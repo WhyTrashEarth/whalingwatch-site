@@ -1,10 +1,10 @@
-# MekongEarth
+# WTEWiki
 
-Astro starter template for MekongEarth:
+Astro starter template for WTEWiki:
 
 - i18n routing ready (default `en`, `prefixDefaultLocale: false`)
 - Atkinson Hyperlegible via local package files (no external CDN)
-- Ocean and Jungle Colors
+- Standard WTE Colors, red monotone color scheme
 - Pages: Home, About, Contact, Privacy, 404
 - Sitemap + robots.txt
 - SEO component (title/description/canonical/OG/Twitter)

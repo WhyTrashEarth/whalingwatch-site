@@ -1,14 +1,14 @@
 export type SiteStatus = "live" | "construction";
 
 export const SITE = {
-  name: "MekongEarth",
+  name: "WTEWiki",
   description:
-    "MekongEarth is a neutral environmental initiative focused on raising awareness and  ",
+    "WTEWiki is the official WhyTrashEarth Network",
 
   // Flip this to "construction" to force the homepage into under-construction mode:
   status: "live" as SiteStatus,
 
-  canonicalBase: "https://mekong.earth",
+  canonicalBase: "https://wte.wiki",
 
   socials: {
     twitter: undefined as string | undefined
