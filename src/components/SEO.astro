@@ -1,0 +1,51 @@
+---
+import { SITE } from "@/config/site";
+
+export type Props = {
+  title?: string;
+  description?: string;
+  canonical?: string; // optional explicit canonical
+  ogImage?: string;   // absolute or site-relative (/og/og-default.png)
+  noIndex?: boolean;
+};
+
+const {
+  title,
+  description = SITE.description,
+  canonical,
+  ogImage = "/og/og-default.png",
+  noIndex = false
+} = Astro.props;
+
+const site = Astro.site?.toString().replace(/\/$/, "") ?? SITE.canonicalBase ?? "";
+const url = new URL(Astro.url.pathname, site || Astro.url.origin).toString();
+
+const finalTitle = title ? `${title} · ${SITE.name}` : SITE.name;
+const finalCanonical = canonical ?? url;
+
+const ogUrl = finalCanonical;
+const ogImg = ogImage.startsWith("http") ? ogImage : (site ? `${site}${ogImage}` : ogImage);
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>{finalTitle}</title>
+<meta name="description" content={description} />
+
+<link rel="canonical" href={finalCanonical} />
+
+{noIndex ? <meta name="robots" content="noindex,nofollow" /> : null}
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content={finalTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={ogUrl} />
+<meta property="og:image" content={ogImg} />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={finalTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImg} />

@@ -1,0 +1,15 @@
+---
+import { t } from "@/i18n/ui";
+const locale = Astro.currentLocale;
+---
+<section class="card p-24" aria-labelledby="uc-title">
+  <h1 id="uc-title" class="h1">{t(locale, "uc_title")}</h1>
+  <p class="muted" style="max-width: 70ch; line-height: 1.6;">
+    {t(locale, "uc_body")}
+  </p>
+  <hr class="hr" />
+  <p style="margin:0; line-height:1.6;">
+    You can still access other pages while the homepage is in build mode:
+    <a href="/about">About</a>, <a href="/contact">Contact</a>, <a href="/blog">Blog</a>.
+  </p>
+</section>
