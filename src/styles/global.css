@@ -41,9 +41,9 @@
 }
 
 :root {
-  --color-bg: #0b1f1a;        /* deep alpine green */
-  --color-text: #e6f2ef;      /* soft snow white */
-  --color-accent: #3a7d6b;    /* forest green */
+  --color-bg: #040036;        /* deep blue */
+  --color-text: #000000;      /* bg gradient dark */
+  --color-accent: #50004c;    /* dark sakura pink */
   --color-muted: #7fa39a;     /* sage */
 
   /* Accessible text */
@@ -89,7 +89,7 @@ main {
 /* Links */
 a {
   color: var(--text);
-  text-decoration-color: rgba(225, 6, 0, 0.7);
+  text-decoration-color: rgba(108, 0, 104, 0.7);
   text-underline-offset: 0.2em;
 }
 a:hover {

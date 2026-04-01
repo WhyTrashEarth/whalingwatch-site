@@ -1,4 +1,4 @@
-### WhyTrashTahoe Dev Notes
+### UXO.Info Dev Notes
 
-- Make sure it works 
+- Started Today
 
