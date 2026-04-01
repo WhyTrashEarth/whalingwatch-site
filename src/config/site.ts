@@ -1,14 +1,14 @@
 export type SiteStatus = "live" | "construction";
 
 export const SITE = {
-  name: "UXOInfo",
+  name: "MenhadenEco",
   description:
-    "UXOInfo is an initiative focused on practical, systems-level improvements in regards to UXOs (Unexploded Ordinances)",
+    "MenhadenEco is an environmental initiative focused on raising awareness and saving the Mehaden Fish in the Atlantic ",
 
   // Flip this to "construction" to force the homepage into under-construction mode:
   status: "live" as SiteStatus,
 
-  canonicalBase: "https://uxo.info",
+  canonicalBase: "https://menhaden.eco",
 
   socials: {
     twitter: undefined as string | undefined

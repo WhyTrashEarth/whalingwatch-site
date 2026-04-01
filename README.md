@@ -1,10 +1,10 @@
-# UXOInfo
+# MenhadenEco
 
-Astro starter template for UXOInfo:
+Astro starter template for MenhadenEco:
 
 - i18n routing ready (default `en`, `prefixDefaultLocale: false`)
 - Atkinson Hyperlegible via local package files (no external CDN)
-- Heavy neutral colors, and light sakura notes 
+- Ocean Colors, Browns Like Menhaden Fish 
 - Pages: Home, About, Contact, Privacy, 404
 - Sitemap + robots.txt
 - SEO component (title/description/canonical/OG/Twitter)
