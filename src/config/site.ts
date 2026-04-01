@@ -1,14 +1,14 @@
 export type SiteStatus = "live" | "construction";
 
 export const SITE = {
-  name: "MenhadenEco",
+  name: "MekongEarth",
   description:
-    "MenhadenEco is an environmental initiative focused on raising awareness and saving the Mehaden Fish in the Atlantic ",
+    "MekongEarth is a neutral environmental initiative focused on raising awareness and  ",
 
   // Flip this to "construction" to force the homepage into under-construction mode:
   status: "live" as SiteStatus,
 
-  canonicalBase: "https://menhaden.eco",
+  canonicalBase: "https://mekong.earth",
 
   socials: {
     twitter: undefined as string | undefined

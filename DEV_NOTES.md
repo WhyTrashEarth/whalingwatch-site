@@ -1,4 +1,4 @@
-### Menhaden.Eco Dev Notes
+### Mekong.Earth Dev Notes
 
 - Started Today
 

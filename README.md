@@ -1,10 +1,10 @@
-# MenhadenEco
+# MekongEarth
 
-Astro starter template for MenhadenEco:
+Astro starter template for MekongEarth:
 
 - i18n routing ready (default `en`, `prefixDefaultLocale: false`)
 - Atkinson Hyperlegible via local package files (no external CDN)
-- Ocean Colors, Browns Like Menhaden Fish 
+- Ocean and Jungle Colors
 - Pages: Home, About, Contact, Privacy, 404
 - Sitemap + robots.txt
 - SEO component (title/description/canonical/OG/Twitter)
