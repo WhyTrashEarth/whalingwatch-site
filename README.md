@@ -1,10 +1,10 @@
-# PlasticFreeFlights
+# ReLiveNV
 
 Astro starter template for PlasticFreeWaste:
 
 - i18n routing ready (default `en`, `prefixDefaultLocale: false`)
 - Atkinson Hyperlegible via local package files (no external CDN)
-- Aviation color, blue, white and yellow
+- Nevada tones, neutral colors
 - Pages: Home, About, Contact, Privacy, 404
 - Sitemap + robots.txt
 - SEO component (title/description/canonical/OG/Twitter)

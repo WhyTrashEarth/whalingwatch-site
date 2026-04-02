@@ -1,6 +1,6 @@
 ---
-title: Hello PlasticFreeFlights Lovers!
-description: First post in the PlasticFreeFlights Blog
+title: Hello Lithium Recycling Lovers from Nevadas!
+description: First post in the ReLiveNV Blog
 pubDate: 2026-04-01
 ---
 
