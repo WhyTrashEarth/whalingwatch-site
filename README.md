@@ -1,10 +1,10 @@
-# EcoWasteWorldWide
+# WineWaste
 
-Astro starter template for EcoWasteWorldWide:
+Astro starter template for WineWaste:
 
 - i18n routing ready (default `en`, `prefixDefaultLocale: false`)
 - Atkinson Hyperlegible via local package files (no external CDN)
-- Neutral, Generic Tones, Greens and Light Reds
+- Wine Colors, like a beautiful cab and some lighter tones like a nice sauv blanc
 - Pages: Home, About, Contact, Privacy, 404
 - Sitemap + robots.txt
 - SEO component (title/description/canonical/OG/Twitter)

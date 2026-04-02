@@ -1,14 +1,14 @@
 export type SiteStatus = "live" | "construction";
 
 export const SITE = {
-  name: "EcoWasteWorldWide",
+  name: "WineWaste",
   description:
-    "EcoWasteWorldwide is awareness around illegal and illicit waste dumping worldwide",
+    "WineWaste 🍷 is an environmental effort focused on unnecessary wine waste in the global wine industry",
 
   // Flip this to "construction" to force the homepage into under-construction mode:
   status: "live" as SiteStatus,
 
-  canonicalBase: "https://ecowasteworldwide.org",
+  canonicalBase: "https://winewaste.org",
 
   socials: {
     twitter: undefined as string | undefined

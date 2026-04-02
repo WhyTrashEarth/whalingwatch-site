@@ -1,6 +1,6 @@
 ---
-title: Hello EcoWorld!
-description: First post in the EcoWasteWorldWide Blog
+title: Hello Wine Lovers!
+description: First post in the WineWaste Blog
 pubDate: 2026-04-01
 ---
 

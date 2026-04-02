@@ -1,4 +1,4 @@
-### EcoWasteWorldWide
+### WineWaste
 
-- Hello EcoWorld, we shall be helping you soon. Remember EWW 
+- Hello Wine Enthusiasts, raise a glass and enjoy something delicous... Updates coming soon
 

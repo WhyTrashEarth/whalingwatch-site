@@ -42,8 +42,8 @@
 
 :root {
   --color-bg: #ffffff;        /* white */
-  --color-text: #090c08;      /* bg black */
-  --color-accent: #006664;    /* dark red */
+  --color-text: #514d3a;      /* bg black */
+  --color-accent: #660005;    /* wube red */
   --color-muted: #e1e1e1;     /* also dark red */
 
   /* Accessible text */
@@ -69,7 +69,7 @@
 html {
   font-family: "Atkinson Hyperlegible", system-ui, -apple-system, Segoe UI, Roboto,
     Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-  background: radial-gradient(1200px 700px at 20% 0%, rgba(145, 20, 167, 0.18), transparent 55%),
+  background: radial-gradient(1200px 700px at 20% 0%, rgba(255, 255, 255, 0.188), transparent 55%),
     linear-gradient(180deg, var(--color-text), var(--color-accent));
   color: var(--text);
   text-rendering: optimizeLegibility;
@@ -89,7 +89,7 @@ main {
 /* Links */
 a {
   color: var(--text);
-  text-decoration-color: rgb(87, 0, 116);
+  text-decoration-color: rgb(250, 173, 173);
   text-underline-offset: 0.2em;
 }
 a:hover {
@@ -109,7 +109,7 @@ textarea {
 }
 
 .card {
-  background: rgba(0, 32, 10, 0.485);
+  background: rgba(0, 0, 0, 0.485);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
