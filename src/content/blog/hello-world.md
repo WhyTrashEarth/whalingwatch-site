@@ -1,6 +1,6 @@
 ---
-title: Hello World
-description: First post in the Airi Venturi Blog
+title: Hello Hawaii!
+description: First post in the CrowCRB Blog
 pubDate: 2026-04-01
 ---
 
