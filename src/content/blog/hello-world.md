@@ -1,6 +1,6 @@
 ---
-title: Hello Hawaii!
-description: First post in the CrowCRB Blog
+title: Hello EcoWorld!
+description: First post in the EcoWasteWorldWide Blog
 pubDate: 2026-04-01
 ---
 

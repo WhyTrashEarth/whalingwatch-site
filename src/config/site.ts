@@ -1,14 +1,14 @@
 export type SiteStatus = "live" | "construction";
 
 export const SITE = {
-  name: "CrowCRB",
+  name: "EcoWasteWorldWide",
   description:
-    "CrowCRB is an environmental Response to Coconut Rhinoceros Beetle response initiative in Hawaii ",
+    "EcoWasteWorldwide is awareness around illegal and illicit waste dumping worldwide",
 
   // Flip this to "construction" to force the homepage into under-construction mode:
   status: "live" as SiteStatus,
 
-  canonicalBase: "https://CrowCRB.org",
+  canonicalBase: "https://ecowasteworldwide.org",
 
   socials: {
     twitter: undefined as string | undefined
