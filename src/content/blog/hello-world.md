@@ -1,6 +1,6 @@
 ---
-title: Hello Fast Fashion Lovers and Haters! 
-description: First post in the EndFastFashion Blog
+title: Hello Futbol/Soccer and FIFA World Cup Lovers!
+description: First post in the MakeTheGoal Blog
 pubDate: 2026-04-01
 ---
 
