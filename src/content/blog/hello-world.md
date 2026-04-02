@@ -1,6 +1,6 @@
 ---
-title: Hello Futbol/Soccer and FIFA World Cup Lovers!
-description: First post in the MakeTheGoal Blog
+title: Hello Whale Lovers!
+description: First post in the Whaling Watching Blog
 pubDate: 2026-04-01
 ---
 

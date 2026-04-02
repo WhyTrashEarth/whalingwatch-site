@@ -1,10 +1,10 @@
-# MakeTheGoal
+# WhalingWatch
 
-Astro starter template for MakeTheGoal:
+Astro starter template for WhalingWatch:
 
 - i18n routing ready (default `en`, `prefixDefaultLocale: false`)
 - Atkinson Hyperlegible via local package files (no external CDN)
-- Soccer/Futbol Colors, Green and White
+- Whale Colors, Dark Blues and Deep Blacks
 - Pages: Home, About, Contact, Privacy, 404
 - Sitemap + robots.txt
 - SEO component (title/description/canonical/OG/Twitter)
