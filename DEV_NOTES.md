@@ -1,4 +1,3 @@
-### WineWaste
+### PlasticFreeFlights
 
-- Hello Wine Enthusiasts, raise a glass and enjoy something delicous... Updates coming soon
-
+- Hello Frequent Flyers!, Working on the future of aviation and improving the Earth

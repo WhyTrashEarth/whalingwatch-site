@@ -1,10 +1,10 @@
-# WineWaste
+# PlasticFreeFlights
 
-Astro starter template for WineWaste:
+Astro starter template for PlasticFreeWaste:
 
 - i18n routing ready (default `en`, `prefixDefaultLocale: false`)
 - Atkinson Hyperlegible via local package files (no external CDN)
-- Wine Colors, like a beautiful cab and some lighter tones like a nice sauv blanc
+- Aviation color, blue, white and yellow
 - Pages: Home, About, Contact, Privacy, 404
 - Sitemap + robots.txt
 - SEO component (title/description/canonical/OG/Twitter)

@@ -1,6 +1,6 @@
 ---
-title: Hello Wine Lovers!
-description: First post in the WineWaste Blog
+title: Hello PlasticFreeFlights Lovers!
+description: First post in the PlasticFreeFlights Blog
 pubDate: 2026-04-01
 ---
 

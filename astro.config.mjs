@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: 'https://winewaste.org',
+  site: 'https://plasticfree.flights',
   integrations: [sitemap()],
 
   // i18n routing ready:
