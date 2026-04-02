@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: 'https://wte.wiki',
+  site: 'https://AiriVenturi.com',
   integrations: [sitemap()],
 
   // i18n routing ready:

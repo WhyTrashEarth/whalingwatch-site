@@ -1,7 +1,7 @@
 ---
 title: Hello World
-description: First post in the WTE Astro template blog.
-pubDate: 2026-03-03
+description: First post in the Airi Venturi Blog
+pubDate: 2026-04-01
 ---
 
 This is a starter blog post.

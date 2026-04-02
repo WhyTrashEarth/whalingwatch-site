@@ -1,10 +1,10 @@
-# WTEWiki
+# AiriVenturi
 
-Astro starter template for WTEWiki:
+Astro starter template for AiriVenturi:
 
 - i18n routing ready (default `en`, `prefixDefaultLocale: false`)
 - Atkinson Hyperlegible via local package files (no external CDN)
-- Standard WTE Colors, red monotone color scheme
+- Beautiful sky blues and gorgeous pure white colors
 - Pages: Home, About, Contact, Privacy, 404
 - Sitemap + robots.txt
 - SEO component (title/description/canonical/OG/Twitter)
