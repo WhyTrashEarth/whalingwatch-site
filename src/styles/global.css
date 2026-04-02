@@ -42,8 +42,8 @@
 
 :root {
   --color-bg: #ffffff;        /* white */
-  --color-text: #c07702;      /* nv desert */
-  --color-accent: #343839;    /* li grey */
+  --color-text: #140054;      /* dark regal */
+  --color-accent: #99bcf7;    /* light blueish white */
   --color-muted: #e1e1e1;     /* white */
 
   /* Accessible text */
@@ -89,7 +89,7 @@ main {
 /* Links */
 a {
   color: var(--text);
-  text-decoration-color: rgb(23, 19, 249);
+  text-decoration-color: rgb(225, 173, 2);
   text-underline-offset: 0.2em;
 }
 a:hover {
@@ -109,7 +109,7 @@ textarea {
 }
 
 .card {
-  background: rgba(1, 5, 75, 0.485);
+  background: rgba(0, 0, 0, 0.485);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);

@@ -1,6 +1,6 @@
 ---
-title: Hello Lithium Recycling Lovers from Nevadas!
-description: First post in the ReLiveNV Blog
+title: Hello Fast Fashion Lovers and Haters! 
+description: First post in the EndFastFashion Blog
 pubDate: 2026-04-01
 ---
 

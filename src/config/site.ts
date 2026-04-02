@@ -1,14 +1,14 @@
 export type SiteStatus = "live" | "construction";
 
 export const SITE = {
-  name: "ReLiveNV",
+  name: "EndFastFashion",
   description:
-    "ReLiveNV is an envrionemtnal effort to raise awareness on Recycling Lithium in Nevada",
+    "EndFastFashion is an envrionemtnal effort to raise awareness of fast fashion and providing solutions worldwide",
 
   // Flip this to "construction" to force the homepage into under-construction mode:
   status: "live" as SiteStatus,
 
-  canonicalBase: "https://relivenv.org",
+  canonicalBase: "https://endfast.fashion",
 
   socials: {
     twitter: undefined as string | undefined
