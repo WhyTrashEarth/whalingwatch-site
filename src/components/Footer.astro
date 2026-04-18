@@ -1,12 +1,62 @@
+
 <footer class="container" role="contentinfo" aria-label="Site footer" style="padding: 2rem 0 3rem;">
   <div class="card p-16">
-    <div class="muted" style="display:flex; gap:0.75rem; flex-wrap:wrap; align-items:center; justify-content:space-between;">
-      <span>© {new Date().getFullYear()} WhalingWatch</span>
-      <span style="display:flex; gap:0.75rem; align-items:center;">
-        <a href="/sitemap.xml">Sitemap</a>
+    <div class="muted footer-inner">
+      
+      <!-- LEFT: Site identity -->
+      <span> {new Date().getFullYear()} Whaling Watch </span>
+
+      <!-- RIGHT: Links + WTE -->
+      <span class="footer-right">
+        <a href="/sitemap-index.xml">Sitemap</a>
         <span aria-hidden="true">·</span>
         <a href="/robots.txt">Robots</a>
+
+        <span class="footer-divider" aria-hidden="true">·</span>
+
+        <a
+          href="https://whytrashearth.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="wte-link"
+        >
+          © WhyTrashEarth
+        </a>
       </span>
+
     </div>
   </div>
 </footer>
+
+<style>
+  .footer-inner {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-right {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-divider {
+    opacity: 0.5;
+  }
+
+  .wte-link {
+    font-size: 0.85rem;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    letter-spacing: 0.05em;
+  }
+
+  .wte-link:hover {
+    opacity: 1;
+  }
+</style>

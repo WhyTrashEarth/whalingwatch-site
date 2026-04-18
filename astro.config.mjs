@@ -2,7 +2,7 @@ import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: 'https://endfast.fashion',
+  site: 'https://whaling.watch',
   integrations: [sitemap()],
 
   // i18n routing ready:
@@ -16,7 +16,4 @@ export default defineConfig({
     }
   },
 
-  integrations: [
-  
-  ]
 });

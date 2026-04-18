@@ -3,45 +3,22 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { t } from "@/i18n/ui";
 const locale = Astro.currentLocale;
 ---
-<BaseLayout title={t(locale, "contact_title")} description="Contact WhalingWatch.">
-  <section class="card p-24" aria-labelledby="contact-title">
-    <h1 id="contact-title" class="h1">{t(locale, "contact_title")}</h1>
-    <p class="muted" style="max-width: 75ch; line-height: 1.65;">
-      Replace this with your preferred contact method (email, form provider, or mail address).
-    </p>
+<BaseLayout title={t(locale, "contact_title")} description="Contact WhyTrashEarth.">
+<section class="card p-24" aria-labelledby="contact-title">
+  <h1 id="contact-title" class="h1">Contact Us</h1>
 
-    <hr class="hr" />
+  <p class="muted" style="max-width: 75ch; line-height: 1.65;">
+    We prefer direct communication. If you have a question, idea, or would like to work with us, please reach out via email.
+  </p>
 
-    <form class="card p-16" style="background: rgba(0,0,0,0.22);" aria-label="Contact form (placeholder)">
-      <div style="display:grid; gap: 12px; grid-template-columns: 1fr;">
-        <label>
-          <div style="font-weight:700;">Name</div>
-          <input
-            type="text"
-            name="name"
-            autocomplete="name"
-            style="width:100%; margin-top:6px; padding:10px 12px; border-radius:12px; border:1px solid var(--border); background:#000; color:var(--text);"
-          />
-        </label>
+  <p style="margin-top: 16px; font-weight: 700;">
+    <a href="mailto:wte23@pm.me" style="text-decoration: underline;">
+      wte23@pm.me
+    </a>
+  </p>
 
-        <label>
-          <div style="font-weight:700;">Message</div>
-          <textarea
-            name="message"
-            rows="5"
-            style="width:100%; margin-top:6px; padding:10px 12px; border-radius:12px; border:1px solid var(--border); background:#000; color:var(--text);"
-          ></textarea>
-        </label>
-
-        <button
-          type="button"
-          class="card p-16"
-          style="cursor:not-allowed; border-color: rgba(225,6,0,0.35); font-weight:800;"
-          aria-disabled="true"
-        >
-          Submit Your Whale of a Letter
-        </button>
-      </div>
-    </form>
-  </section>
+  <p class="muted" style="margin-top: 16px; max-width: 75ch; line-height: 1.65;">
+    If needed, a contact form may be available in the future. For now, email ensures your message reaches us directly and reliably.
+  </p>
+</section>
 </BaseLayout>
