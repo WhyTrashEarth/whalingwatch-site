@@ -6,12 +6,11 @@ const locale = Astro.currentLocale;
 <header class="container" role="banner" aria-label="Site header" style="padding: 1.25rem 0;">
   <nav aria-label="Primary" class="card p-16" style="display:flex; gap:1rem; align-items:center; justify-content:space-between;">
     <a href="/" style="font-weight:800; letter-spacing:-0.02em; text-decoration:none;">
-      WhalingWatch 🐋
-      <span aria-hidden="true" style="color:var(--color-text);">■</span>
+      Whaling Watch 🐋
+      <span aria-hidden="true" style="color:var(--color-text);"></span>
     </a>
 
     <div style="display:flex; gap:0.85rem; flex-wrap:wrap; justify-content:flex-end;">
-      <a href="/">{t(locale, "nav_home")}</a>
       <a href="/about">{t(locale, "nav_about")}</a>
       <a href="/contact">{t(locale, "nav_contact")}</a>
       <a href="/blog">{t(locale, "nav_blog")}</a>
