@@ -1,0 +1,40 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const sources = [
+  { group: "International framework", title: "International Whaling Commission: Commission overview", description: "The IWC’s role, structure, convention, and areas of work.", href: "https://iwc.int/commission", label: "IWC" },
+  { group: "International framework", title: "Types of whaling", description: "The IWC overview of commercial, Aboriginal subsistence, and special-permit whaling.", href: "https://iwc.int/management-and-conservation/whaling", label: "IWC" },
+  { group: "Commercial", title: "Commercial whaling", description: "The IWC account of the moratorium and the current positions of Norway, Iceland, and Japan.", href: "https://iwc.int/management-and-conservation/whaling/commercial", label: "IWC" },
+  { group: "Subsistence", title: "Aboriginal subsistence whaling", description: "The IWC framework, participating member countries, objectives, and quota process.", href: "https://iwc.int/management-and-conservation/whaling/aboriginal", label: "IWC" },
+  { group: "United States", title: "Makah Tribal Whale Hunt", description: "NOAA Fisheries’ chronology, legal process, environmental review, waiver, and permitting material.", href: "https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/makah-tribal-whale-hunt", label: "NOAA Fisheries" },
+  { group: "Japan", title: "Whaling Affairs", description: "The Fisheries Agency of Japan’s catch-limit documents, policy statements, and scientific progress reports.", href: "https://www.jfa.maff.go.jp/e/whale/", label: "Fisheries Agency of Japan" },
+  { group: "Norway", title: "Whaling", description: "The Norwegian government’s description of national management, hunting practice, and scientific basis.", href: "https://www.regjeringen.no/en/topics/food-fisheries-and-agriculture/fishing-and-aquaculture/kval-og-sel/whaling/id2001553/", label: "Government of Norway" },
+];
+---
+
+<BaseLayout title="Sources" description="The official starting sources and editorial standards used by Whaling Watch.">
+  <section class="container closing-section source-intro">
+    <p class="eyebrow">Source library</p>
+    <h2>The claim is only as useful as the path back to it.</h2>
+    <p>This is the beginning of the working library—not a claim that any institution is neutral or complete. Official sources establish what a government, regulator, or commission says and records. Whaling Watch will compare them with scientific literature, community material, and other primary evidence as individual country pages develop.</p>
+    <p class="verification-stamp"><time datetime="2026-09-08">Sources last verified September 8, 2026</time></p>
+  </section>
+
+  <section class="container source-library" aria-label="Official starting sources">
+    {sources.map((source, index) => (
+      <a class="source-entry" href={source.href} target="_blank" rel="noopener noreferrer">
+        <span class="source-number">{String(index + 1).padStart(2, "0")}</span>
+        <span class="source-group">{source.group}</span>
+        <span class="source-copy"><strong>{source.title}</strong><small>{source.description}</small></span>
+        <span class="source-publisher">{source.label}</span>
+        <span class="source-arrow" aria-hidden="true">↗</span>
+      </a>
+    ))}
+  </section>
+
+  <section class="container source-method">
+    <article><p class="eyebrow">Link the claim</p><h3>Context, not citation theater.</h3><p>Important facts should lead to the specific source that supports them.</p></article>
+    <article><p class="eyebrow">Show the date</p><h3>Records change.</h3><p>Country and legal entries should show when the source was published and when we last checked it.</p></article>
+    <article><p class="eyebrow">Name uncertainty</p><h3>Disagreement belongs in view.</h3><p>When credible sources conflict or the evidence is incomplete, the page should say so plainly.</p></article>
+  </section>
+</BaseLayout>

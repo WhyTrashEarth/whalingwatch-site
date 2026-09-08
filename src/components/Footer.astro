@@ -1,72 +1,35 @@
 
-<footer class="container" role="contentinfo" aria-label="Site footer" style="padding: 2rem 0 3rem;">
-  <div class="card p-16">
-    <div class="muted footer-inner">
-      
-      <!-- LEFT: Site identity -->
-      <span> {new Date().getFullYear()} Whaling Watch </span>
-
-      <!-- RIGHT: Links + WTE -->
-      <span class="footer-right">
-        <a href="/sitemap-index.xml">Sitemap</a>
-        <span aria-hidden="true">·</span>
-        <a href="/robots.txt">Robots</a>
-
-        <span class="footer-divider" aria-hidden="true">·</span>
-
-        <a
-          href="https://whytrashearth.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="wte-link"
-        >
-          © WhyTrashEarth
-        </a>
-      </span>
-
+<footer class="site-footer" role="contentinfo" aria-label="Site footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="eyebrow">Whaling Watch</p>
+      <p class="footer-statement">Independent. International. Source-driven.</p>
+      <p class="footer-note">No petitions. No donation appeals. Just careful context and the sources behind it.</p>
+    </div>
+    <div class="footer-links">
+      <a href="/about">About the project</a><a href="/sources">Source standards</a><a href="/blog">Corrections &amp; changes</a><a href="/contact">Contact</a>
+      <a href="https://whytrashearth.org" target="_blank" rel="noopener noreferrer">© WhyTrashEarth</a>
     </div>
   </div>
+  <div class="footer-whale" data-whale-gallery>
+    <a class="footer-whale-home" href="/" aria-label="Return to the Whaling Watch homepage">
+      <img class="footer-whale-art is-active" data-whale src="/images/whale.webp" alt="" />
+      <img class="footer-whale-art" data-whale src="/images/whale-blue.webp" alt="" />
+      <img class="footer-whale-art footer-whale-art--orca" data-whale src="/images/orca-transparent.webp" alt="" />
+    </a>
+  </div>
+  <div class="container footer-bottom">© <span data-current-year>{new Date().getFullYear()}</span> Whaling Watch · Last updated September 2026 · <a href="/sitemap-index.xml">Sitemap</a></div>
 </footer>
 
-<style>
-  .footer-inner {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .footer-right {
-    display: flex;
-    gap: 0.75rem;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .footer-divider {
-    opacity: 0.5;
-  }
-
-  .wte-link {
-    font-size: 0.85rem;
-    text-decoration: none;
-    opacity: 0.6;
-    transition: opacity 0.2s ease;
-    letter-spacing: 0.05em;
-  }
-
-  .wte-link:hover {
-    opacity: 1;
-  }
-</style>
-
-<section class="footer-badge">
- <a href="/" aria-label="Return to homepage">
-    <div class="badge-wrapper">
-    <img 
-     src="/images/whale.webp" 
-     alt="WhyTrashEarth badge"
-     class="badge-img"
-  </div>
-</section>
+<script is:inline>
+  (() => {
+    const gallery = document.querySelector('[data-whale-gallery]');
+    if (!gallery) return;
+    const whales = [...gallery.querySelectorAll('[data-whale]')];
+    whales.forEach((whale) => whale.classList.remove('is-active'));
+    whales[Math.floor(Math.random() * whales.length)]?.classList.add('is-active');
+    document.querySelectorAll('[data-current-year]').forEach((year) => {
+      year.textContent = String(new Date().getFullYear());
+    });
+  })();
+</script>

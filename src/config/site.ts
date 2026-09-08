@@ -1,14 +1,14 @@
 export type SiteStatus = "live" | "construction";
 
 export const SITE = {
-  name: "WhalingWatch",
+  name: "Whaling Watch",
   description:
-    "Whaling Watch monitors whaling activity worldwide and provides knowledges resources on whaling",
+    "An independent, international, source-driven reference on contemporary whaling.",
 
   // Flip this to "construction" to force the homepage into under-construction mode:
   status: "live" as SiteStatus,
 
-  canonicalBase: "https://whalingwatch.org",
+  canonicalBase: "https://whaling.watch",
 
   socials: {
     twitter: undefined as string | undefined

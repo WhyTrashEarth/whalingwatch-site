@@ -1,14 +1,24 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const entries = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
-<BaseLayout title="Updates | WhalingWatch">
-  <main class="container">
-    <h1>Updates</h1>
-    <p>Updates, findings, and project logs will be published here.</p>
-
-    <hr />
-
-    <p>No posts yet. More coming soon.</p>
-  </main>
+<BaseLayout title="Corrections & changes" description="A public record of meaningful Whaling Watch site changes, source updates, corrections, and research revisions.">
+  <section class="container closing-section update-intro">
+    <p class="eyebrow">Public record</p>
+    <h2>Corrections, changes, and what moved.</h2>
+    <p>This log records meaningful changes to the site and its research. Visual housekeeping may be grouped together; factual corrections and source revisions should identify what changed and when.</p>
+    <p class="verification-stamp"><time datetime="2026-09-08">Log established September 8, 2026</time></p>
+  </section>
+  <section class="container update-list">
+    {entries.map((entry) => (
+      <a class="update-entry" href={`/blog/${entry.slug}/`}>
+        <time datetime={entry.data.pubDate.toISOString()}>{entry.data.pubDate.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</time>
+        <span><strong>{entry.data.title}</strong><small>{entry.data.description}</small></span>
+        <span aria-hidden="true">→</span>
+      </a>
+    ))}
+  </section>
 </BaseLayout>

@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../styles/refinements.css";
 import SEO from "../components/SEO.astro";
 import SkipLink from "../components/SkipLink.astro";
 import Header from "../components/Header.astro";
@@ -10,21 +11,22 @@ export type Props = {
   description?: string;
   canonical?: string;
   ogImage?: string;
+  ogImageAlt?: string;
   noIndex?: boolean;
 };
 
-const { title, description, canonical, ogImage, noIndex } = Astro.props;
+const { title, description, canonical, ogImage, ogImageAlt, noIndex } = Astro.props;
 ---
 <!doctype html>
 <html lang={Astro.currentLocale ?? "en"}>
   <head>
-    <SEO title={title} description={description} canonical={canonical} ogImage={ogImage} noIndex={noIndex} />
+    <SEO title={title} description={description} canonical={canonical} ogImage={ogImage} ogImageAlt={ogImageAlt} noIndex={noIndex} />
   </head>
   <body>
     <SkipLink />
     <Header />
 
-    <main id="main-content" class="container" role="main" tabindex="-1" style="padding: 0.5rem 0 2rem;">
+    <main id="main-content" role="main" tabindex="-1">
       <slot />
     </main>
 

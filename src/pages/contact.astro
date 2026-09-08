@@ -1,24 +1,33 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import { t } from "@/i18n/ui";
-const locale = Astro.currentLocale;
+
+const invitations = [
+  ["Tips & leads", "Point us toward a regulation, report, local development, archive, or story that deserves a closer look."],
+  ["Corrections & context", "Tell us when a statement is incomplete, outdated, mistranslated, or missing important cultural or legal context."],
+  ["Photos & records", "Share original photography, historical material, field notes, or records that may strengthen the public archive."],
+  ["Translation & research", "Help make carefully sourced information understandable beyond English and across the communities represented."],
+];
 ---
-<BaseLayout title={t(locale, "contact_title")} description="Contact WhyTrashEarth.">
-<section class="card p-24" aria-labelledby="contact-title">
-  <h1 id="contact-title" class="h1">Contact Us</h1>
 
-  <p class="muted" style="max-width: 75ch; line-height: 1.65;">
-    We prefer direct communication. If you have a question, idea, or would like to work with us, please reach out via email.
-  </p>
+<BaseLayout title="Contact" description="Share a source, correction, photograph, research lead, translation offer, or collaboration idea with Whaling Watch.">
+  <section class="container contact-hero">
+    <p class="eyebrow">Contact Whaling Watch</p>
+    <h1>Bring something<br /><em>to the surface.</em></h1>
+    <p>Whaling Watch grows through careful public participation. Whether you have a source, a correction, a question, or firsthand material, we want to hear from you.</p>
+  </section>
 
-  <p style="margin-top: 16px; font-weight: 700;">
-    <a href="mailto:wte23@pm.me" style="text-decoration: underline;">
-      wte23@pm.me
-    </a>
-  </p>
-
-  <p class="muted" style="margin-top: 16px; max-width: 75ch; line-height: 1.65;">
-    If needed, a contact form may be available in the future. For now, email ensures your message reaches us directly and reliably.
-  </p>
-</section>
+  <section class="container contact-grid">
+    <div class="contact-invitations">
+      {invitations.map(([title, detail], index) => (
+        <article><span>0{index + 1}</span><div><h2>{title}</h2><p>{detail}</p></div></article>
+      ))}
+    </div>
+    <aside class="contact-card">
+      <p class="eyebrow">Write to us</p>
+      <h2>One inbox.<br />Real people.</h2>
+      <p>Email is currently the most direct way to reach the project. A useful note explains what you are sharing, where it came from, and whether we may credit or contact you about it.</p>
+      <a class="contact-email" href="mailto:hello@whaling.watch">hello@whaling.watch <span aria-hidden="true">↗</span></a>
+      <small>Please do not send confidential, dangerous, or unlawfully obtained material. If a photo is not yours, include its creator and reuse information.</small>
+    </aside>
+  </section>
 </BaseLayout>

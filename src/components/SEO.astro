@@ -6,6 +6,7 @@ export type Props = {
   description?: string;
   canonical?: string; // optional explicit canonical
   ogImage?: string;   // absolute or site-relative (/og/og-default.png)
+  ogImageAlt?: string;
   noIndex?: boolean;
 };
 
@@ -13,7 +14,8 @@ const {
   title,
   description = SITE.description,
   canonical,
-  ogImage = "/og/og-default.png",
+  ogImage = "/og/og-whaling-watch.png",
+  ogImageAlt = "Whaling Watch — Independent. International. Source-driven.",
   noIndex = false
 } = Astro.props;
 
@@ -33,19 +35,26 @@ const ogImg = ogImage.startsWith("http") ? ogImage : (site ? `${site}${ogImage}`
 <title>{finalTitle}</title>
 <meta name="description" content={description} />
 
-<link rel="icon" href=whaling-favicon.png />
+<link rel="icon" href="/whaling-favicon.png" />
+<meta name="theme-color" content="#031f36" />
 
 {noIndex ? <meta name="robots" content="noindex,nofollow" /> : null}
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
+<meta property="og:site_name" content={SITE.name} />
+<meta property="og:locale" content="en_US" />
 <meta property="og:title" content={finalTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={ogUrl} />
 <meta property="og:image" content={ogImg} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={ogImageAlt} />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={finalTitle} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImg} />
+<meta name="twitter:image:alt" content={ogImageAlt} />

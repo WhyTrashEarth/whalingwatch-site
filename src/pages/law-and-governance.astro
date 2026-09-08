@@ -1,0 +1,40 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const legalSources = [
+  ["Treaty", "International Convention for the Regulation of Whaling & Schedule", "The 1946 founding convention and the Schedule containing operational rules, including classifications and catch limits.", "IWC", "https://iwc.int/commission/convention"],
+  ["Framework", "The IWC’s three types of whaling", "The Commission’s overview of commercial, Aboriginal subsistence, and special-permit whaling.", "IWC", "https://iwc.int/management-and-conservation/whaling"],
+  ["Commercial", "Commercial whaling and the moratorium", "The moratorium, objections, reservations, and the current position of Japan, Norway, and Iceland.", "IWC", "https://iwc.int/management-and-conservation/whaling/commercial"],
+  ["Subsistence", "Aboriginal Subsistence Whaling", "The IWC’s purpose, needs-based framework, participating member governments, and management approach.", "IWC", "https://iwc.int/management-and-conservation/whaling/aboriginal"],
+  ["Catch limits", "Current Aboriginal subsistence catch limits", "The present block quotas and annual strike limits by population and community.", "IWC", "https://iwc.int/management-and-conservation/whaling/aboriginal/html_76"],
+  ["Science", "Revised Management Procedure", "The scientific method developed by the IWC to calculate commercial catch limits if the moratorium were lifted.", "IWC", "https://iwc.int/management-and-conservation/rmp/rmp2"],
+  ["Ocean law", "UNCLOS Article 65", "The duty of coastal states to cooperate through appropriate international organizations on marine-mammal conservation.", "United Nations", "https://www.un.org/Depts/los/convention_agreements/texts/unclos/part5.htm"],
+  ["Ocean law", "UNCLOS Article 120", "Article 65’s marine-mammal cooperation rule as applied on the high seas.", "United Nations", "https://www.un.org/depts/los/convention_agreements/texts/unclos/part7.htm"],
+  ["Protected areas", "IWC whale sanctuaries", "The Indian Ocean and Southern Ocean sanctuary framework and its relationship to commercial whaling.", "IWC", "https://iwc.int/management-and-conservation/sanctuaries"],
+  ["National example", "Norway’s whaling framework", "Norway’s official explanation of its objection, national quota setting, and management approach.", "Government of Norway", "https://www.regjeringen.no/en/topics/food-fisheries-and-agriculture/fishing-and-aquaculture/kval-og-sel/whaling/id2001553/"],
+  ["National example", "Japan’s whaling policy and cooperation", "Japan’s official account of its withdrawal from the IWC and the geographic scope of commercial operations.", "Japan Fisheries Agency", "https://www.jfa.maff.go.jp/e/whale/cooperation.html"],
+  ["National example", "Makah gray-whale waiver and regulations", "The U.S. legal and administrative process governing a tribal ceremonial and subsistence hunt.", "NOAA Fisheries", "https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/makah-tribal-whale-hunt"],
+];
+---
+
+<BaseLayout title="Law & governance" description="A source-led guide to the treaties, IWC rules, national frameworks, catch limits, and governance systems relevant to contemporary whaling.">
+  <section class="container closing-section source-intro">
+    <p class="eyebrow">Law & governance</p><h2>There is no useful one-word answer to “is whaling legal?”</h2>
+    <p>The answer can depend on the species, place, type of hunt, a state’s relationship to international agreements, national law, permits, catch limits, and the facts of a specific event. This page maps the authorities a careful answer should consult.</p>
+    <p class="verification-stamp"><time datetime="2026-09-08">Sources last verified September 8, 2026</time></p>
+  </section>
+  <section class="depth-band"><div class="container principles-grid">
+    <article><span>01</span><h3>International framework</h3><p>The ICRW, its amendable Schedule, IWC decisions, and the law of the sea form an important international layer.</p></article>
+    <article><span>02</span><h3>National framework</h3><p>Domestic legislation, authorizations, regulation, treaty positions, and enforcement determine how rules operate within a jurisdiction.</p></article>
+    <article><span>03</span><h3>Specific facts</h3><p>A responsible explanation names the rule, jurisdiction, date, activity, and source—and says plainly when evidence or interpretation is uncertain.</p></article>
+  </div></section>
+  <section class="container country-section">
+    <div class="section-heading legal-heading"><div><p class="eyebrow">Primary-source library</p><h2>Read the rulebook.</h2></div><p>These links lead to the treaty text, current IWC material, United Nations ocean law, and selected national sources. National pages state their governments’ positions; they are evidence to examine, not independent verdicts.</p></div>
+    <div class="source-library">
+      {legalSources.map(([group, title, description, publisher, href], index) => (
+        <a class="source-entry" href={href} target="_blank" rel="noreferrer"><span class="source-number">{String(index + 1).padStart(2, "0")}</span><span class="source-group">{group}</span><span class="source-copy"><strong>{title}</strong><small>{description}</small></span><span class="source-publisher">{publisher}</span><span class="source-arrow" aria-hidden="true">↗</span></a>
+      ))}
+    </div>
+    <div class="legal-note"><p class="eyebrow">A necessary boundary</p><p>Whaling Watch provides public education and source navigation, not legal advice. Treaty interpretation and national law can change; verify the current instrument and seek qualified counsel for a legal determination.</p></div>
+  </section>
+</BaseLayout>

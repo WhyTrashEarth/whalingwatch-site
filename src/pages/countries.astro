@@ -1,0 +1,65 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const commercial = [
+  { name: "Iceland", region: "North Atlantic", status: "Commercial framework", detail: "Iceland is an IWC member with a reservation to the commercial-whaling moratorium. Authorizations and actual activity can change from year to year, so current claims must be dated.", href: "https://iwc.int/management-and-conservation/whaling/commercial", source: "IWC commercial-whaling overview" },
+  { name: "Norway", region: "North Atlantic", status: "Commercial whaling", detail: "Norway lodged a formal objection to the moratorium and sets national quotas for minke whales. Its government publishes the national management position and regulatory context.", href: "https://www.regjeringen.no/en/topics/food-fisheries-and-agriculture/fishing-and-aquaculture/kval-og-sel/whaling/id2001553/", source: "Government of Norway" },
+  { name: "Japan", region: "North Pacific", status: "Commercial whaling", detail: "Japan withdrew from the IWC in 2019 and resumed commercial whaling under national management. Japan states that operations are limited to its territorial sea and exclusive economic zone.", href: "https://www.jfa.maff.go.jp/e/whale/cooperation.html", source: "Japan Fisheries Agency" },
+];
+
+const subsistence = [
+  { name: "Greenland", sovereign: "Kingdom of Denmark", community: "Greenlandic communities", detail: "The IWC sets Aboriginal Subsistence Whaling catch limits for Greenland through Denmark, with distinct provisions by species and management area.", href: "https://iwc.int/management-and-conservation/whaling/aboriginal/greenland" },
+  { name: "Alaska", sovereign: "United States", community: "Alaska Native communities", detail: "IWC catch limits cover bowhead and gray whales taken by eligible Alaska Native communities under a co-management system.", href: "https://iwc.int/management-and-conservation/whaling/aboriginal/usa/alaska" },
+  { name: "Chukotka", sovereign: "Russian Federation", community: "Chukotkan Indigenous communities", detail: "The IWC framework includes gray- and bowhead-whale catch limits for Indigenous communities in Chukotka for nutritional, subsistence, and cultural needs.", href: "https://iwc.int/management-and-conservation/whaling/aboriginal" },
+  { name: "Bequia", sovereign: "St Vincent and the Grenadines", community: "Bequian community", detail: "The IWC framework includes a limited humpback-whale catch allocation for Bequia, with conditions stated in the binding Schedule.", href: "https://iwc.int/management-and-conservation/whaling/aboriginal" },
+];
+---
+
+<BaseLayout title="Countries & communities" description="A sourced international guide to the countries and communities represented in contemporary commercial and Aboriginal subsistence whaling frameworks.">
+  <section class="container closing-section country-intro">
+    <p class="eyebrow">Countries & communities</p>
+    <h2>One word cannot describe every place, people, or legal framework.</h2>
+    <p>This index separates commercial whaling from Aboriginal subsistence whaling, identifies the sovereign state and community where relevant, and sends every entry to a primary source. It is a starting map—not a claim that the practices are equivalent.</p>
+    <p class="verification-stamp"><time datetime="2026-09-08">Last verified September 8, 2026</time></p>
+  </section>
+
+  <section class="container country-section country-group">
+    <div class="country-group-heading">
+      <div><p class="eyebrow">01 · Commercial</p><h2>Commercial whaling frameworks</h2></div>
+      <p>The IWC’s commercial overview identifies Iceland and Norway as countries that have continued commercial catches under a reservation or objection. Japan left the IWC in 2019 and resumed commercial whaling under national regulation.</p>
+    </div>
+    <div class="jurisdiction-grid jurisdiction-grid-three">
+      {commercial.map((country) => (
+        <a class="jurisdiction-card" href={country.href} target="_blank" rel="noreferrer">
+          <span class="jurisdiction-meta">{country.region} · {country.status}</span><h3>{country.name}</h3><p>{country.detail}</p><small>{country.source} <span aria-hidden="true">↗</span></small>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="depth-band country-group-band">
+    <div class="container country-group">
+      <div class="country-group-heading">
+        <div><p class="eyebrow">02 · Subsistence</p><h2>Aboriginal subsistence whaling</h2></div>
+        <p>The IWC recognizes these hunts as distinct from commercial whaling and describes them in terms of cultural, nutritional, and subsistence need. Catch limits are agreed for named communities and stocks.</p>
+      </div>
+      <div class="jurisdiction-grid">
+        {subsistence.map((place) => (
+          <a class="jurisdiction-card" href={place.href} target="_blank" rel="noreferrer">
+            <span class="jurisdiction-meta">{place.sovereign}</span><h3>{place.name}</h3><span class="jurisdiction-community">{place.community}</span><p>{place.detail}</p><small>IWC Aboriginal Subsistence Whaling <span aria-hidden="true">↗</span></small>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="container worldwide-panel">
+    <div><span class="worldwide-number">7</span><p class="eyebrow">sovereign states represented</p></div>
+    <div class="worldwide-copy">
+      <h2>Whaling remains a worldwide practice.</h2>
+      <p>Across the IWC’s current commercial and Aboriginal subsistence frameworks, at least seven sovereign states are represented: Iceland, Norway, Japan, Denmark, Russia, St Vincent and the Grenadines, and the United States. They span the North Atlantic, North Pacific, Arctic, and Caribbean.</p>
+      <p><strong>Scope matters:</strong> this is not a count of countries killing whales in every calendar year. It counts sovereign states represented in these documented frameworks; activity, authorizations, communities, species, and frequency differ sharply by place.</p>
+      <a class="text-link" href="https://iwc.int/management-and-conservation/whaling" target="_blank" rel="noreferrer">Read the IWC framework <span>↗</span></a>
+    </div>
+  </section>
+</BaseLayout>

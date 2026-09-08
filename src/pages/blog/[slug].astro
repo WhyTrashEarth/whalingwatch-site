@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getCollection, render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -10,18 +10,12 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 ---
-<BaseLayout title={post.data.title} description={post.data.description ?? "Blog post."}>
-  <article class="card p-24" aria-labelledby="post-title">
-    <header>
-      <h1 id="post-title" class="h1">{post.data.title}</h1>
-      <p class="muted" style="margin-top:0.35rem;">
-        {post.data.pubDate.toLocaleDateString()}
-      </p>
-      <hr class="hr" />
-    </header>
 
-    <div style="max-width: 75ch; line-height: 1.75;">
-      <Content />
-    </div>
+<BaseLayout title={post.data.title} description={post.data.description ?? "A Whaling Watch correction or project update."}>
+  <article class="container closing-section update-article">
+    <p class="eyebrow">Corrections &amp; changes</p>
+    <h2>{post.data.title}</h2>
+    <time datetime={post.data.pubDate.toISOString()}>{post.data.pubDate.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</time>
+    <div class="update-body"><Content /></div>
   </article>
 </BaseLayout>

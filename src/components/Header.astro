@@ -3,17 +3,19 @@ import { t } from "@/i18n/ui";
 
 const locale = Astro.currentLocale;
 ---
-<header class="container" role="banner" aria-label="Site header" style="padding: 1.25rem 0;">
-  <nav aria-label="Primary" class="card p-16" style="display:flex; gap:1rem; align-items:center; justify-content:space-between;">
-    <a href="/" style="font-weight:800; letter-spacing:-0.02em; text-decoration:none;">
-      Whaling Watch 🐋
-      <span aria-hidden="true" style="color:var(--color-text);"></span>
+<header class="site-header" role="banner">
+  <nav aria-label="Primary" class="container nav-shell">
+    <a href="/" class="wordmark" aria-label="Whaling Watch home">
+      <span class="wordmark-mark" aria-hidden="true">◒</span>
+      <span>Whaling <em>Watch</em></span>
     </a>
 
-    <div style="display:flex; gap:0.85rem; flex-wrap:wrap; justify-content:flex-end;">
+    <div class="nav-links">
+      <a href="/countries">Countries</a>
+      <a href="/law-and-governance">Law &amp; governance</a>
+      <a href="/sources">Sources</a>
+      <a href="/blog">Updates</a>
       <a href="/about">{t(locale, "nav_about")}</a>
-      <a href="/contact">{t(locale, "nav_contact")}</a>
-      <a href="/blog">{t(locale, "nav_blog")}</a>
     </div>
   </nav>
 </header>
