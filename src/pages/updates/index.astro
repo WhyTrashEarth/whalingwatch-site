@@ -1,0 +1,27 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const entries = (await getCollection("updates")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout title="Notable developments" description="Dated, source-led records of meaningful developments in whaling policy, regulation, commercial operations, research, and governance.">
+  <section class="container closing-section update-intro">
+    <p class="eyebrow">Developing record</p>
+    <h1>Notable developments.</h1>
+    <p>A dated record of material developments in contemporary whaling policy, regulation, commercial operations, research, and governance. This is not a breaking-news service: each entry distinguishes documented fact, proposal, attributed position, and what remains unresolved.</p>
+  </section>
+  <section class="container update-list">
+    {entries.map((entry) => (
+      <a class="update-entry" href={`/updates/${entry.id}/`}>
+        <time datetime={entry.data.pubDate.toISOString()}>{entry.data.pubDate.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</time>
+        <span>
+          <span class="update-kicker">{entry.data.jurisdiction} · {entry.data.tags.slice(1).join(" · ")}</span>
+          <strong>{entry.data.title}</strong>
+          <small>{entry.data.description}</small>
+        </span>
+        <span aria-hidden="true">→</span>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
