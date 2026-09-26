@@ -14,5 +14,6 @@ Whaling Watch now includes a broader research architecture around the first fiel
 - A dedicated *Moby-Dick; or, The Whale* page linking public-domain editions without repackaging Project Gutenberg material.
 - A subtle page for Electric Light Orchestra’s instrumental “The Whale,” linking only to an authorized recording.
 - A reserved, transparent public-record entry for the unverified Regulations.gov submission.
+- Literata 500 as the site’s self-hosted display face, using only Latin and Latin-extended WOFF2 subsets.
 
 The public-record item remains incomplete until its EPA source PDF, docket, and comment identifier are available.
