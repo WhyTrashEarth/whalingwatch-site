@@ -1,0 +1,108 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const responses = [
+  ["Leave", "Natural decomposition can be the least disruptive option in remote places where public-health and access risks are low."],
+  ["Examine", "A necropsy and carefully documented samples can turn a death into evidence about disease, injury, population health, and the surrounding ocean."],
+  ["Bury", "Burial can reduce access and scavenging, but requires suitable ground, permission, heavy equipment, and attention to tides, groundwater, erosion, and later subsidence."],
+  ["Tow or sink", "Offshore disposal may return nutrients to the marine environment, but currents, weather, permits, towing hazards, buoyancy, shipping, and the risk of restranding all matter."],
+  ["Transport", "Road or vessel transport can support necropsy, cultural management, burial, or preservation when the carcass, route, equipment, and destination make it practical."],
+  ["Preserve", "Skeletons, tissue samples, pathology collections, and other specimens can support research, education, and museums long after the response ends."],
+];
+
+const cases = [
+  {
+    place: "Tainan, Taiwan",
+    date: "2004",
+    title: "A decomposition-driven rupture during transport",
+    body: "A sperm whale that died after stranding ruptured while being transported through Tainan. Taiwan’s Ministry of Environment identifies the animal’s skeleton in the National Cheng Kung University research center collection. Detailed measurements and the full transport chronology still require stronger original documentation, so Whaling Watch is not repeating disputed weight estimates yet.",
+    distinction: "Decomposition and internal pressure—not deliberate explosive disposal.",
+    href: "https://eego.moenv.gov.tw/english/tour1/index-2.asp?Parser=99%2C10%2C26%2C%2C%2C%2C%2C1307",
+    source: "Taiwan Ministry of Environment",
+  },
+  {
+    place: "Nantucket → New Bedford",
+    date: "2002–2005",
+    title: "Nine hours under tow, then a flatbed and a museum",
+    body: "The New Bedford Whaling Museum records that a 48-foot male sperm whale was towed for nine hours from Nantucket to Fairhaven, transferred to a long flatbed truck, necropsied and flensed at a landfill, and prepared for museum display. The articulated skeleton was completed in 2005.",
+    distinction: "A major transport operation with a successful scientific and educational outcome.",
+    href: "https://www.whalingmuseum.org/research/research-resources/whale-science/biology/skeletons-of-the-deep/sperm-whale/",
+    source: "New Bedford Whaling Museum",
+  },
+  {
+    place: "Newfoundland and Labrador",
+    date: "2014–2017",
+    title: "A feared rupture that became a research collection",
+    body: "Nine blue whales died after becoming trapped in Gulf of St. Lawrence ice. Two came ashore at Trout River and Rocky Harbour. Royal Ontario Museum teams worked with local communities and Canada’s Department of Fisheries and Oceans to recover the animals; one skeleton later anchored the museum’s Blue Whale Story exhibition.",
+    distinction: "The widely anticipated catastrophic rupture did not become the story; recovery and preservation did.",
+    href: "https://www.rom.on.ca/whats-on/exhibitions/out-depths-blue-whale-story",
+    source: "Royal Ontario Museum",
+  },
+  {
+    place: "Red Beach, Aotearoa New Zealand",
+    date: "2023",
+    title: "Engineering and cultural management together",
+    body: "New Zealand’s Department of Conservation reported that a 14.6-metre juvenile pygmy blue whale, estimated at about 20 tonnes, was craned onto a truck and taken to a Ngāti Manuhiri whale urupā. Tikanga and kawa guided the response, while Massey University collected samples with Ngāti Manuhiri’s blessing.",
+    distinction: "Transport, burial, research, and Indigenous authority were parts of one response—not competing footnotes.",
+    href: "https://www.doc.govt.nz/news/media-releases/2023-media-releases/pygmy-blue-whale-found-at-red-beach-now-buried/",
+    source: "New Zealand Department of Conservation",
+  },
+  {
+    place: "Florence, Oregon",
+    date: "1970",
+    title: "The deliberate explosion",
+    body: "The Oregon State Highway Division used half a ton of dynamite in an attempt to fragment a 45-foot, eight-ton sperm-whale carcass. The Oregon Encyclopedia records that the blast scattered large pieces rather than producing the intended scavenger-manageable result.",
+    distinction: "A planned disposal method—not a spontaneous rupture caused by decomposition.",
+    href: "https://www.oregonencyclopedia.org/articles/florence_whale_explosion/",
+    source: "The Oregon Encyclopedia / Oregon Historical Society",
+  },
+];
+---
+
+<BaseLayout title="When a whale comes ashore" description="A source-led guide to the logistical, scientific, environmental, and cultural decisions that follow the death of a large stranded whale.">
+  <section class="ashore-hero">
+    <div class="container ashore-hero-grid">
+      <div><p class="eyebrow">Field guide · Carcass management</p><h1>When a whale<br /><em>comes ashore.</em></h1></div>
+      <div class="ashore-question"><span aria-hidden="true">?</span><p>A whale can become more than a biological event. Once one of the world’s largest animals dies beside a populated coastline, somebody must answer a practical question:</p><strong>What do we do with the whale?</strong></div>
+    </div>
+    <div class="ashore-tide" aria-hidden="true"></div>
+  </section>
+
+  <section class="container ashore-intro">
+    <div><p class="eyebrow">No universal answer</p><h2>A decision made from place, condition, people, and purpose.</h2></div>
+    <div><p>Species, size, decomposition, access, weather, equipment, scientific value, cultural responsibilities, environmental effects, cost, and law can all change the response. NOAA’s current guidance divides the broad options into leaving a carcass in the environment or removing it for further processing—but the operational choices inside those categories remain highly local.</p><a class="text-link" href="https://www.fisheries.noaa.gov/national/marine-life-distress/how-experts-properly-dispose-dead-marine-mammals" target="_blank" rel="noopener noreferrer">Read NOAA’s disposal overview ↗</a></div>
+  </section>
+
+  <section class="container response-grid" aria-label="Common whale carcass responses">
+    {responses.map(([title, description], index) => <article><span>0{index + 1}</span><h3>{title}</h3><p>{description}</p></article>)}
+  </section>
+
+  <section class="science-band">
+    <div class="container science-grid">
+      <div><p class="eyebrow">The science of a swollen carcass</p><h2>Gas accumulation is real. Rupture is possible. Neither is a species-specific certainty.</h2></div>
+      <div><p>Microbial decomposition can produce gases within tissues and body cavities. A large carcass may become visibly distended, but appearance alone does not predict a dramatic rupture. Condition, temperature, time, scavenging, handling, and openings in the carcass all affect what happens next.</p><p>Whaling Watch keeps this separate from gas found in living or freshly dead diving animals, which may involve different physiology and pathology. It also keeps accidental rupture separate from a carcass intentionally opened during examination—and from deliberate explosive disposal.</p><aside><strong>Working principle</strong><br />Large whale carcasses may become distended as decomposition gases accumulate. Rupture has been documented, but it is not inevitable and should not presently be characterized as unique to sperm whales.</aside></div>
+    </div>
+  </section>
+
+  <section class="container case-section">
+    <div class="section-heading case-heading"><div><p class="eyebrow">Five documented outcomes</p><h2>Similar scale.<br />Very different stories.</h2></div><p>These cases are not a ranking of good and bad decisions. They show why “the whale exploded” or “they moved it” is rarely enough context.</p></div>
+    <div class="case-list">
+      {cases.map((item, index) => (
+        <article class="case-study">
+          <div class="case-index"><span>{String(index + 1).padStart(2, "0")}</span><time>{item.date}</time></div>
+          <div class="case-copy"><p class="eyebrow">{item.place}</p><h3>{item.title}</h3><p>{item.body}</p><strong>{item.distinction}</strong></div>
+          <a href={item.href} target="_blank" rel="noopener noreferrer">{item.source} <span aria-hidden="true">↗</span></a>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="container responder-note">
+    <p class="eyebrow">If you encounter a whale</p><h2>Observe from a distance. Report it. Let trained responders take over.</h2><p>Dead marine mammals can present disease, unstable-tissue, surf, line, and heavy-equipment hazards. Do not touch, climb on, cut, tow, or collect parts from a carcass. Keep people and pets back and contact the responsible local stranding or wildlife authority.</p>
+  </section>
+
+  <section class="container research-ledger">
+    <div><p class="eyebrow">Research status</p><h2>What this page does not yet claim.</h2></div>
+    <ul><li>The disputed size and weight figures reported for the 2004 Tainan whale remain under review.</li><li>The 2013 Faroe Islands examination will be added only after personnel, footage provenance, and official documentation are secured.</li><li>A comparative international table of burial depths, tow distances, equipment, permits, costs, and outcomes is still being assembled.</li><li>Sonar and live-stranding causation belong to a separate evidence review and are intentionally excluded here.</li></ul>
+  </section>
+</BaseLayout>
