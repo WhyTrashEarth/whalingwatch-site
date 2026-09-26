@@ -1,0 +1,35 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+const groups = [
+  { label:"Government & operations", title:"Respond, regulate, document", links:[
+    ["NOAA carcass-disposal overview","United States","https://www.fisheries.noaa.gov/national/marine-life-distress/how-experts-properly-dispose-dead-marine-mammals"],
+    ["Marine-mammal response best practices","United States","https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-protection-act-policies-guidance-and-regulations"],
+    ["Marine-mammal strandings","Aotearoa New Zealand","https://www.doc.govt.nz/nature/native-animals/marine-mammals/marine-mammal-strandings/"],
+    ["Royal Fish guidance","Scotland","https://www.gov.scot/policies/marine-environment/marine-mammals/"],
+    ["Dead or distressed marine mammals","Canada","https://www.dfo-mpo.gc.ca/species-especes/mammals-mammiferes/cetacean-cetaces/entangled-enchevetres/index-eng.html"],
+  ]},
+  { label:"Science", title:"Pathology, acoustics, recovery", links:[
+    ["Mariana beaked-whale and sonar study","NOAA repository","https://repository.library.noaa.gov/view/noaa/26176"],
+    ["Decompression vs. decomposition","Scientific study","https://pmc.ncbi.nlm.nih.gov/articles/PMC3366475/"],
+    ["Blue Whale Story","Royal Ontario Museum","https://www.rom.on.ca/whats-on/exhibitions/out-depths-blue-whale-story"],
+    ["Sperm-whale skeleton record","New Bedford Whaling Museum","https://www.whalingmuseum.org/research/research-resources/whale-science/biology/skeletons-of-the-deep/sperm-whale/"],
+  ]},
+  { label:"Law & records", title:"Treaties and public evidence", links:[
+    ["International Convention and Schedule","IWC","https://iwc.int/commission/convention"],
+    ["Law & governance guide","Whaling Watch","/law-and-governance"],
+    ["Source library","Whaling Watch","/sources"],
+    ["Corrections and changes","Whaling Watch","/blog"],
+  ]},
+  { label:"Reading room", title:"History and literature", links:[
+    ["Whaling Watch Library","Public-domain and official material","/library"],
+    ["Moby-Dick; or, The Whale","Herman Melville · 1851","/moby-dick"],
+    ["Florence whale explosion","Oregon public history","https://www.oregonencyclopedia.org/articles/florence_whale_explosion/"],
+    ["The Whale","Something out of the blue","/the-whale"],
+  ]},
+];
+---
+<BaseLayout title="Resources" description="Government guidance, scientific literature, historical records, public documents, and free reading selected by Whaling Watch.">
+  <section class="container archive-hero"><p class="eyebrow">Resource hub</p><h1>Original sources, organized for use.</h1><p>This directory favors government documents, scientific literature, museum records, and clearly identified public-domain works. A listing means the source is relevant—not that Whaling Watch endorses every interpretation it contains.</p></section>
+  <section class="container resource-groups">{groups.map(group => <article class="resource-group"><div><p class="eyebrow">{group.label}</p><h2>{group.title}</h2></div><div class="resource-links">{group.links.map(([title,meta,href]) => <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined}><span>{title}</span><small>{meta} ↗</small></a>)}</div></article>)}</section>
+  <section class="container research-ledger"><div><p class="eyebrow">Public record</p><h2>Our participation belongs in view, too.</h2></div><ul><li>A Whaling Watch / WhyTrashEarth Regulations.gov comment is known to exist but is not yet listed because its docket and comment identifier have not been verified.</li><li>The government-hosted record and submitted PDF will be added here once the identifying EPA document is available.</li><li>Our own submissions will always be labeled as participation, separate from independent research material.</li></ul></section>
+</BaseLayout>

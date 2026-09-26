@@ -465,7 +465,49 @@
 .research-ledger li { padding: 1.25rem 0 1.25rem 2rem; border-bottom: 1px solid var(--line); color: var(--muted); line-height: 1.6; position: relative; }
 .research-ledger li:before { content: '—'; position: absolute; left: 0; color: var(--aqua); }
 
+@media (min-width: 761px) {
+  .nav-shell { position: relative; min-height: 2rem; }
+  .wordmark { position: absolute; left: 50%; transform: translateX(-50%); white-space: nowrap; }
+  .nav-links { margin-left: auto; max-width: 48%; }
+}
+
+.archive-hero { padding: 8rem 0 5rem; }
+.archive-hero h1 { max-width: 12ch; margin: .7rem 0 1.25rem; font-family: var(--display); font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 400; letter-spacing: -.055em; line-height: .95; }
+.archive-hero > p:last-child { max-width: 64ch; color: var(--muted); font-size: 1.1rem; line-height: 1.75; }
+.resource-groups { display: grid; gap: 1px; padding-bottom: 8rem; background: var(--line); border: 1px solid var(--line); }
+.resource-group { display: grid; grid-template-columns: .7fr 1.3fr; gap: 3rem; padding: 2.5rem; background: var(--abyss); }
+.resource-group h2 { margin: .6rem 0; font-family: var(--display); font-size: 2.25rem; font-weight: 400; }
+.resource-links { display: grid; gap: .75rem; }
+.resource-links a { display: flex; justify-content: space-between; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); color: var(--foam); font-weight: 700; }
+.resource-links small { color: var(--muted); font-weight: 400; }
+.library-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-bottom: 8rem; background: var(--line); border: 1px solid var(--line); }
+.library-card { min-height: 330px; padding: 2.5rem; background: var(--deep); }
+.library-card h2 { margin: 2rem 0 .75rem; font-family: var(--display); font-size: 2.5rem; font-weight: 400; }
+.library-card p { color: var(--muted); line-height: 1.7; }
+.rights-tag { display: inline-block; padding: .35rem .6rem; border: 1px solid var(--line); color: var(--aqua); font-size: .7rem; text-transform: uppercase; letter-spacing: .08em; }
+.sonar-findings { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-bottom: 7rem; background: var(--line); border: 1px solid var(--line); }
+.sonar-findings article { min-height: 300px; padding: 2rem; background: var(--deep); }
+.sonar-findings h2 { font-family: var(--display); font-size: 2rem; font-weight: 400; line-height: 1.1; }
+.sonar-findings p { color: var(--muted); line-height: 1.7; }
+.evidence-scale { margin-bottom: 8rem; border-top: 1px solid var(--line); }
+.evidence-row { display: grid; grid-template-columns: 11rem 1fr; gap: 2rem; padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.evidence-row strong { color: var(--aqua); }
+.evidence-row p { margin: 0; color: var(--muted); line-height: 1.65; }
+.book-hero { min-height: 620px; display: grid; place-items: center; text-align: center; padding: 7rem 1.5rem; }
+.book-hero h1 { margin: .7rem 0 0; font-family: var(--display); font-size: clamp(4rem, 10vw, 9rem); font-weight: 400; letter-spacing: -.065em; line-height: .85; }
+.book-hero h1 em { color: var(--aqua); }
+.book-meta { color: var(--muted); }
+.book-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+.copyright-note { max-width: 760px; margin: 0 auto 8rem; padding: 2rem; border: 1px solid var(--line); color: var(--muted); line-height: 1.75; }
+.elo-page { min-height: 80vh; display: grid; place-items: center; text-align: center; }
+.elo-page h1 { margin: .5rem 0 1rem; font-family: var(--display); font-size: clamp(4rem, 12vw, 10rem); font-weight: 400; }
+.elo-page p { color: var(--muted); font-size: 1.2rem; }
+
 @media (max-width: 760px) {
+  body { min-width: 0; }
+  .nav-shell { align-items: center; }
+  .wordmark { text-align: center; }
+  .nav-links { justify-content: center; }
   .hero h1 {
     line-height: 1.06;
     letter-spacing: -0.035em;
@@ -517,6 +559,11 @@
   .case-study { grid-template-columns: 4rem 1fr; }
   .case-study > a { grid-column: 2; justify-self: start; }
   .responder-note { padding: 2rem; }
+  .resource-group,
+  .library-grid,
+  .sonar-findings { grid-template-columns: 1fr; }
+  .resource-group { gap: 1rem; padding: 1.5rem; }
+  .evidence-row { grid-template-columns: 1fr; gap: .5rem; }
   .contact-hero {
     padding-top: 4.5rem;
   }
