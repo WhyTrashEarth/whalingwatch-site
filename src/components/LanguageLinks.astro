@@ -1,7 +1,7 @@
 ---
-import { equivalents, localeNames } from '../i18n/localization';
+import { languageDestinations, localeNames } from '../i18n/localization';
 type Props = { label?: string };
-const choices = equivalents(Astro.url.pathname);
+const choices = languageDestinations(Astro.url.pathname);
 const { label = 'Languages' } = Astro.props;
 ---
 {choices.length > 1 && <nav class="language-links" aria-label={label}>{choices.map(choice => <a href={choice.href} lang={choice.locale} hreflang={choice.locale} aria-current={Astro.url.pathname === choice.href ? 'page' : undefined}>{localeNames[choice.locale]}</a>)}</nav>}

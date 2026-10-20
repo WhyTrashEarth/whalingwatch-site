@@ -698,6 +698,8 @@ h3,
 }
 .nav-links a { display: inline-block; padding-block: .45rem; }
 .language-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.2rem; padding: 1rem; font-size: .85rem; }
+.site-footer .language-links { justify-content: flex-start; padding: 1.5rem 0 0; gap: .5rem 1.5rem; }
+.language-links a { display: inline-flex; align-items: center; min-height: 44px; }
 .history-hero { padding: 5.5rem 0 3.5rem; }
 .history-hero h1, .about-page h1, .country-intro h1, .translated-page h1 {
   font-family: var(--display); font-size: clamp(2.5rem, 5.6vw, 5rem);
@@ -737,7 +739,17 @@ h3,
 .about-principles { margin-top: 3rem; }
 .translated-page { max-width: 800px; padding-block: 4rem; }
 .translated-page section { padding-block: 1.5rem; }
-html[lang="ja"] { line-break: strict; font-family: system-ui, sans-serif; }
+.translated-page .translated-lede { font-size: 1.2rem; color: var(--foam); margin-bottom: 2.5rem; }
+.translated-page section + section { border-top: 1px solid var(--line); padding-top: 2.5rem; }
+.translated-page h1, .translated-page h2 { overflow-wrap: anywhere; text-wrap: balance; }
+.introduction-contact { margin-top: -.5rem; padding-bottom: 1rem; }
+.introduction-contact .button { max-width: 100%; }
+.introduction-contact .button:hover { color: var(--abyss); background: var(--foam); }
+html[lang="ja"] { line-break: strict; font-family: system-ui, 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif; }
+html[lang="ja"] .translated-page h1, html[lang="ja"] .translated-page h2, html[lang="ja"] .footer-statement { font-family: inherit; letter-spacing: normal; line-height: 1.5; }
+html[lang="ja"] .translated-page h1 { font-size: clamp(2rem, 5vw, 3.3rem); }
+html[lang="ja"] .translated-page h2 { font-size: clamp(1.5rem, 3.2vw, 2.2rem); }
+html[lang="ja"] .footer-statement { font-size: clamp(1.5rem, 3vw, 2rem); }
 @media (max-width: 800px) {
   .history-layout, .inventory-entry { grid-template-columns: 1fr; gap: 1.5rem; }
   .history-contents { position: static; }

@@ -1,24 +1,38 @@
 
-<footer class="site-footer" role="contentinfo" aria-label="Site footer">
+---
+import LanguageLinks from './LanguageLinks.astro';
+import { introductions, type IntroductionLocale } from '../i18n/introductions';
+type Props = { locale?: 'en' | IntroductionLocale };
+const { locale = 'en' } = Astro.props;
+const localized = locale === 'en' ? undefined : introductions[locale];
+---
+<footer class="site-footer" role="contentinfo" aria-label={localized?.ui.footer ?? 'Site footer'}>
   <div class="container footer-grid">
     <div>
       <p class="eyebrow">Whaling Watch</p>
-      <p class="footer-statement">Independent. International. Source-driven.</p>
-      <p class="footer-note">No petitions. No donation appeals. Just careful context and the sources behind it.</p>
+      <p class="footer-statement">{localized?.ui.statement ?? 'Independent. International. Source-driven.'}</p>
+      <p class="footer-note">{localized?.footer.note ?? 'No petitions. No donation appeals. Just careful context and the sources behind it.'}</p>
     </div>
     <div class="footer-links">
-      <a href="/about/">About the project</a><a href="/resources/">Resources</a><a href="/historical-economics/">Historical economics</a><a href="/countries/history/">Country history</a><a href="/library/">Library</a><a href="/sources/">Source standards</a><a href="/updates/">Notable developments</a><a href="/blog/">Corrections &amp; changes</a><a href="/contact/">Contact</a>
+      {localized ? <>
+        <a href="/about/" hreflang="en">{localized.footer.about}</a>
+        <a href="/resources/" hreflang="en">{localized.ui.resources}</a>
+        <a href="/contact/" hreflang="en">{localized.ui.contact}</a>
+      </> : <>
+        <a href="/about/">About the project</a><a href="/resources/">Resources</a><a href="/historical-economics/">Historical economics</a><a href="/countries/history/">Country history</a><a href="/library/">Library</a><a href="/sources/">Source standards</a><a href="/updates/">Notable developments</a><a href="/blog/">Corrections &amp; changes</a><a href="/contact/">Contact</a>
+      </>}
       <a href="https://whytrashearth.org" target="_blank" rel="noopener noreferrer">© WhyTrashEarth</a>
     </div>
   </div>
+  <div class="container"><LanguageLinks label={localized?.ui.languages} /></div>
   <div class="footer-whale" data-whale-gallery>
-    <a class="footer-whale-home" href="/" aria-label="Return to the Whaling Watch homepage">
+    <a class="footer-whale-home" href={locale === 'en' ? '/' : `/${locale}/`} aria-label={localized?.footer.home ?? 'Return to the Whaling Watch homepage'}>
       <img class="footer-whale-art is-active" data-whale src="/images/whale.webp" alt="" />
       <img class="footer-whale-art" data-whale src="/images/whale-blue.webp" alt="" />
       <img class="footer-whale-art footer-whale-art--orca" data-whale src="/images/orca-transparent.webp" alt="" />
     </a>
   </div>
-  <div class="container footer-bottom">© <span data-current-year>{new Date().getFullYear()}</span> Whaling Watch · Last updated October 20, 2026 · <a href="/sitemap-index.xml">Sitemap</a></div>
+  <div class="container footer-bottom">© <span data-current-year>{new Date().getFullYear()}</span> Whaling Watch{!localized && ' · Last updated October 20, 2026'} · <a href="/sitemap-index.xml">{localized?.footer.sitemap ?? 'Sitemap'}</a></div>
 </footer>
 
 <script is:inline>

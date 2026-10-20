@@ -66,7 +66,20 @@ export function originalPath(path: string) {
 }
 export function equivalents(path: string) {
   const route = originalPath(path);
+  // The short introductions are the initial localized home experiences.
+  // They are not alternate versions of English research or About pages.
+  if (route === '/') return [
+    { locale: 'en' as const, href: '/' },
+    { locale: 'is' as const, href: '/is/' },
+    { locale: 'ja' as const, href: '/ja/' },
+  ];
   return [ { locale: 'en' as const, href: route }, ...publishedTranslations.filter(item => item.page.route === route).map(item => ({ locale: item.locale, href: `/${item.locale}${route}` })) ];
+}
+export function languageDestinations(path: string) {
+  const available = equivalents(/^\/404(?:\/|\.html)?$/.test(path) ? '/' : path);
+  return (Object.keys(localeNames) as (keyof typeof localeNames)[]).map(locale =>
+    available.find(item => item.locale === locale) ?? { locale, href: `/${locale}/` }
+  );
 }
 export function navState(path: string, href: string): 'page' | 'true' | undefined {
   const normalize = (value: string) => value === '/' ? '/' : value.replace(/\/+$/, '') + '/';
