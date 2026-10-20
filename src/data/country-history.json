@@ -1,0 +1,205 @@
+[
+  {
+    "id": "australia",
+    "name": "Australia",
+    "kind": "Country",
+    "period": "Late eighteenth century–1978",
+    "evidence": "Shore stations produced oil and other whale products for domestic use and export. The Australian government identifies Cheynes Beach as the last commercial station, closing in 1978.",
+    "limits": "The 1978 closure and 1979 policy change are separate events. Exact company finances, worker outcomes and the later statutory sequence require their own evidence.",
+    "sources": [
+      "S016"
+    ]
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "kind": "Country",
+    "period": "COPESBRA, twentieth century; 1981 market records",
+    "evidence": "SUDEPE documents COPESBRA’s catching and processing business, meat exports, domestic meat sales, and oil and meal markets. Brazilian and Japanese capital participated in the enterprise.",
+    "limits": "These records establish commercial production and trade. They do not establish net profit, a single motive for closure or later worker outcomes.",
+    "sources": [
+      "S003"
+    ]
+  },
+  {
+    "id": "canada",
+    "name": "Canada",
+    "kind": "Country",
+    "period": "Atlantic shore industry, 1964–1972 example",
+    "evidence": "A Canadian government report documents three Atlantic stations, paid crews and plant workers, annual landed and processed values, and compensation following the 1972 cessation.",
+    "limits": "This is an Atlantic episode. Earlier Basque sites, Pacific operations, the national final-catch chronology and later Indigenous hunts need separate treatment.",
+    "sources": [
+      "S002"
+    ]
+  },
+  {
+    "id": "chile",
+    "name": "Chile",
+    "kind": "Country",
+    "period": "Santa María and Chome; ending in 1983",
+    "evidence": "Chile’s national heritage research documents commercial whaling around Santa María and Chome, including the Macaya enterprise, and dates the industry’s ending to 1983.",
+    "limits": "Company accounts and worker testimony remain to be examined. A later protection law cannot, by its date alone, explain an earlier closure.",
+    "sources": [
+      "S021"
+    ]
+  },
+  {
+    "id": "france",
+    "name": "France",
+    "kind": "Country; Basque attribution qualified",
+    "period": "Sixteenth-century Basque maritime trade",
+    "evidence": "Memorial University’s account identifies French and Spanish Basque ports in the Labrador whaling trade. Organized seasonal voyages supplied oil to European markets.",
+    "limits": "This establishes participation by ports in a shared Basque network. It does not allocate every voyage, worker or receipt to a modern national industry.",
+    "sources": [
+      "S030"
+    ]
+  },
+  {
+    "id": "germany",
+    "name": "Germany",
+    "kind": "Country",
+    "period": "Walter Rau fleet, late 1930s",
+    "evidence": "The German Maritime Museum describes Walter Rau’s commercial fleet, built to supply whale fats for margarine manufacture, and its purpose-built catcher RAU IX.",
+    "limits": "RAU IX’s construction in 1939 is not evidence that it completed a German commercial whaling voyage. Fleet history and this individual vessel’s service must be distinguished.",
+    "sources": [
+      "S031"
+    ]
+  },
+  {
+    "id": "iceland",
+    "name": "Iceland",
+    "kind": "Country",
+    "period": "Historical shore operations; later commercial resumption",
+    "evidence": "The industrial catch study documents Icelandic shore whaling. The IWC identifies Iceland’s reservation to the commercial-whaling moratorium.",
+    "limits": "Catch records, permission to operate and company profitability answer different questions. No 2026 catch total or conclusion that proposed reform became law is established by this entry.",
+    "sources": [
+      "S032",
+      "S001"
+    ]
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "kind": "Country",
+    "period": "Twentieth-century fleets; commercial resumption in 2019",
+    "evidence": "The industrial study documents Japanese fleets. The IWC records Japan’s withdrawal and return to commercial whaling in 2019.",
+    "limits": "Special-permit research catches and ordinary commercial operations are separate categories. A quota is not an actual catch or a financial return.",
+    "sources": [
+      "S032",
+      "S001"
+    ]
+  },
+  {
+    "id": "netherlands",
+    "name": "Netherlands",
+    "kind": "Country",
+    "period": "Postwar fleet, 1946–1964",
+    "evidence": "Het Scheepvaartmuseum documents the Nederlandsche Maatschappij voor de Walvisvaart and Willem Barendsz fleet. Its shipboard account connects the venture to edible-fat shortages and margarine production.",
+    "limits": "The museum attributes the 1964 ending to unprofitability; company accounts are needed to test that explanation. This episode does not delimit the earlier Dutch industry.",
+    "sources": [
+      "S025",
+      "S042"
+    ]
+  },
+  {
+    "id": "new-zealand",
+    "name": "New Zealand",
+    "kind": "Country",
+    "period": "Perano station, 1911–1964",
+    "evidence": "NZHistory documents the Perano family’s shore operation, catching vessels and processing facilities. It identifies 21 December 1964 as the final catch of the country’s last major shore-whaling station.",
+    "limits": "The official history discusses economics and public sentiment. It does not supply a full company profit series or a study of all former workers’ subsequent earnings.",
+    "sources": [
+      "S019"
+    ]
+  },
+  {
+    "id": "norway",
+    "name": "Norway",
+    "kind": "Country",
+    "period": "Modern small-whaling series; resumption in 1993",
+    "evidence": "Statistics Norway records vessels, catch values and the development of modern small-whaling from the late 1920s. Commercial catching resumed in 1993 after a pause beginning in 1987.",
+    "limits": "The small-whaling series is distinct from Norway’s overseas factory-fleet history. Historical catch values are nominal amounts, not present-day purchasing power.",
+    "sources": [
+      "S008"
+    ]
+  },
+  {
+    "id": "portugal",
+    "name": "Portugal / Azores",
+    "kind": "Country with regional example",
+    "period": "Pico factory, 1949–1984",
+    "evidence": "Museu do Pico identifies Armações Baleeiras Reunidas and its whale-processing factory, which operated from 1949 to 1984. Small recurring enterprises belong in commercial history too.",
+    "limits": "This factory’s closing date is not a national final-catch date. The Azores are a region within Portugal, not an additional sovereign country in this inventory.",
+    "sources": [
+      "S028"
+    ]
+  },
+  {
+    "id": "south-africa",
+    "name": "South Africa",
+    "kind": "Country",
+    "period": "Durban industry, 1908–1975",
+    "evidence": "South African History Online’s timeline records the establishment of Durban’s whaling industry and the station’s closure in 1975.",
+    "limits": "This institutional historical account supports the Durban episode. National coverage, company finances, closure causes and the legal sequence need primary records.",
+    "sources": [
+      "S027"
+    ]
+  },
+  {
+    "id": "spain",
+    "name": "Spain",
+    "kind": "Country; Basque attribution qualified",
+    "period": "Sixteenth-century Basque maritime trade",
+    "evidence": "Memorial University documents Spanish as well as French Basque home ports in the organized Labrador whale-oil trade.",
+    "limits": "Basque participation must remain visible without assigning all voyages to modern Spain. The separate modern Galician industry and its ending need further primary-source work.",
+    "sources": [
+      "S030"
+    ]
+  },
+  {
+    "id": "united-kingdom",
+    "name": "United Kingdom",
+    "kind": "Country with overseas operations",
+    "period": "Salvesen enterprise; whaling exit in 1963",
+    "evidence": "Edinburgh University’s archive history describes Christian Salvesen and the South Georgia Company, including Salvesen’s departure from whaling in 1963.",
+    "limits": "The company’s exit is not certified here as Britain’s final catch. Underlying ledgers are identified but unread; corporate domicile, operating territory and workforce are separate relationships.",
+    "sources": [
+      "S026"
+    ]
+  },
+  {
+    "id": "united-states",
+    "name": "United States",
+    "kind": "Country",
+    "period": "American whaling, 1816–1906 study",
+    "evidence": "Economic historians reconstruct American production and the industry’s changing fortunes. Museum records document oil, spermaceti and baleen cargoes, including individual voyage returns.",
+    "limits": "The study’s period is not the national beginning or ending. A voyage return spanning several years cannot be treated as annual output or modern after-wage corporate profit.",
+    "sources": [
+      "S006",
+      "S007"
+    ]
+  },
+  {
+    "id": "soviet-union",
+    "name": "Soviet Union",
+    "kind": "Historical state",
+    "period": "Twentieth-century industrial fleets",
+    "evidence": "Rocha, Clapham and Ivashchenko document Soviet industrial whaling and revisions to misreported catches.",
+    "limits": "The USSR is retained as a historical state. Its catches must not be duplicated across successor states or conflated with current Indigenous subsistence hunts.",
+    "sources": [
+      "S032"
+    ]
+  },
+  {
+    "id": "basque-networks",
+    "name": "Basque maritime enterprises / Red Bay",
+    "kind": "Cross-border network and operating site",
+    "period": "Sixteenth century",
+    "evidence": "UNESCO documents organized catching, rendering and shipment of whale oil from Red Bay in present-day Labrador to European markets.",
+    "limits": "The site’s present-day Canadian location does not establish Canadian ownership. This shared network overlaps the France and Spain entries and is not an additional country.",
+    "sources": [
+      "S029",
+      "S030"
+    ]
+  }
+]

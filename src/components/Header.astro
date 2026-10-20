@@ -1,22 +1,23 @@
 ---
-import { t } from "@/i18n/ui";
-
-const locale = Astro.currentLocale;
+import { navState } from '../i18n/localization';
+import LanguageLinks from './LanguageLinks.astro';
+const links = [
+  ['/when-a-whale-comes-ashore/', 'Ashore'],
+  ['/sonar-and-strandings/', 'Sonar'],
+  ['/countries/', 'Countries'],
+  ['/historical-economics/', 'History & economics'],
+  ['/law-and-governance/', 'Law & governance'],
+  ['/resources/', 'Resources'],
+  ['/about/', 'About'],
+];
 ---
 <header class="site-header" role="banner">
   <nav aria-label="Primary" class="container nav-shell">
-    <a href="/" class="wordmark" aria-label="Whaling Watch home">
+    <a href="/" class="wordmark" aria-label="Whaling Watch home" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>
       <span class="wordmark-mark" aria-hidden="true">◒</span>
       <span>Whaling <em>Watch</em></span>
     </a>
-
-    <div class="nav-links">
-      <a href="/when-a-whale-comes-ashore/">Ashore</a>
-      <a href="/sonar-and-strandings/">Sonar</a>
-      <a href="/countries/">Countries</a>
-      <a href="/law-and-governance/">Law &amp; governance</a>
-      <a href="/resources/">Resources</a>
-      <a href="/about/">{t(locale, "nav_about")}</a>
-    </div>
+    <div class="nav-links">{links.map(([href, label]) => <a href={href} aria-current={navState(Astro.url.pathname, href)}>{label}</a>)}</div>
   </nav>
+  <LanguageLinks />
 </header>

@@ -1,0 +1,8 @@
+---
+import sources from '../data/history-sources.json';
+type Props = { ids: (keyof typeof sources)[] };
+const { ids } = Astro.props;
+---
+<ul class="history-sources">
+  {ids.map(id => <li><a href={sources[id].url}>{sources[id].title}</a><span>{sources[id].publisher} · {sources[id].locator}</span></li>)}
+</ul>

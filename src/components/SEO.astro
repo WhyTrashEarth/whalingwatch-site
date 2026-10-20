@@ -1,5 +1,6 @@
 ---
 import { SITE } from "@/config/site";
+import { equivalents } from "../i18n/localization";
 
 export type Props = {
   title?: string;
@@ -8,6 +9,7 @@ export type Props = {
   ogImage?: string;   // absolute or site-relative (/og/og-default.png)
   ogImageAlt?: string;
   noIndex?: boolean;
+  locale?: "en" | "is" | "ja";
 };
 
 const {
@@ -16,6 +18,7 @@ const {
   canonical,
   ogImage = "/og/og-whaling-watch.png",
   ogImageAlt = "Whaling Watch — Independent. International. Source-driven.",
+  locale = "en",
   noIndex = false
 } = Astro.props;
 
@@ -25,6 +28,8 @@ const url = new URL(Astro.url.pathname, site || Astro.url.origin).toString();
 const finalTitle = title ? `${title} · ${SITE.name}` : SITE.name;
 const finalCanonical = canonical ?? url;
 
+const alternatives = equivalents(Astro.url.pathname);
+const ogLocale = { en: "en_US", is: "is_IS", ja: "ja_JP" }[locale];
 const ogUrl = finalCanonical;
 const ogImg = ogImage.startsWith("http") ? ogImage : (site ? `${site}${ogImage}` : ogImage);
 ---
@@ -35,6 +40,10 @@ const ogImg = ogImage.startsWith("http") ? ogImage : (site ? `${site}${ogImage}`
 <title>{finalTitle}</title>
 <meta name="description" content={description} />
 {!noIndex && <link rel="canonical" href={finalCanonical} />}
+{!noIndex && alternatives.length > 1 && <>
+  {alternatives.map(item => <link rel="alternate" hreflang={item.locale} href={new URL(item.href, site).href} />)}
+  <link rel="alternate" hreflang="x-default" href={new URL(alternatives[0].href, site).href} />
+</>}
 
 <link rel="icon" href="/whaling-favicon.png" />
 <meta name="theme-color" content="#031f36" />
@@ -44,7 +53,7 @@ const ogImg = ogImage.startsWith("http") ? ogImage : (site ? `${site}${ogImage}`
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content={SITE.name} />
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content={ogLocale} />
 <meta property="og:title" content={finalTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={ogUrl} />

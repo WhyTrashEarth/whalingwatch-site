@@ -1,0 +1,164 @@
+{
+  "S001": {
+    "title": "Commercial whaling",
+    "url": "https://iwc.int/management-and-conservation/whaling/commercial",
+    "publisher": "International Whaling Commission",
+    "locator": "Commercial whaling overview",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Overview is not a complete domestic-law or current catch register"
+  },
+  "S002": {
+    "title": "Canadian Delegation Report: 32nd Annual Meeting, International Whaling Commission; Appendix 5: The Canadian Whaling Ban: Its Implementation and Impact",
+    "url": "https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/40592066.pdf",
+    "publisher": "M. C. Mercer / Fisheries and Oceans Canada; appendix by W. R. Martin",
+    "locator": "Delegation summary p.1; Appendix 5 pp.1–14, PDF pp.51–64; figures pp.5,10,12–13",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_and_selected_scans_inspected",
+    "limitations": "Retrospective government assessment; financial averaging window unclear; worker-level outcomes absent"
+  },
+  "S003": {
+    "title": "Sumário sobre a caça de baleias no Brasil",
+    "url": "https://www.gov.br/icmbio/pt-br/assuntos/centros-de-pesquisa/biodiversidade-marinha-do-sudeste-e-sul/acervo-digital/trabalhos-tecnicos/pub_1982_caca_baleias_brasil.pdf",
+    "publisher": "Ministério da Agricultura / SUDEPE / Instituto de Pesquisa e Desenvolvimento Pesqueiro, Coordenação de Pesquisa–PDP",
+    "locator": "Printed pp.6–9; PDF pp.8–11; employment, trade and price scans checked",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_and_selected_scans_inspected",
+    "limitations": "Government report is not audited company accounts; ambiguous meal-sales amount excluded"
+  },
+  "S006": {
+    "title": "In Retrospect, chapter 14 of In Pursuit of Leviathan: Technology, Institutions, Productivity, and Profits in American Whaling, 1816–1906",
+    "url": "https://www.nber.org/system/files/chapters/c8289/c8289.pdf",
+    "publisher": "Lance E. Davis, Robert E. Gallman, Karin Gleiter; University of Chicago Press / NBER",
+    "locator": "pp.513–522",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Underlying census and account samples not independently re-extracted; do not generalize US explanation globally"
+  },
+  "S007": {
+    "title": "Whales and Hunting",
+    "url": "https://www.whalingmuseum.org/research/research-resources/whaling-history/whales-and-hunting/",
+    "publisher": "New Bedford Whaling Museum",
+    "locator": "Whale products; Benjamin Tucker 1851 example",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Underlying voyage ledger not inspected; a voyage is not a calendar-year national result"
+  },
+  "S008": {
+    "title": "Statistisk skråblikk på småhvalfangst",
+    "url": "https://www.ssb.no/jord-skog-jakt-og-fiskeri/artikler-og-publikasjoner/statistisk-skraablikk-paa-smaahvalfangst",
+    "publisher": "Frode Brunvoll, Statistics Norway",
+    "locator": "Catch value, vessel and catch discussion",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Historical small-whaling series; catch value is not profit; figures described approximately"
+  },
+  "S016": {
+    "title": "Whaling",
+    "url": "https://www.dcceew.gov.au/environment/marine/marine-species/cetaceans/whaling",
+    "publisher": "Australian Department of Climate Change, Energy, the Environment and Water",
+    "locator": "Australian history and policy",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Official overview does not establish exact last-catch day or company-level closure causes"
+  },
+  "S019": {
+    "title": "Perano whaling station",
+    "url": "https://nzhistory.govt.nz/media/photo/perano-whaling-station",
+    "publisher": "Gavin McLean, Manatū Taonga / NZHistory",
+    "locator": "Site history",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "No worker-income panel or proof of tourism replacing wages"
+  },
+  "S021": {
+    "title": "Itinerarios balleneros. De la caza tradicional a la caza moderna (... o de isla Santa María a caleta Chome, Chile)",
+    "url": "https://www.investigacion.patrimoniocultural.gob.cl/publicaciones/itinerarios-balleneros-de-la-caza-tradicional-la-caza-moderna-o-de-isla-santa-maria",
+    "publisher": "Gastón Carreño and Daniel Quiroz; Ediciones Subdirección de Investigación",
+    "locator": "ISBN 978-956-244-447-7; book p.25; contents pp.139–177 are further research leads",
+    "accessed": "2026-10-09",
+    "inspection": "catalogue_and_relevant_pdf_text_inspected",
+    "limitations": "Full account tables and oral histories not yet extracted"
+  },
+  "S025": {
+    "title": "Walvischtraan",
+    "url": "https://www.hetscheepvaartmuseum.nl/collectie/artikelen/2212/walvischtraan",
+    "publisher": "Anne-Goaitske Breteler, Het Scheepvaartmuseum",
+    "locator": "Postwar fleet and 1964 ending",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Museum account, not direct extraction of company financial statements"
+  },
+  "S026": {
+    "title": "Salvesen Archive: 50 years at Edinburgh University Library, 1969–2019",
+    "url": "https://libraryblogs.is.ed.ac.uk/edinburghuniversityarchives/2019/05/08/salvesen-archive-50-years-at-edinburgh-university-library-1969-2019/",
+    "publisher": "Graeme D. Eddie, University of Edinburgh Archives",
+    "locator": "Company history and holdings description",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Underlying ledgers not inspected; founder nationality is not corporate nationality"
+  },
+  "S027": {
+    "title": "Durban Timeline 1497–1990",
+    "url": "https://sahistory.org.za/article/durban-timeline-1497-1990",
+    "publisher": "South African History Online",
+    "locator": "1908 and 1975 entries",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "National final-catch completeness, financial causes and legal instrument need primary verification"
+  },
+  "S028": {
+    "title": "Museu do Pico visitor leaflet: Museu da Indústria Baleeira",
+    "url": "https://www.azores.gov.pt/NR/rdonlyres/697C4B1D-8247-4D3D-914C-4EB79D79E582/1101716/5_Panfleto_Pico_Online.pdf",
+    "publisher": "Azores Regional Government / Museu do Pico",
+    "locator": "PDF p.4, bilingual industry museum history",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "A single factory ending is not national last-catch date"
+  },
+  "S029": {
+    "title": "Red Bay Basque Whaling Station",
+    "url": "https://whc.unesco.org/en/list/1412/",
+    "publisher": "UNESCO World Heritage Centre",
+    "locator": "Brief synthesis and outstanding universal value",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Site location does not alone establish Canadian ownership"
+  },
+  "S030": {
+    "title": "Basque Whaling at Red Bay",
+    "url": "https://www.heritage.nl.ca/articles/exploration/basque-whaling-red-bay.php",
+    "publisher": "Newfoundland and Labrador Heritage, Memorial University",
+    "locator": "Basque fleets and home ports",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Modern national allocation requires home-port and polity records"
+  },
+  "S031": {
+    "title": "RAU IX; whaling fleet historical context",
+    "url": "https://www.dsm.museum/museum/exponate/rau-ix-2",
+    "publisher": "Deutsches Schifffahrtsmuseum",
+    "locator": "Walter Rau fleet history",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "RAU IX itself was built in 1939 but did not conduct the assumed German prewar whaling voyage"
+  },
+  "S032": {
+    "title": "Emptying the Oceans: A Summary of Industrial Whaling Catches in the 20th Century",
+    "url": "https://www.whalingmuseum.org/wp-content/uploads/2021/04/mfr7643-Emptying-the-Oceans.pdf",
+    "publisher": "Robert C. Rocha Jr., Phillip J. Clapham, Yulia V. Ivashchenko; Marine Fisheries Review 76(4):37–48",
+    "locator": "pp.38–40; Table 1; DOI 10.7755/MFR.76.4.3",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_and_tables_inspected",
+    "limitations": "Industrial definition differs from project commercial definition; underlying database not re-extracted; catches remain incomplete"
+  },
+  "S042": {
+    "title": "Kerst op traanfabriek Willem Barendsz",
+    "url": "https://www.hetscheepvaartmuseum.nl/collectie/artikelen/660/kerst-op-traanfabriek-willem-barendsz",
+    "publisher": "Het Scheepvaartmuseum",
+    "locator": "Adolf Melchior shipboard account, 1946–1947",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Contemporary account mediated by museum article; not aggregate industrial statistics"
+  }
+}

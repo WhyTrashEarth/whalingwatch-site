@@ -1,0 +1,26 @@
+---
+import '../../styles/global.css';
+import '../../styles/refinements.css';
+import SEO from '../../components/SEO.astro';
+import LanguageLinks from '../../components/LanguageLinks.astro';
+import { publishedTranslations, navState, type TranslationPage, type TranslationBundle } from '../../i18n/localization';
+export function getStaticPaths() {
+  return publishedTranslations.map(item => ({
+    params: { locale: item.locale, page: item.page.route === '/' ? undefined : 'about' },
+    props: item,
+  }));
+}
+type Props = { locale: 'is' | 'ja'; ui: NonNullable<TranslationBundle['ui']>; page: TranslationPage };
+const { locale, ui, page } = Astro.props;
+const localPages = publishedTranslations.filter(item => item.locale === locale);
+---
+<!doctype html>
+<html lang={locale}>
+  <head><SEO title={page.title} description={page.description} locale={locale} /></head>
+  <body>
+    <a class="skip-link" href="#main-content">{ui.skip}</a>
+    <header class="site-header"><nav class="container nav-shell" aria-label={ui.primary}><span class="wordmark">Whaling <em>Watch</em></span><div class="nav-links">{localPages.map(item => <a href={`/${locale}${item.page.route}`} aria-current={navState(Astro.url.pathname, `/${locale}${item.page.route}`)}>{item.page.route === '/' ? ui.home : ui.about}</a>)}</div></nav><LanguageLinks label={ui.languages} /></header>
+    <main id="main-content" tabindex="-1" class="container translated-page"><h1>{page.title}</h1><p>{page.description}</p>{page.sections?.map(section => <section><h2>{section.heading}</h2>{section.paragraphs.map(paragraph => <p>{paragraph}</p>)}</section>)}<p>{ui.reviewed} <time datetime={page.reviewedOn}>{page.reviewedOn}</time></p><p><a href={page.route} hreflang="en">{ui.original}</a></p></main>
+    <footer class="site-footer" aria-label={ui.footer}><div class="container"><p class="footer-statement">{ui.statement}</p><p><a href="/resources/" hreflang="en">{ui.resources}</a> · <a href="/contact/" hreflang="en">{ui.contact}</a></p><p>© {new Date().getFullYear()} Whaling Watch</p></div></footer>
+  </body>
+</html>
