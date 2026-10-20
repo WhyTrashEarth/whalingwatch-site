@@ -34,6 +34,7 @@ const ogImg = ogImage.startsWith("http") ? ogImage : (site ? `${site}${ogImage}`
 
 <title>{finalTitle}</title>
 <meta name="description" content={description} />
+{!noIndex && <link rel="canonical" href={finalCanonical} />}
 
 <link rel="icon" href="/whaling-favicon.png" />
 <meta name="theme-color" content="#031f36" />
