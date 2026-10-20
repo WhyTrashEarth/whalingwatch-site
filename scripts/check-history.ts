@@ -51,4 +51,6 @@ assert.ok(sitemap.includes('/countries/history/'));
 assert.ok(!/\/(is|ja)\//.test(sitemap));
 assert.ok(!sitemap.includes('history.csv'), 'Download must not become an HTML sitemap URL');
 assert.ok(readFileSync('dist/_redirects','utf8').includes('/About/ /about/ 301'));
+assert.ok(readFileSync('dist/blog/october-2026-history-and-mission/index.html', 'utf8').includes('>October 20, 2026</time>'));
+assert.ok(readFileSync('dist/updates/index.html', 'utf8').includes('>September 26, 2026</time>'));
 console.log(`History, navigation and translation gate checks passed (${entries.length} bounded inventory entries).`);

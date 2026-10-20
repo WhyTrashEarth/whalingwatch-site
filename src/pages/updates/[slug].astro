@@ -15,7 +15,7 @@ const { Content } = await render(entry);
   <article class="container closing-section update-article">
     <p class="eyebrow">Notable development · {entry.data.jurisdiction}</p>
     <h1>{entry.data.title}</h1>
-    <time datetime={entry.data.pubDate.toISOString()}>{entry.data.pubDate.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</time>
+    <time datetime={entry.data.pubDate.toISOString()}>{entry.data.pubDate.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time>
     <ul class="update-tags" aria-label="Topics">
       {entry.data.tags.map((tag) => <li>{tag}</li>)}
     </ul>

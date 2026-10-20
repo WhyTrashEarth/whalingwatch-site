@@ -15,7 +15,7 @@ const { Content } = await render(post);
   <article class="container closing-section update-article">
     <p class="eyebrow">Corrections &amp; changes</p>
     <h2>{post.data.title}</h2>
-    <time datetime={post.data.pubDate.toISOString()}>{post.data.pubDate.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</time>
+    <time datetime={post.data.pubDate.toISOString()}>{post.data.pubDate.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}</time>
     <div class="update-body"><Content /></div>
   </article>
 </BaseLayout>
