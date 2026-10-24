@@ -4,5 +4,5 @@ type Props = { ids: (keyof typeof sources)[] };
 const { ids } = Astro.props;
 ---
 <ul class="history-sources">
-  {ids.map(id => <li><a href={sources[id].url}>{sources[id].title}</a><span>{sources[id].publisher} · {sources[id].locator}</span></li>)}
+  {ids.map(id => <li><a href={sources[id].url}>{sources[id].title}</a><span>{sources[id].publisher} · {sources[id].locator}</span><a href={`/library/history/#${id}`}>Inspection notes and limits ({id})</a></li>)}
 </ul>

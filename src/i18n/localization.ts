@@ -2,8 +2,10 @@ import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import drafts from './translations.json' with { type: 'json' };
 import { resolve } from 'node:path';
+import { introductions, type IntroductionLocale } from './introductions.ts';
 
-export const localeNames = { en: 'English', is: 'Íslenska', ja: '日本語' } as const;
+export const localeNames = { en: 'English', is: 'Íslenska', ja: '日本語', nb: 'Norsk bokmål', 'pt-br': 'Português (Brasil)' } as const;
+const introductionLocales = Object.keys(introductions) as IntroductionLocale[];
 export const englishUI = {
   primary: 'Primary', home: 'Home', about: 'About', languages: 'Languages',
   skip: 'Skip to main content', original: 'Read the English original',
@@ -18,7 +20,7 @@ export type TranslationPage = {
   sections?: { heading: string; paragraphs: string[] }[];
 };
 export type TranslationBundle = {
-  locale: 'is' | 'ja'; status: 'draft' | 'reviewed';
+  locale: IntroductionLocale; status: 'draft' | 'reviewed';
   reviewedBy?: string; reviewedOn?: string; uiSourceHash?: string;
   ui?: Record<keyof typeof englishUI, string>; pages: TranslationPage[];
 };
@@ -38,10 +40,10 @@ function reviewValid(review: { reviewedBy?: string; reviewedOn?: string }) {
 // Drafts never produce routes, hreflang links or language choices. Invalid reviewed
 // records fail the build, including after changes to their English source.
 export function validateTranslations(bundles: TranslationBundle[], hashes = sourceHashes) {
-  const published: { locale: 'is' | 'ja'; ui: NonNullable<TranslationBundle['ui']>; page: TranslationPage }[] = [];
+  const published: { locale: IntroductionLocale; ui: NonNullable<TranslationBundle['ui']>; page: TranslationPage }[] = [];
   const seen = new Set<string>();
   for (const bundle of bundles) {
-    if (!['is','ja'].includes(bundle.locale) || seen.has(bundle.locale)) throw new Error('Invalid or duplicate translation locale');
+    if (!introductionLocales.includes(bundle.locale) || seen.has(bundle.locale)) throw new Error('Invalid or duplicate translation locale');
     seen.add(bundle.locale);
     if (bundle.status === 'draft') continue;
     if (bundle.status !== 'reviewed' || !reviewValid(bundle) || bundle.uiSourceHash !== hashes.ui || !bundle.ui || Object.keys(englishUI).some(key => !nonempty(bundle.ui?.[key as keyof typeof englishUI]))) {
@@ -62,7 +64,7 @@ export function validateTranslations(bundles: TranslationBundle[], hashes = sour
 }
 export const publishedTranslations = validateTranslations(drafts as TranslationBundle[]);
 export function originalPath(path: string) {
-  return path.replace(/^\/(is|ja)(?=\/|$)/, '') || '/';
+  return path.replace(/^\/(is|ja|nb|pt-br)(?=\/|$)/, '') || '/';
 }
 export function equivalents(path: string) {
   const route = originalPath(path);
@@ -70,8 +72,7 @@ export function equivalents(path: string) {
   // They are not alternate versions of English research or About pages.
   if (route === '/') return [
     { locale: 'en' as const, href: '/' },
-    { locale: 'is' as const, href: '/is/' },
-    { locale: 'ja' as const, href: '/ja/' },
+    ...introductionLocales.map(locale => ({ locale, href: `/${locale}/` })),
   ];
   return [ { locale: 'en' as const, href: route }, ...publishedTranslations.filter(item => item.page.route === route).map(item => ({ locale: item.locale, href: `/${item.locale}${route}` })) ];
 }
@@ -85,5 +86,5 @@ export function navState(path: string, href: string): 'page' | 'true' | undefine
   const normalize = (value: string) => value === '/' ? '/' : value.replace(/\/+$/, '') + '/';
   const current = normalize(path), target = normalize(href);
   if (current === target) return 'page';
-  if (target !== '/' && !/^\/(is|ja)\/$/.test(target) && current.startsWith(target)) return 'true';
+  if (target !== '/' && !/^\/(is|ja|nb|pt-br)\/$/.test(target) && current.startsWith(target)) return 'true';
 }

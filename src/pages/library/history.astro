@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import sources from '../../data/history-sources.json';
+const labels: Record<string,string> = {
+  relevant_text_inspected: 'Relevant text inspected',
+  relevant_text_and_selected_scans_inspected: 'Relevant text and selected scans inspected',
+  relevant_text_and_tables_inspected: 'Relevant text and tables inspected',
+  relevant_provisions_inspected: 'Relevant provisions inspected',
+  catalogue_and_relevant_pdf_text_inspected: 'Catalogue and selected document text inspected',
+  indexed_excerpt_only: 'Indexed excerpt only — discovery lead',
+  located_relevant_passage_unresolved: 'Located — relevant passage unresolved',
+  compilation_metadata_only: 'Compilation metadata only',
+  portal_located_no_dataset_extracted: 'Portal located — dataset not extracted',
+  archive_record_only: 'Archive description only',
+  catalogue_only: 'Catalogue only',
+  located_not_substantively_inspected: 'Located — substantive review pending',
+  catalogue_search_excerpt_only: 'Catalogue/search excerpt only',
+};
+---
+<BaseLayout title="Historical source catalogue" description="The historical research source ledger: original titles, authors, dates, inspection status, locators, follow-up checks and unresolved evidence gaps.">
+  <header class="container history-hero"><p class="eyebrow">Library · Historical research</p><h1>Follow the source.<br /> Keep its limits in view.</h1><p>All 47 records from the October 9 archive are listed here, alongside four follow-up records. Inclusion is not endorsement or proof that an entire source was read. Original access dates and later checks remain separate.</p><p class="history-date">Catalogue review: October 24, 2026</p><div class="history-actions"><a href="/research-status/">Research status & discrepancies →</a><a href="/library/">Return to the reading room →</a></div></header>
+  <section class="container inventory-method"><h2>Reading the evidence labels</h2><p>Inspected text supports only the claim and passage identified. A catalogue, indexed excerpt or located link is a research lead, not a verified financial or legal conclusion. A successful link check does not verify its contents. Sources remain at their publishers; redistribution rights have not been assumed.</p></section>
+  <nav class="container inventory-index" aria-label="Source identifiers">{Object.keys(sources).map(id => <a href={`#${id}`}>{id}</a>)}</nav>
+  <div class="container source-catalogue">{Object.entries(sources).map(([id,source]) => <article class="source-record" id={id}><p class="eyebrow">{id} · {labels[source.inspection] ?? source.inspection.replaceAll('_',' ')}</p><h2><a href={source.url}>{source.title}</a></h2><p>{source.publisher}{source.date && ` · ${source.date}`}</p><p><strong>Locator:</strong> {source.locator}</p><p><strong>Evidence limits:</strong> {source.limitations}</p><details><summary>Inspection and preservation notes</summary><p>Recorded access: <time datetime={source.accessed}>{source.accessed}</time>. {source.rights}</p>{source.reviewed && <p>Follow-up: <time datetime={source.reviewed}>{source.reviewed}</time>. {source.reviewNote}</p>}</details></article>)}</div>
+</BaseLayout>

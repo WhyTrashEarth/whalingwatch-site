@@ -9,7 +9,7 @@ export default defineConfig({
   // i18n routing ready:
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "is", "ja"],
+    locales: ["en", "is", "ja", "nb", "pt-br"],
 
     // IMPORTANT: do not prefix default locale
     routing: {

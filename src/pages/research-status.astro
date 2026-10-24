@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HistorySources from '../components/HistorySources.astro';
+import questions from '../data/research-questions.json';
+import sources from '../data/history-sources.json';
+import tac from '../data/japan-2026-tac.json';
+---
+<BaseLayout title="Research status and unresolved questions" description="What the Whaling Watch historical edition establishes, what remains unresolved, and the evidence needed to resolve country, economic and source discrepancies.">
+  <header class="container history-hero">
+    <p class="eyebrow">Evidence & corrections · v1.0</p>
+    <h1>What we know.<br /> What remains open.</h1>
+    <p>This edition provides a bounded historical reference. It does not claim a complete worldwide census, a comparable global economic total or a complete account of workers’ lives after closure.</p>
+    <p class="history-date">Review: October 24, 2026 · Baseline: October 9 research archive</p>
+    <div class="history-actions"><a href="/countries/history/#coverage">Country coverage register →</a><a href="/library/history/">Historical source catalogue →</a></div>
+  </header>
+  <div class="container history-layout">
+    <nav class="history-contents" aria-label="On this page"><p class="eyebrow">On this page</p><a href="#coverage">Coverage</a><a href="#economics">Comparability</a><a href="#workers">Closures & workers</a><a href="#iceland">Iceland 2026</a><a href="#japan">Japan 2026</a><a href="#brazil">Brazil discrepancies</a><a href="#library">Source gaps</a><a href="#questions">Full research queue</a></nav>
+    <article class="history-prose">
+      <section id="coverage"><h2>Country coverage is documented, not complete.</h2>
+        <p>The archive contains 33 entities, including modern countries, historical states, territories and overlapping maritime networks. Nineteen of those rows map to 18 bounded public entries: Portugal and the Azores share an entry. The remaining rows retain their original survey, attribution or screening status in the <a href="/countries/history/#coverage">coverage register</a>.</p>
+        <p>These are record counts, not a count of commercial-whaling countries. A flag, an owner’s nationality or a port call does not establish a domestic industry. Indigenous and subsistence activity is not automatically reclassified as commercial.</p>
+        <p>Regional searches remain incomplete, including the Caribbean, Indian Ocean, Southeast Asia, Pacific islands and additional African coasts. Early and smaller enterprises also need more work. A missing entry is not evidence of no history.</p>
+      </section>
+      <section id="economics"><h2>There is no defensible world value yet.</h2>
+        <p>The <a href="/historical-economics/">economic examples</a> preserve their original years, currencies and accounting boundaries. Landed value, processed value, exports, profit and compensation cannot be added together. Monthly employment is not a count of unique workers, and a quota is not a catch.</p>
+        <p>A comparable estimate would need a common reporting year and valuation stage, product coverage, treatment of inventories and transfers, documented exchange rates and an explicit price basis. Missing producers must remain visible. Catch numbers alone cannot supply the missing revenue evidence.</p>
+        <p>No inflation adjustment, currency conversion, country ranking, global peak-value estimate or cumulative monetary total has been constructed for this edition.</p>
+      </section>
+      <section id="workers"><h2>Closure is an event. Recovery requires evidence.</h2>
+        <p>The Canadian report documents compensation and later local fish-processing employment. It does not follow the same former whalers through subsequent jobs, earnings or household circumstances. Compensation totals are transfers, not annual industry output.</p>
+        <p>A company exit, final catch, station closure, policy announcement and legal prohibition can have different dates. Australia’s 1978 station closure and 1979 policy change illustrate that distinction. Company diversification or a heritage attraction does not establish that displaced workers recovered their incomes.</p>
+        <p>Worker and union records, payroll definitions, settlement schedules and longitudinal accounts are still needed. No general claim of successful transition, uncompensated loss or a single economic cause of closure is made.</p>
+        <HistorySources ids={['S002','S016','S019','S026']} />
+      </section>
+      <section id="iceland"><h2>Iceland 2026: reporting and official returns.</h2>
+        <p><strong>Partly resolved.</strong> RÚV’s English article reports 93 fin whales over 34 days. Its rendered body was inspected in this review; the Icelandic headline also reports 93. The October 9 archive’s “94 days” wording is not adopted. The duration difference and the official season/vessel return remain unresolved.</p>
+        <p>The <a href="/updates/iceland-2026-season-and-reform/">season note</a> now identifies the catch figure as news reporting rather than an independently verified official total. It is not included in an accepted catch aggregation.</p>
+        <p>The official October 1 statutory compilation retains a licensing framework. The February 2027 reform timetable remains attributed to news reporting: the linked government programme did not yield the relevant passage. Neither that timetable nor a company’s stated litigation position establishes an enacted ban, compensation entitlement or court outcome.</p>
+        <HistorySources ids={['S013','S048','S011','S015']} />
+      </section>
+      <section id="japan"><h2>Japan 2026: use the dated revised limits.</h2>
+        <p><strong>Revised document verified.</strong> The official Japanese TAC document, revised September 18, 2026, and its amendment comparison were inspected in full, including the tables. The management period is January 1–December 31, 2026. These are authorized limits and allocations, not actual catches or revenue.</p>
+        <div class="evidence-table-wrap" role="region" aria-label="Japan 2026 revised TAC table" tabindex="0"><table class="evidence-table"><caption>Revised 2026 TAC · number of whales · September 18 document</caption><thead><tr><th scope="col">Species</th><th scope="col">TAC</th><th scope="col">Allocation and source location</th></tr></thead><tbody>{tac.map(row => <tr><th scope="row">{row.species}<br /><span lang="ja">{row.japanese}</span></th><td>{row.tac}</td><td>{row.species === 'Bryde’s' ? row.detail : row.species === 'Minke' ? row.detail : `Mothership: ${row.mothership}. ${row.detail}`}<br /><small>{row.locator}</small></td></tr>)}</tbody></table></div>
+        <p>The September change reallocates eight Bryde’s-whale places between fishery categories; it does not increase the species TAC. Allocations are parts of the limit, not additional catches.</p>
+        <p>The archive’s old English PDF remains inaccessible in this review. Its bycatch deductions and relationship to earlier versions have not been fully reconciled. A complete regulatory history and official actual-catch reconciliation remain open.</p>
+        <HistorySources ids={['S049','S050','S051','S033']} />
+      </section>
+      <section id="brazil"><h2>Brazil: the scan and its interpretation.</h2>
+        <p><strong>Mass discrepancy confirmed.</strong> Printed page 8 reports an estimated 5,242 tonnes for 1981 using seven tonnes per animal. Annexes 1 and 4 list 749 animals. Multiplication gives 5,243 tonnes, a one-tonne difference. This check identifies an internal discrepancy; it does not authorize silently correcting the source. Estimated raw material is not measured processed meat.</p>
+        <p><strong>Meal-sales digits checked; scope unresolved.</strong> The scan reads Cr$11.4 million beside a statement about a 79% regional share. Whether the amount refers to all meal sales or that share remains ambiguous. It stays outside the accepted economic observations.</p>
+        <p>Monthly employment and narrative seasonal averages also require reconciliation. Monthly counts must not be added into a unique-worker total. The separate export and selected domestic-meat examples retain their original currency, year and product scope.</p>
+        <HistorySources ids={['S003']} />
+      </section>
+      <section id="library"><h2>A source link is not a completed investigation.</h2>
+        <p>The <a href="/library/history/">catalogue</a> exposes all 47 baseline source records and four follow-up records. Each distinguishes inspected material from catalogue entries, excerpts and discovery leads, with dates, locators and limits. An access failure is recorded separately from the evidence already inspected.</p>
+        <p>Missing work includes original company accounts, customs and price series, worker records, current legal instruments and regional archives. Item-level redistribution rights also remain open; third-party PDFs and private correspondence are not republished.</p>
+        <p>The public-participation record also remains incomplete: the earlier Regulations.gov comment has no verified docket/comment identifier in this review, so no submitted document is presented as recovered. See the <a href="/resources/">resources record</a>.</p>
+        <p>The Hvalur letter informs our standards for fair participation, corrections, attribution and verification. It is not factual proof of company claims, evidence of a reply, or approval of a website translation.</p>
+      </section>
+      <section id="questions"><h2>Every baseline question has a disposition.</h2>
+        <p>The 34 questions below retain the original research identifiers. “Open” means the evidence needed to settle the question remains missing; “partly resolved” identifies a bounded improvement. Documenting a gap does not close the underlying research.</p>
+        {questions.map(q => <details class="research-question" id={q.question_id}><summary><span>{q.question_id} · {q.release_status}</span>{q.question}</summary><p>{q.release_note}</p><p><strong>Records still needed:</strong> {q.records_required}</p><p><strong>Why it matters:</strong> {q.why_it_matters}</p>{q.source_ids && <p>Source trail: {q.source_ids.split(';').map((id,i) => <>{i > 0 && ' · '}<a href={`/library/history/#${id}`}>{id}: {sources[id as keyof typeof sources].title}</a></>)}</p>}</details>)}
+        <p><a href="/contact/">Send a correction or an identifiable source.</a></p>
+      </section>
+    </article>
+  </div>
+</BaseLayout>

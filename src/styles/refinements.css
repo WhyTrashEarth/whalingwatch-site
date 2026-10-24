@@ -734,6 +734,22 @@ h3,
 .inventory-entry .evidence-label { color: var(--aqua); font-size: .85rem; font-weight: 700; }
 .inventory-entry header > p:last-child { font-size: .95rem; }
 .history-open-questions { padding-block: 3rem 6rem; border-top: 1px solid var(--line); }
+.research-question { border-top: 1px solid var(--line); padding-block: 1rem; scroll-margin-top: 1.5rem; }
+.research-question summary { cursor: pointer; font-size: 1.1rem; line-height: 1.5; padding-block: .5rem; color: var(--foam); }
+.research-question summary > span { display: block; color: var(--muted); font-size: .8rem; }
+.research-question p { max-width: 78ch; }
+.research-question:target { border-left: 3px solid var(--aqua); padding-left: 1rem; }
+.source-catalogue { padding-bottom: 5rem; }
+.source-record { border-top: 1px solid var(--line); padding-block: 2rem; scroll-margin-top: 1.5rem; max-width: 85ch; overflow-wrap: anywhere; }
+.source-record h2 { font-family: var(--display); line-height: 1.35; font-size: 1.7rem; }
+.source-record p { color: var(--muted); line-height: 1.7; }
+.source-record summary { cursor: pointer; min-height: 44px; padding-block: .7rem; }
+.evidence-table-wrap { overflow-x: auto; margin-block: 1.5rem; }
+.evidence-table { width: 100%; border-collapse: collapse; line-height: 1.6; font-size: .95rem; }
+.evidence-table caption { text-align: left; padding-bottom: .75rem; color: var(--foam); }
+.evidence-table th, .evidence-table td { text-align: left; vertical-align: top; padding: .8rem; border-bottom: 1px solid var(--line); }
+.evidence-table td { color: var(--muted); }
+.evidence-table th[scope="row"] { min-width: 7rem; }
 .about-page > p:not(.eyebrow) { max-width: 67ch; }
 .about-page .mission-panel h2, .about-page .participate-panel h2, .about-page .artist-credit h2 { font-family: var(--display); font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.2; letter-spacing: -.025em; }
 .about-principles { margin-top: 3rem; }
@@ -758,3 +774,6 @@ html[lang="ja"] .footer-statement { font-size: clamp(1.5rem, 3vw, 2rem); }
   .inventory-entry { padding-block: 2rem; }
   .inventory-entry header > p:last-child { margin-bottom: 0; }
 }
+
+/* Page titles preserve the established appearance with correct heading levels. */
+.source-intro > h1 { font-family: var(--display); font-size: clamp(2.2rem,4.6vw,4.3rem); letter-spacing: -.06em; line-height: .95; margin: .55rem 0; }

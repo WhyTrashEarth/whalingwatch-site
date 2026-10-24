@@ -1,4 +1,4 @@
-// Short introductions authorized for publication on 2026-10-20. These are not
+// Short introductions requested on 2026-10-20 and 2026-10-24. These are not
 // reviewed translations of the full English pages; that workflow stays separate.
 export const introductions = {
   is: {
@@ -59,6 +59,66 @@ export const introductions = {
     footer: {
       note: '日本語による簡単な紹介です。サイトの大部分は現在、英語で提供しています。',
       about: 'このサイトについて（英語）', home: '日本語の紹介ページへ', sitemap: 'サイトマップ',
+    },
+  },
+  nb: {
+    title: 'Om Whaling Watch',
+    description: 'Et uavhengig informasjonsnettsted om hvalfangstens historie, økonomi, praksis og forvaltning verden over.',
+    sections: [
+      { heading: 'Formålet med nettstedet', paragraphs: [
+        'Whaling Watch samler kilder og bakgrunnsinformasjon for å gjøre det lettere å forstå hvalfangst. Vi arbeider verken for å videreføre eller avvikle hvalfangsten. Målet er å bevare kunnskap og gjøre pålitelig informasjon tilgjengelig.',
+        'Enten hvalfangsten fortsetter, endrer seg eller opphører, er historien fortsatt verdt å forstå.',
+      ] },
+      { heading: 'Flere språk, bedre tilgang', paragraphs: [
+        'Dette er en kort introduksjon på norsk bokmål. Det meste av nettstedet er fortsatt på engelsk. På sikt ønsker vi å gjøre alle sidene tilgjengelige på språkene leserne våre og samfunnene vi omtaler, trenger.',
+        'Oversettelser av hele sider skal gjennomgå språklig og faglig kontroll før publisering. Vi tar gjerne imot hjelp med oversettelse og gjennomgang.',
+      ] },
+      { heading: 'Ta kontakt', paragraphs: [
+        'Har du et spørsmål, en kommentar eller en rettelse? Kjenner du til en kilde eller et perspektiv vi mangler? Send oss en e-post. Vi ønsker innspill fra alle som vil bidra til bedre forståelse av emnet.',
+      ] },
+    ],
+    contactLabel: 'Send e-post',
+    contactSubject: 'Spørsmål eller kommentar — Whaling.Watch',
+    ui: {
+      primary: 'Hovedmeny', home: 'Hjem', about: 'Om prosjektet', languages: 'Språk',
+      skip: 'Hopp til hovedinnhold', original: 'Les den engelske originalen',
+      statement: 'Uavhengig. Internasjonalt. Basert på kilder.',
+      resources: 'Kilder og ressurser på engelsk', contact: 'Kontaktside på engelsk',
+      reviewed: 'Oversettelsen er gjennomgått', footer: 'Bunntekst',
+    },
+    footer: {
+      note: 'En kort introduksjon på norsk bokmål. Det meste av nettstedet er fortsatt på engelsk.',
+      about: 'Om prosjektet på engelsk', home: 'Til introduksjonen på norsk bokmål', sitemap: 'Nettstedskart',
+    },
+  },
+  'pt-br': {
+    title: 'Sobre o Whaling Watch',
+    description: 'Um site independente de informações sobre a história, a economia, as práticas e a regulamentação da caça às baleias no mundo.',
+    sections: [
+      { heading: 'O propósito do site', paragraphs: [
+        'O Whaling Watch reúne fontes e informações de contexto para facilitar a compreensão da caça às baleias. Não defendemos sua continuidade nem seu encerramento. Nosso objetivo é preservar o conhecimento e tornar informações confiáveis acessíveis.',
+        'Quer a caça às baleias continue, mude ou deixe de existir, sua história continuará merecendo ser compreendida.',
+      ] },
+      { heading: 'Mais idiomas, mais acesso', paragraphs: [
+        'Esta é uma breve apresentação em português do Brasil. A maior parte do site ainda está em inglês. A longo prazo, queremos disponibilizar todas as páginas nos idiomas de que nossos leitores e as comunidades abordadas precisam.',
+        'As traduções de páginas completas passarão por revisão linguística e verificação do conteúdo antes da publicação. Contribuições para a tradução e a revisão são bem-vindas.',
+      ] },
+      { heading: 'Entre em contato', paragraphs: [
+        'Tem uma pergunta, um comentário ou uma correção? Conhece uma fonte ou uma perspectiva que ainda não incluímos? Envie um e-mail. Acolhemos contribuições de quem deseja ajudar a compreender melhor o assunto.',
+      ] },
+    ],
+    contactLabel: 'Enviar e-mail',
+    contactSubject: 'Pergunta ou comentário — Whaling.Watch',
+    ui: {
+      primary: 'Navegação principal', home: 'Início', about: 'Sobre o projeto', languages: 'Idiomas',
+      skip: 'Ir para o conteúdo principal', original: 'Ler o original em inglês',
+      statement: 'Independente. Internacional. Baseado em fontes.',
+      resources: 'Fontes e recursos em inglês', contact: 'Página de contato em inglês',
+      reviewed: 'Tradução revisada', footer: 'Rodapé',
+    },
+    footer: {
+      note: 'Uma breve apresentação em português do Brasil. A maior parte do site ainda está em inglês.',
+      about: 'Sobre o projeto em inglês', home: 'Ir para a apresentação em português do Brasil', sitemap: 'Mapa do site',
     },
   },
 };

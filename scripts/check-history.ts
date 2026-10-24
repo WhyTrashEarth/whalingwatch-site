@@ -4,6 +4,22 @@ import { introductions, contactHref } from '../src/i18n/introductions.ts';
 import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import entries from '../src/data/country-history.json' with { type: 'json' };
 import sources from '../src/data/history-sources.json' with { type: 'json' };
+import coverage from '../src/data/history-coverage.json' with { type: 'json' };
+import questions from '../src/data/research-questions.json' with { type: 'json' };
+import tac from '../src/data/japan-2026-tac.json' with { type: 'json' };
+
+assert.equal(new Set(coverage.map(row => row.id)).size, 33, 'Preserve the baseline entity register');
+assert.deepEqual(new Set(coverage.filter(row => row.entry).map(row => row.entry)), new Set(entries.map(row => row.id)));
+assert.equal(new Set(questions.map(row => row.question_id)).size, 34, 'Every baseline question has a disposition');
+for (const row of coverage) {
+  assert.ok(row.limits && row.status);
+  for (const id of row.sources) assert.ok(sources[id as keyof typeof sources], `Coverage: missing source ${id}`);
+}
+for (const row of questions) {
+  assert.ok(row.release_status && row.release_note && row.records_required);
+  for (const id of row.source_ids.split(';').filter(Boolean)) assert.ok(sources[id as keyof typeof sources], `Question: missing source ${id}`);
+}
+for (const row of tac) assert.equal(row.tac, row.mothership + (row.base ?? 0), 'Allocations are parts of TAC');
 
 assert.equal(navState('/about/', '/about/'), 'page');
 assert.equal(navState('/about', '/about/'), 'page');
@@ -35,8 +51,12 @@ assert.equal(validateTranslations([{...reviewed,pages:[{route:'/',status:'draft'
 assert.equal(equivalents('/about/').length,1,'Full pages have no alternate translation before review');
 assert.deepEqual(equivalents('/'), equivalents('/is/'));
 assert.deepEqual(equivalents('/'), equivalents('/ja/'));
-assert.deepEqual(languageDestinations('/countries/history/').map(item => item.href), ['/countries/history/', '/is/', '/ja/']);
-assert.deepEqual(languageDestinations('/404/').map(item => item.href), ['/', '/is/', '/ja/']);
+assert.deepEqual(equivalents('/'), equivalents('/nb/'));
+assert.deepEqual(equivalents('/'), equivalents('/pt-br/'));
+assert.equal(navState('/nb/about/', '/nb/'), undefined);
+assert.equal(navState('/pt-br/about/', '/pt-br/'), undefined);
+assert.deepEqual(languageDestinations('/countries/history/').map(item => item.href), ['/countries/history/', '/is/', '/ja/', '/nb/', '/pt-br/']);
+assert.deepEqual(languageDestinations('/404/').map(item => item.href), ['/', '/is/', '/ja/', '/nb/', '/pt-br/']);
 assert.equal(new Set(entries.map(entry=>entry.id)).size,entries.length);
 for (const entry of entries) {
   assert.ok(entry.limits && entry.evidence && entry.sources.length);
@@ -50,7 +70,7 @@ for(const route of ['historical-economics','countries/history','about']) {
   const head = html.split('</head>')[0];
   assert.ok(!head.includes('hreflang="is"') && !head.includes('hreflang="ja"'));
 }
-for(const locale of ['is','ja'] as const) {
+for(const locale of ['is','ja','nb','pt-br'] as const) {
   const html = readFileSync(`dist/${locale}/index.html`, 'utf8');
   assert.ok(html.includes(`<html lang="${locale}">`));
   assert.equal((html.match(/<h1[\s>]/g)||[]).length, 1);
@@ -65,16 +85,18 @@ for(const locale of ['is','ja'] as const) {
 }
 for (const path of readdirSync('dist', { recursive: true }).filter(path => typeof path === 'string' && path.endsWith('.html'))) {
   const html = readFileSync(`dist/${path}`, 'utf8');
+  assert.equal((html.match(/<h1[\s>]/g)||[]).length, 1, `${path}: one first-level heading`);
+  assert.equal((html.match(/<main[\s>]/g)||[]).length, 1, `${path}: one main landmark`);
   const header = html.match(/<header\b[^>]*class="site-header"[\s\S]*?<\/header>/)?.[0];
   const footer = html.match(/<footer\b[\s\S]*?<\/footer>/)?.[0];
   assert.ok(header && !header.includes('class="language-links"'), `${path}: no header language selector`);
   assert.ok(footer?.includes('class="language-links"'), `${path}: footer language selector exists`);
-  for (const locale of ['is', 'ja']) assert.ok(footer?.includes(`href="/${locale}/" lang="${locale}"`));
+  for (const locale of ['is', 'ja', 'nb', 'pt-br']) assert.ok(footer?.includes(`href="/${locale}/" lang="${locale}"`));
 }
 const sitemap=readFileSync('dist/sitemap-0.xml','utf8');
 assert.ok(sitemap.includes('/historical-economics/'));
 assert.ok(sitemap.includes('/countries/history/'));
-for (const locale of ['is', 'ja']) {
+for (const locale of ['is', 'ja', 'nb', 'pt-br']) {
   assert.ok(sitemap.includes(`<loc>https://whaling.watch/${locale}/</loc>`));
   assert.ok(!sitemap.includes(`/${locale}/about/`));
 }

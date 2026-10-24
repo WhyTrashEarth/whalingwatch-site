@@ -9,15 +9,15 @@ tags:
   - Law & policy
 ---
 
-## Current status
+## Law and reporting status
 
-Commercial whaling remains lawful in Iceland. The current Whaling Act provides for licensing, and in June the Minister of Industries told Alþingi that a regulation was in force and that Hvalur hf. was not prevented from whaling if it chose to do so. [Read the parliamentary record](https://www.althingi.is/altext/raeda/157/rad20260608T105941.html).
+The Whaling Act in the official October 1, 2026 compilation retains a licensing framework. In June, the Minister of Industries told Alþingi that a regulation was in force and that Hvalur hf. was not prevented from whaling if it chose to do so. [Read the parliamentary record](https://www.althingi.is/altext/raeda/157/rad20260608T105941.html).
 
-Hvalur hf. is Iceland’s active commercial fin-whaling operator. Its 2026 season has ended: RÚV reported that 93 fin whales were caught over 34 days, with weather among the factors that disrupted operations. That is the reported final season figure recorded here. [Read RÚV’s report](https://www.ruv.is/english/2026-09-23-hvalur-boss-will-sue-if-whaling-banned-487801).
+RÚV reported the end of Hvalur hf.’s 2026 season, with 93 fin whales caught over 34 days and weather among the factors disrupting operations. These are figures in a news report, not an official catch return independently verified by Whaling Watch. [Read RÚV’s report](https://www.ruv.is/english/2026-09-23-hvalur-boss-will-sue-if-whaling-banned-487801).
 
-## A reform is planned, not enacted
+## Reported reform timetable
 
-The government is planning a bill to amend Iceland’s whaling legislation in February 2027. The Minister of Industries has publicly expressed her view that the law needs fundamental review and that she intends to prohibit whaling; the bill has not been introduced or enacted. The present law remains available in Alþingi’s official legal database. [Read the current Whaling Act](https://www.althingi.is/lagas/157c/1949026.html).
+RÚV’s September 23 report describes a plan to introduce legislation in February 2027 and attributes an intention to prohibit whaling to the Minister of Industries. That is a reported plan, not evidence of introduction, passage or commencement. The official statutory compilation inspected on October 24 retains the existing licensing framework. [Read the current Whaling Act](https://www.althingi.is/lagas/nuna/1949026.html).
 
 The distinction matters. A planned reform is not bill text, passage, an effective date, or a settled answer about existing commercial rights.
 
@@ -25,10 +25,14 @@ The distinction matters. A planned reform is not bill text, passage, an effectiv
 
 Kristján Loftsson, chief executive of Hvalur hf., has said that he would take the Icelandic state to court if a prohibition is introduced. This is Hvalur’s stated position, not a finding that compensation is required or that a claim would succeed. [Read RÚV’s report of his position](https://www.ruv.is/english/2026-09-23-hvalur-boss-will-sue-if-whaling-banned-487801).
 
-The treatment of any existing licences or commercial interests, the final legislative text, an implementation date, parliamentary support, and the outcome of any future litigation remain unresolved. Whaling Watch will review the primary Icelandic bill text when it is published.
+The treatment of any existing licences or commercial interests, the final legislative text, an implementation date, parliamentary support, and the outcome of any future litigation remain unresolved. Primary Icelandic bill text and subsequent legal records are needed to update that assessment.
+
+## Review note · October 24, 2026
+
+The rendered RÚV English article was rechecked and supports the attributed 93-whale/34-day wording. The research archive’s 94-day wording is not adopted. Official catch returns and the duration discrepancy remain open. The February timetable has not been verified against the relevant primary programme passage. See the [research status and discrepancy record](/research-status/#iceland).
 
 ## Sources consulted
 
 - [Alþingi: Minister of Industries on the applicable regulation and Hvalur’s ability to operate, June 8, 2026](https://www.althingi.is/altext/raeda/157/rad20260608T105941.html)
-- [Alþingi: current consolidated Whaling Act, No. 26/1949](https://www.althingi.is/lagas/157c/1949026.html)
+- [Alþingi: current consolidated Whaling Act, No. 26/1949](https://www.althingi.is/lagas/nuna/1949026.html)
 - [RÚV: reported end of the 2026 season, 93 fin whales, planned bill, and Hvalur’s stated legal position, September 23, 2026](https://www.ruv.is/english/2026-09-23-hvalur-boss-will-sue-if-whaling-banned-487801)

@@ -14,7 +14,7 @@ const observations = [
     <p class="eyebrow">History & economics</p>
     <h1>Products, markets,<br /> and the people behind them.</h1>
     <p>Whaling supplied food, lighting materials, lubricants and manufactured goods. Its economic purposes changed across places and periods. Understanding those differences is part of documenting the history.</p>
-    <p class="history-date">Research edition · October 20, 2026 · Based on the October 9 research archive</p>
+    <p class="history-date">Research edition · Review October 24, 2026 · Based on the October 9 research archive</p>
     <a class="text-link" href="/countries/history/">Explore the country-history inventory →</a>
   </header>
   <div class="container history-layout">
@@ -29,7 +29,7 @@ const observations = [
       <section id="values"><h2>Economic evidence, with its units attached.</h2>
         <p>Sales, profit, landed value and compensation measure different things. These examples show what the surviving records can tell us; they are not a country ranking or a world total.</p>
         <div class="economic-observations">{observations.map(item => <section><h3>{item.place}</h3><p class="economic-value">{item.value}</p><p>{item.scope}</p><a href={item.href}>Read the source ({item.source}) →</a></section>)}</div>
-        <p>No new inflation adjustment or exchange-rate conversion has been applied. Landed and processed values must not be added as if they represented separate production.</p>
+        <p>No new inflation adjustment or exchange-rate conversion has been applied. Landed and processed values must not be added as if they represented separate production.</p><p>A global estimate would need a common year, valuation stage, product coverage and price basis, with missing producers and potential double counting identified. <a href="/research-status/#economics">Read the comparability requirements and remaining gaps.</a></p>
         <HistorySources ids={['S002','S003','S008']} />
       </section>
       <section id="change"><h2>There was no single global ending.</h2>
@@ -40,6 +40,7 @@ const observations = [
       </section>
       <section id="communities"><h2>People belong in the economic record.</h2>
         <p>The Canadian report documents seasonal work and closure compensation. Later local fish-processing employment does not establish that the same former whalers obtained equivalent earnings. That question requires worker and household evidence.</p>
+        <HistorySources ids={['S002']} />
         <p>Indigenous and subsistence whaling need their own account of food, culture and community life. Commercial sale of some products does not, by itself, settle the primary purpose of a hunt. The IWC treats Aboriginal Subsistence Whaling separately from commercial whaling.</p>
         <p><a href="https://iwc.int/management-and-conservation/whaling/aboriginal">Read the IWC’s subsistence framework</a> and our <a href="/countries/">countries and communities guide</a>.</p>
       </section>
@@ -47,8 +48,8 @@ const observations = [
         <p>We begin with a documented enterprise or operating episode: who caught or processed whales, where it operated, and what connected it to a market. A vessel’s flag, a founder’s nationality or a port visit is insufficient on its own.</p>
         <p>Government records, scholarly analysis, institutional histories and archive descriptions have different evidentiary roles. The <a href="/countries/history/">inventory</a> identifies its sources and limits beside each entry. A catalogue of company ledgers is not a claim that those ledgers have been read.</p>
         <h3>Still unresolved</h3>
-        <ul><li>A complete global inventory, including smaller enterprises and historical territorial attribution.</li><li>Comparable annual values, consistent accounting boundaries and any defensible global monetary total.</li><li>Many national final-catch dates, company closure causes and subsequent worker outcomes.</li><li>The archive’s provisional Icelandic 2026 catch figure, Japanese 2026 quota lead and discrepancies in Brazilian mass and meal-sales records. These are not used as accepted figures here.</li></ul>
-        <p>Neither an omission nor an unresolved entry is evidence that a place had no whaling history. <a href="/contact/">Corrections and additional sources are welcome.</a></p>
+        <ul><li>A complete global inventory, including smaller enterprises and historical territorial attribution.</li><li>Comparable annual values, consistent accounting boundaries and any defensible global monetary total.</li><li>Many national final-catch dates, company closure causes and subsequent worker outcomes.</li><li>Iceland’s official 2026 catch return, reconciliation of earlier Japanese quota material, and Brazilian mass, meal-sales and employment discrepancies. The revised Japanese TAC document has now been inspected; it is a limit, not a catch.</li></ul>
+        <p><a href="/research-status/">See the dated discrepancy decisions and all 34 research questions.</a> Neither an omission nor an unresolved entry is evidence that a place had no whaling history. <a href="/contact/">Corrections and additional sources are welcome.</a></p>
       </section>
     </article>
   </div>

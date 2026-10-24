@@ -1,0 +1,38 @@
+[
+  {
+    "species": "Sei",
+    "japanese": "いわしくじら",
+    "tac": 56,
+    "mothership": 56,
+    "base": 0,
+    "detail": "Base allocation: 0.",
+    "locator": "PDF pp.1–2"
+  },
+  {
+    "species": "Bryde’s",
+    "japanese": "にたりくじら",
+    "tac": 153,
+    "mothership": 151,
+    "base": 2,
+    "detail": "September 18 reallocation: mothership 143 → 151; base 10 → 2.",
+    "locator": "PDF pp.2–3; amendment p.1"
+  },
+  {
+    "species": "Minke",
+    "japanese": "みんくくじら",
+    "tac": 145,
+    "mothership": 0,
+    "base": 145,
+    "detail": "Base allocation is 112 Pacific and 33 Okhotsk; both mothership allocations are 0.",
+    "locator": "PDF pp.3–4"
+  },
+  {
+    "species": "Fin",
+    "japanese": "ながすくじら",
+    "tac": 58,
+    "mothership": 58,
+    "base": null,
+    "detail": "The document lists the mothership category only.",
+    "locator": "PDF pp.4–5"
+  }
+]

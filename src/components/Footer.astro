@@ -19,7 +19,7 @@ const localized = locale === 'en' ? undefined : introductions[locale];
         <a href="/resources/" hreflang="en">{localized.ui.resources}</a>
         <a href="/contact/" hreflang="en">{localized.ui.contact}</a>
       </> : <>
-        <a href="/about/">About the project</a><a href="/resources/">Resources</a><a href="/historical-economics/">Historical economics</a><a href="/countries/history/">Country history</a><a href="/library/">Library</a><a href="/sources/">Source standards</a><a href="/updates/">Notable developments</a><a href="/blog/">Corrections &amp; changes</a><a href="/contact/">Contact</a>
+        <a href="/about/">About the project</a><a href="/resources/">Resources</a><a href="/historical-economics/">Historical economics</a><a href="/countries/history/">Country history</a><a href="/library/">Library</a><a href="/research-status/">Research status &amp; gaps</a><a href="/sources/">Source standards</a><a href="/updates/">Notable developments</a><a href="/blog/">Corrections &amp; changes</a><a href="/contact/">Contact</a>
       </>}
       <a href="https://whytrashearth.org" target="_blank" rel="noopener noreferrer">© WhyTrashEarth</a>
     </div>
@@ -32,7 +32,7 @@ const localized = locale === 'en' ? undefined : introductions[locale];
       <img class="footer-whale-art footer-whale-art--orca" data-whale src="/images/orca-transparent.webp" alt="" />
     </a>
   </div>
-  <div class="container footer-bottom">© <span data-current-year>{new Date().getFullYear()}</span> Whaling Watch{!localized && ' · Last updated October 20, 2026'} · <a href="/sitemap-index.xml">{localized?.footer.sitemap ?? 'Sitemap'}</a></div>
+  <div class="container footer-bottom">© <span data-current-year>{new Date().getFullYear()}</span> Whaling Watch{!localized && ' · Last updated October 24, 2026'} · <a href="/sitemap-index.xml">{localized?.footer.sitemap ?? 'Sitemap'}</a></div>
 </footer>
 
 <script is:inline>

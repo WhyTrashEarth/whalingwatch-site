@@ -2,9 +2,11 @@
 
 English remains at `/`. On October 20, 2026, the site owner authorized short Icelandic and Japanese introductions at `/is/` and `/ja/`. These describe the mission, current language availability, long-term access goal and contact options. They are stored in `src/i18n/introductions.ts` separately from full-page translations and do not claim human language review. Their publication does not approve translations of research, legal material or the complete English homepage/About page.
 
-The introductions use localized email subjects and explicitly say that most content remains in English. Language choices appear only in the footer, on every page. They prefer an existing equivalent page and otherwise lead to the language's introduction. Search-engine alternates describe the three home experiences; English research pages do not claim nonexistent translated equivalents.
+The October 24 v1.0 request adds short Norwegian Bokmål (`/nb/`) and Brazilian Portuguese (`/pt-br/`) introductions on the same terms. These are newly drafted introductions, not claims of fluent human review.
 
-The route generator uses a reviewed homepage translation in place of an introduction when one becomes available. About routes at `/is/about/` and `/ja/about/` remain unpublished until review. Empty draft bundles never create full translation routes. Do not add research claims to the introduction pathway to bypass review.
+The introductions use localized email subjects and explicitly say that most content remains in English. Language choices appear only in the footer, on every page. They prefer an existing equivalent page and otherwise lead to the language's introduction. Search-engine alternates describe the five home experiences; English research pages do not claim nonexistent translated equivalents.
+
+The route generator uses a reviewed homepage translation in place of an introduction when one becomes available. About routes at `/is/about/`, `/ja/about/`, `/nb/about/` and `/pt-br/about/` remain unpublished until review. Empty draft bundles never create full translation routes. Do not add research claims to the introduction pathway to bypass review.
 
 ## Full-page translation workflow
 

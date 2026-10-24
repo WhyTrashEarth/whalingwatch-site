@@ -6,7 +6,11 @@
     "locator": "Commercial whaling overview",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "Overview is not a complete domestic-law or current catch register"
+    "limitations": "Overview is not a complete domestic-law or current catch register",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S002": {
     "title": "Canadian Delegation Report: 32nd Annual Meeting, International Whaling Commission; Appendix 5: The Canadian Whaling Ban: Its Implementation and Impact",
@@ -15,7 +19,11 @@
     "locator": "Delegation summary p.1; Appendix 5 pp.1–14, PDF pp.51–64; figures pp.5,10,12–13",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_and_selected_scans_inspected",
-    "limitations": "Retrospective government assessment; financial averaging window unclear; worker-level outcomes absent"
+    "limitations": "Retrospective government assessment; financial averaging window unclear; worker-level outcomes absent",
+    "date": "1980-10",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S003": {
     "title": "Sumário sobre a caça de baleias no Brasil",
@@ -24,7 +32,37 @@
     "locator": "Printed pp.6–9; PDF pp.8–11; employment, trade and price scans checked",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_and_selected_scans_inspected",
-    "limitations": "Government report is not audited company accounts; ambiguous meal-sales amount excluded"
+    "limitations": "Government report is not audited company accounts; ambiguous meal-sales amount excluded",
+    "date": "1982-03",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "2026-10-24",
+    "reviewNote": "Rechecked printed p.8 and Annexes 1 and 4 visually. The scan reads Cr$11.4 million, but the meal-sales geographic denominator remains ambiguous. Reported estimated mass of 5,242 tonnes differs from 749 × 7 = 5,243; no silent correction."
+  },
+  "S004": {
+    "title": "Decreto nº 92.185, de 20 de dezembro de 1985",
+    "url": "https://www2.camara.leg.br/legin/fed/decret/1980-1987/decreto-92185-20-dezembro-1985-442250-publicacaooriginal-1-pe.html",
+    "publisher": "Brazil, Presidency; Câmara dos Deputados legislative archive",
+    "locator": "Article 1; original publication",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Historical original text; later law separately recorded",
+    "date": "1985-12-20",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S005": {
+    "title": "Lei nº 7.643, de 18 de dezembro de 1987",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/l7643.htm",
+    "publisher": "Brazil, Presidency",
+    "locator": "Articles 1–4; publication note",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Original penalties must not be treated as a complete 2026 enforcement code",
+    "date": "1987-12-18",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S006": {
     "title": "In Retrospect, chapter 14 of In Pursuit of Leviathan: Technology, Institutions, Productivity, and Profits in American Whaling, 1816–1906",
@@ -33,7 +71,11 @@
     "locator": "pp.513–522",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "Underlying census and account samples not independently re-extracted; do not generalize US explanation globally"
+    "limitations": "Underlying census and account samples not independently re-extracted; do not generalize US explanation globally",
+    "date": "1997",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S007": {
     "title": "Whales and Hunting",
@@ -42,7 +84,11 @@
     "locator": "Whale products; Benjamin Tucker 1851 example",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "Underlying voyage ledger not inspected; a voyage is not a calendar-year national result"
+    "limitations": "Underlying voyage ledger not inspected; a voyage is not a calendar-year national result",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S008": {
     "title": "Statistisk skråblikk på småhvalfangst",
@@ -51,7 +97,102 @@
     "locator": "Catch value, vessel and catch discussion",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "Historical small-whaling series; catch value is not profit; figures described approximately"
+    "limitations": "Historical small-whaling series; catch value is not profit; figures described approximately",
+    "date": "2002-08-06",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S009": {
+    "title": "Høgare vågekvalkvote i 2026",
+    "url": "https://www.regjeringen.no/no/aktuelt/hogare-vagekvalkvote-i-2026/id3147611/",
+    "publisher": "Norwegian Ministry of Trade, Industry and Fisheries",
+    "locator": "Quota announcement and preceding-season results",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Quota includes carry-over arrangements; 2026 actual catch not established here",
+    "date": "2026-01-30",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S010": {
+    "title": "Forskrift om regulering av fangst av vågehval i 2026, FOR-2026-03-10-378",
+    "url": "https://lovdata.no/nav/forskrift/2026-03-10-378/%C2%A71",
+    "publisher": "Norwegian fisheries authorities / Lovdata",
+    "locator": "Sections 1–3; validity dates",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Must read exception with opening prohibition; other implementing rules also relevant",
+    "date": "2026-03-10",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S011": {
+    "title": "Lög um hvalveiðar nr.26/1949",
+    "url": "https://www.althingi.is/lagas/nuna/1949026.html",
+    "publisher": "Alþingi, Iceland",
+    "locator": "Sections 1–10; baseline edition 157c (September 1), follow-up edition 158a (October 1, 2026)",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "General statute does not establish a particular vessel licence, quota or company profitability",
+    "date": "1949-05-03",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "2026-10-24",
+    "reviewNote": "Official online compilation dated 1 October 2026, edition 158a, inspected. Sections 1–4 retain licensing and regulatory controls. This does not establish an individual licence or the progress of a future bill."
+  },
+  "S012": {
+    "title": "Ministerial statement on whaling, 8 June 2026",
+    "url": "https://www.althingi.is/altext/raeda/157/rad20260608T105941.html",
+    "publisher": "Hanna Katrín Friðriksson, Alþingi",
+    "locator": "Speech beginning 10:59:41",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Attribution to minister retained; not a judicial ruling or audited account",
+    "date": "2026-06-08",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S013": {
+    "title": "Hvalveiðivertíðinni lokið",
+    "url": "https://www.ruv.is/frettir/innlent/2026-09-20-hvalveidivertidinni-lokid-487560",
+    "publisher": "Hugrún Hannesdóttir Diego, RÚV",
+    "locator": "Indexed article excerpt; body retrieval incomplete",
+    "accessed": "2026-10-09",
+    "inspection": "indexed_excerpt_only",
+    "limitations": "Provisional observation only; obtain article body and regulator catch return",
+    "date": "2026-09-20",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "2026-10-24",
+    "reviewNote": "Rendered Icelandic headline and summary inspected; 93 fin whales is reported. Complete body and regulator return were not recovered. The archive’s 94-day wording is not independently verified; compare S048."
+  },
+  "S014": {
+    "title": "Óttast að umræðan muni dragast fram á sumar",
+    "url": "https://www.visir.is/g/20262933539d/ottast-ad-umraedan-muni-dragast-fram-a-sumar",
+    "publisher": "Sunna Sæmundsdóttir, Vísir",
+    "locator": "Discussion of proposed legislation and timetable",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "A proposed timetable is not a bill, enacted prohibition or entitlement to compensation",
+    "date": "2026-09-12",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S015": {
+    "title": "Þingmálaskrá, 158. löggjafarþing 2026–2027, September 2026",
+    "url": "https://www.stjornarradid.is/library?itemid=7fc5e45e-e6ca-4c11-b669-49f3af65a0fa&type=pdf",
+    "publisher": "Government of Iceland",
+    "locator": "32-page linked document; no matching whaling passage recovered in text extraction",
+    "accessed": "2026-10-09",
+    "inspection": "located_relevant_passage_unresolved",
+    "limitations": "Do not cite as verification of February date until relevant original passage is located",
+    "date": "2026-09",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "2026-10-24",
+    "reviewNote": "The linked 32-page programme was accessible, but a matching whaling passage was not recovered by text search. It still does not verify the reported February 2027 timetable."
   },
   "S016": {
     "title": "Whaling",
@@ -60,7 +201,37 @@
     "locator": "Australian history and policy",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "Official overview does not establish exact last-catch day or company-level closure causes"
+    "limitations": "Official overview does not establish exact last-catch day or company-level closure causes",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S017": {
+    "title": "Whale Protection Act 1980, No.92, as made",
+    "url": "https://www.legislation.gov.au/C2004A02293/asmade/1980-06-06/text/original/pdf",
+    "publisher": "Commonwealth of Australia",
+    "locator": "Sections 2,6,9,11",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Exact proclamation commencement not verified; Act later replaced; permits and successor law require review",
+    "date": "1980-06-06",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S018": {
+    "title": "Environment Protection and Biodiversity Conservation Act 1999, returned compilation C2026C00116",
+    "url": "https://www.legislation.gov.au/Latest/C2023C00492",
+    "publisher": "Commonwealth of Australia",
+    "locator": "Returned compilation validity 28 March–30 June 2026",
+    "accessed": "2026-10-09",
+    "inspection": "compilation_metadata_only",
+    "limitations": "Returned version is not sufficient proof of the text applicable on 9 October 2026",
+    "date": "2026-03-28",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S019": {
     "title": "Perano whaling station",
@@ -69,7 +240,24 @@
     "locator": "Site history",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "No worker-income panel or proof of tourism replacing wages"
+    "limitations": "No worker-income panel or proof of tourism replacing wages",
+    "date": "2013; updated 2025-08-20",
+    "rights": "Text generally CC BY-NC 3.0 NZ; check page terms and separate image rights before reuse",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S020": {
+    "title": "Marine Mammals Protection Act 1978, No.80",
+    "url": "https://www.legislation.govt.nz/act/public/1978/0080/latest/versions.aspx",
+    "publisher": "New Zealand Parliamentary Counsel Office",
+    "locator": "Section 4 and exceptions referenced in sections 5–6; version index",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_provisions_inspected",
+    "limitations": "Complete commercial-purpose prohibition and current consolidated exceptions not fully audited",
+    "date": "1978",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S021": {
     "title": "Itinerarios balleneros. De la caza tradicional a la caza moderna (... o de isla Santa María a caleta Chome, Chile)",
@@ -78,7 +266,50 @@
     "locator": "ISBN 978-956-244-447-7; book p.25; contents pp.139–177 are further research leads",
     "accessed": "2026-10-09",
     "inspection": "catalogue_and_relevant_pdf_text_inspected",
-    "limitations": "Full account tables and oral histories not yet extracted"
+    "limitations": "Full account tables and oral histories not yet extracted",
+    "date": "2019",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S022": {
+    "title": "Ley 20.293: Protege a los cetáceos e introduce modificaciones a la Ley Nº18.892",
+    "url": "https://www.bcn.cl/leychile/navegar?idNorma=280305",
+    "publisher": "Chile, Biblioteca del Congreso Nacional",
+    "locator": "Articles 1–6; promulgated 14 October, published 25 October 2008",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Publication date verified; separate commencement analysis and current enforcement amendments remain to check",
+    "date": "2008-10-25",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S023": {
+    "title": "Especies protegidas",
+    "url": "https://pescayconsumoresponsable.produce.gob.pe/especies-protegidas.html",
+    "publisher": "Peru, Ministerio de la Producción",
+    "locator": "Whale section citing Decreto Supremo Nº026-2001-PE",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Underlying decree not inspected; cannot certify exact legal scope or effective date",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S024": {
+    "title": "Historical Peruvian whaling record, IMARPE repository document",
+    "url": "https://repositorio.imarpe.gob.pe/bitstreams/3066abf1-78b0-418a-ac61-c7e843f09e71/download",
+    "publisher": "Instituto del Mar del Perú; full bibliographic metadata pending",
+    "locator": "Indexed discussion of Paita and foreign whalers",
+    "accessed": "2026-10-09",
+    "inspection": "indexed_excerpt_only",
+    "limitations": "Title, date, authors and original pages must be recovered before factual use",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S025": {
     "title": "Walvischtraan",
@@ -87,7 +318,11 @@
     "locator": "Postwar fleet and 1964 ending",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "Museum account, not direct extraction of company financial statements"
+    "limitations": "Museum account, not direct extraction of company financial statements",
+    "date": "2020-04-01",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S026": {
     "title": "Salvesen Archive: 50 years at Edinburgh University Library, 1969–2019",
@@ -96,7 +331,11 @@
     "locator": "Company history and holdings description",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "Underlying ledgers not inspected; founder nationality is not corporate nationality"
+    "limitations": "Underlying ledgers not inspected; founder nationality is not corporate nationality",
+    "date": "2019-05-08",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S027": {
     "title": "Durban Timeline 1497–1990",
@@ -105,7 +344,11 @@
     "locator": "1908 and 1975 entries",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "National final-catch completeness, financial causes and legal instrument need primary verification"
+    "limitations": "National final-catch completeness, financial causes and legal instrument need primary verification",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S028": {
     "title": "Museu do Pico visitor leaflet: Museu da Indústria Baleeira",
@@ -114,7 +357,11 @@
     "locator": "PDF p.4, bilingual industry museum history",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "A single factory ending is not national last-catch date"
+    "limitations": "A single factory ending is not national last-catch date",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S029": {
     "title": "Red Bay Basque Whaling Station",
@@ -123,7 +370,11 @@
     "locator": "Brief synthesis and outstanding universal value",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "Site location does not alone establish Canadian ownership"
+    "limitations": "Site location does not alone establish Canadian ownership",
+    "date": "",
+    "rights": "Description is labelled CC BY-SA IGO 3.0; other media have separate rights",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S030": {
     "title": "Basque Whaling at Red Bay",
@@ -132,7 +383,11 @@
     "locator": "Basque fleets and home ports",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "Modern national allocation requires home-port and polity records"
+    "limitations": "Modern national allocation requires home-port and polity records",
+    "date": "1997",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S031": {
     "title": "RAU IX; whaling fleet historical context",
@@ -141,7 +396,11 @@
     "locator": "Walter Rau fleet history",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "RAU IX itself was built in 1939 but did not conduct the assumed German prewar whaling voyage"
+    "limitations": "RAU IX itself was built in 1939 but did not conduct the assumed German prewar whaling voyage",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S032": {
     "title": "Emptying the Oceans: A Summary of Industrial Whaling Catches in the 20th Century",
@@ -150,7 +409,128 @@
     "locator": "pp.38–40; Table 1; DOI 10.7755/MFR.76.4.3",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_and_tables_inspected",
-    "limitations": "Industrial definition differs from project commercial definition; underlying database not re-extracted; catches remain incomplete"
+    "limitations": "Industrial definition differs from project commercial definition; underlying database not re-extracted; catches remain incomplete",
+    "date": "2014 issue; publication 2015",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S033": {
+    "title": "2026 Catch Limits for Large Whales, provisional translation",
+    "url": "https://www.jfa.maff.go.jp/e/whale/attach/pdf/index-50.pdf",
+    "publisher": "Fisheries Agency of Japan",
+    "locator": "2026 quota table; PDF full retrieval returned access failure",
+    "accessed": "2026-10-09",
+    "inspection": "indexed_excerpt_only",
+    "limitations": "Not promoted into accepted numeric dataset; complete table and footnotes must be inspected",
+    "date": "2026",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "2026-10-24",
+    "reviewNote": "Archived English PDF link returned HTTP 403. A different indexed Japanese table link displayed a not-found page in the browser. Use the dated Japanese primary documents S049–S050 for the revised 2026 TAC; the old translation and its bycatch calculation remain unreconciled."
+  },
+  "S034": {
+    "title": "Marine Mammal Protection Act: statute compilation",
+    "url": "https://www.fisheries.noaa.gov/national/marine-mammal-protection/marine-mammal-protection-act",
+    "publisher": "NOAA Fisheries",
+    "locator": "Section 102(f), 16 USC 1372(f); compilation through 2023",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Do not date addition of subsection 102(f) to 1972 without amendment history; 2026 consolidation pending",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S035": {
+    "title": "Marine Mammal Regulations, SOR/93-56",
+    "url": "https://laws.justice.gc.ca/eng/regulations/SOR-93-56/FullText.html",
+    "publisher": "Justice Laws Website, Canada",
+    "locator": "Sections 4–6; licence and Indigenous exceptions",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_provisions_inspected",
+    "limitations": "Does not by itself resolve all current commercial restrictions or historical instrument",
+    "date": "1993",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S036": {
+    "title": "IWC data portal",
+    "url": "https://data.iwc.int/",
+    "publisher": "International Whaling Commission",
+    "locator": "Catch data portal",
+    "accessed": "2026-10-09",
+    "inspection": "portal_located_no_dataset_extracted",
+    "limitations": "No downloaded catch series or database revision audited in this release",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S037": {
+    "title": "International Convention for the Regulation of Whaling, archive record",
+    "url": "https://archive.iwc.int/?r=3607",
+    "publisher": "International Whaling Commission",
+    "locator": "Archive item r=3607",
+    "accessed": "2026-10-09",
+    "inspection": "archive_record_only",
+    "limitations": "Underlying archive attachment not inspected; no clause-level legal conclusion based on this record",
+    "date": "1946",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S038": {
+    "title": "IWC Schedule, archive record",
+    "url": "https://archive.iwc.int/?r=3606",
+    "publisher": "International Whaling Commission",
+    "locator": "Archive item r=3606",
+    "accessed": "2026-10-09",
+    "inspection": "archive_record_only",
+    "limitations": "Underlying attachment not inspected; version and full paragraph 10(e) still to archive",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S039": {
+    "title": "Cheynes Beach Whaling Company collection finding aid, MN 862",
+    "url": "https://slwa.wa.gov.au/pdf/mn/mn501_1000/mn0862.pdf",
+    "publisher": "State Library of Western Australia",
+    "locator": "ACC 3012A/105: 1978 closure records",
+    "accessed": "2026-10-09",
+    "inspection": "catalogue_only",
+    "limitations": "Underlying records not inspected; access restrictions/permission may apply",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S040": {
+    "title": "April 1975 labor archive item concerning Union Whaling",
+    "url": "https://sahistory.org.za/sites/default/files/archive-files/LaApr75.0377.5429.001.010.Apr75.8.pdf",
+    "publisher": "South African History Archive; full item metadata pending",
+    "locator": "Archive identifier LaApr75.0377.5429.001.010.Apr75.8",
+    "accessed": "2026-10-09",
+    "inspection": "indexed_excerpt_only",
+    "limitations": "Original pages and authors not yet verified",
+    "date": "1975-04",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S041": {
+    "title": "Estrutura populacional da Balaenoptera bonaerensis (Burmeister) (Cetacea, Balaenopteridae) nas áreas de reprodução do Oceano Atlântico Sul",
+    "url": "https://www.scielo.br/j/rbzool/a/BNNHwLsM5dHCyFHchNgHsyN/?lang=pt",
+    "publisher": "Revista Brasileira de Zoologia; author metadata pending",
+    "locator": "Historical operations and 1974–1985 sampling discussion",
+    "accessed": "2026-10-09",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Not a complete colonial-industry history; authors and issue details require transcription",
+    "date": "2006",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
   },
   "S042": {
     "title": "Kerst op traanfabriek Willem Barendsz",
@@ -159,6 +539,127 @@
     "locator": "Adolf Melchior shipboard account, 1946–1947",
     "accessed": "2026-10-09",
     "inspection": "relevant_text_inspected",
-    "limitations": "Contemporary account mediated by museum article; not aggregate industrial statistics"
+    "limitations": "Contemporary account mediated by museum article; not aggregate industrial statistics",
+    "date": "2015-12-19",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S043": {
+    "title": "Iceland whaling review / committee report, linked 2025 consultation document",
+    "url": "https://samradapi.island.is/api/Documents/5f667ce3-6d2a-f011-9bcc-005056bcce7e",
+    "publisher": "Iceland consultation portal; exact title and authors pending",
+    "locator": "270-page linked report",
+    "accessed": "2026-10-09",
+    "inspection": "located_not_substantively_inspected",
+    "limitations": "Do not infer losses, compensation rights or findings before reading relevant chapters",
+    "date": "2025",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S044": {
+    "title": "Harina, aceite y carne de cetáceos, repository lead",
+    "url": "https://repositorio.imarpe.gob.pe/items/34a9b77f-a4f6-4c69-92b7-b3457ebd2e81",
+    "publisher": "Instituto del Mar del Perú",
+    "locator": "Repository item",
+    "accessed": "2026-10-09",
+    "inspection": "catalogue_search_excerpt_only",
+    "limitations": "Full metadata and report not recovered",
+    "date": "1972",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S045": {
+    "title": "Caneliñas, la última ballenera de Galicia",
+    "url": "https://www.gciencia.com/destinos-ciencia/canelinas-ultima-ballenera-galicia/",
+    "publisher": "GCiencia; author/date metadata to verify",
+    "locator": "Reported IBSA final voyage, 1985",
+    "accessed": "2026-10-09",
+    "inspection": "indexed_excerpt_only",
+    "limitations": "Exact final date not accepted without full article and underlying records",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S046": {
+    "title": "Whale Products",
+    "url": "https://www.nps.gov/nebe/learn/historyculture/whaleproducts.htm",
+    "publisher": "US National Park Service",
+    "locator": "New Bedford Whaling National Historical Park",
+    "accessed": "2026-10-09",
+    "inspection": "located_not_substantively_inspected",
+    "limitations": "Not used to assert an exclusive technical dependence",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S047": {
+    "title": "History of Whaling in America",
+    "url": "https://www.pbs.org/wgbh/americanexperience/features/whaling-history-whaling-america/",
+    "publisher": "PBS American Experience",
+    "locator": "1853 monetary claim in search excerpt",
+    "accessed": "2026-10-09",
+    "inspection": "indexed_excerpt_only",
+    "limitations": "Excluded from numeric baseline pending original series, year and geographic definition",
+    "date": "",
+    "rights": "Rights not established; link supplied; source file not redistributed",
+    "reviewed": "",
+    "reviewNote": ""
+  },
+  "S048": {
+    "title": "Hvalur boss ‘will sue’ if whaling banned",
+    "url": "https://www.ruv.is/english/2026-09-23-hvalur-boss-will-sue-if-whaling-banned-487801",
+    "publisher": "Darren Adam, RÚV English",
+    "locator": "Weather and protests leave their mark on season; proposed legislation and company position",
+    "accessed": "2026-10-24",
+    "inspection": "relevant_text_inspected",
+    "limitations": "News report, not a regulator catch return, enacted law, judicial ruling or evidence of profitability.",
+    "date": "2026-09-23",
+    "rights": "Redistribution rights not assessed; link only.",
+    "reviewed": "2026-10-24",
+    "reviewNote": "Rendered article body inspected in the browser. Reports 93 fin whales over 34 days. The archive’s 94-day wording is not adopted."
+  },
+  "S049": {
+    "title": "2026 management-year TAC for sei, Bryde’s, minke and fin whales (Japanese)",
+    "url": "https://www.jfa.maff.go.jp/j/whale/attach/pdf/index-121.pdf",
+    "publisher": "Fisheries Agency of Japan",
+    "locator": "Complete document, PDF pp.1–5; revision dated 18 September 2026",
+    "accessed": "2026-10-24",
+    "inspection": "relevant_text_and_tables_inspected",
+    "limitations": "Authorized TAC and allocations, not catches, biological abundance or revenue. Does not by itself reconcile the older provisional translation’s deductions.",
+    "date": "2026-09-18",
+    "rights": "Redistribution rights not assessed; link only.",
+    "reviewed": "2026-10-24",
+    "reviewNote": "All five pages text-checked and visually inspected. Period: 1 January–31 December 2026. SHA-256: 867aa00676e30293f05fd02ecccd0deafd6868c6ba22b422ecf9660fac72234b."
+  },
+  "S050": {
+    "title": "2026 TAC amendment comparison, 18 September (Japanese)",
+    "url": "https://www.jfa.maff.go.jp/j/whale/attach/pdf/index-123.pdf",
+    "publisher": "Fisheries Agency of Japan",
+    "locator": "Complete one-page before/after table",
+    "accessed": "2026-10-24",
+    "inspection": "relevant_text_and_tables_inspected",
+    "limitations": "Reallocation of Bryde’s-whale TAC between fishery categories; not additional catch or a change to the species total.",
+    "date": "2026-09-18",
+    "rights": "Redistribution rights not assessed; link only.",
+    "reviewed": "2026-10-24",
+    "reviewNote": "Visually checked: mothership allocation 143 → 151; base allocation 10 → 2. SHA-256: 3bbaa13a0a715f05c1d93942300617c302c3c6af2fb6a4c16ac2b1d25f8a1368."
+  },
+  "S051": {
+    "title": "Whaling information portal (捕鯨の部屋)",
+    "url": "https://www.jfa.maff.go.jp/j/whale/index.html",
+    "publisher": "Fisheries Agency of Japan",
+    "locator": "2026 management-year document links",
+    "accessed": "2026-10-24",
+    "inspection": "relevant_text_inspected",
+    "limitations": "Navigation source for dated official records. Other portal claims were not adopted into this edition.",
+    "date": "",
+    "rights": "Redistribution rights not assessed; link only.",
+    "reviewed": "2026-10-24",
+    "reviewNote": "Rendered page links the 18 September amendment and notes the 2 September correction to the 27 August version."
   }
 }

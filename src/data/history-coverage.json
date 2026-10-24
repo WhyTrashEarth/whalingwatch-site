@@ -1,0 +1,539 @@
+[
+  {
+    "id": "CAN",
+    "name": "Canada",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "canada",
+    "scope": "Atlantic 1964–1972; earlier periods not yet bounded",
+    "limits": "Basque Labrador sites kept distinct from later Canadian enterprises",
+    "sources": [
+      "S002",
+      "S029",
+      "S035"
+    ],
+    "questions": [
+      "Q003",
+      "Q004",
+      "Q005"
+    ]
+  },
+  {
+    "id": "BRA",
+    "name": "Brazil",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "brazil",
+    "scope": "COPESBRA 1911–1985; Cabo Frio 1960–1963; earlier periods pending",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S003",
+      "S004",
+      "S005",
+      "S041"
+    ],
+    "questions": [
+      "Q006",
+      "Q007",
+      "Q008",
+      "Q009"
+    ]
+  },
+  {
+    "id": "USA",
+    "name": "United States",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "united-states",
+    "scope": "1816–1906 study sample; colonial and later coastal periods separate",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S006",
+      "S007",
+      "S034"
+    ],
+    "questions": [
+      "Q010",
+      "Q011"
+    ]
+  },
+  {
+    "id": "NOR",
+    "name": "Norway",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "norway",
+    "scope": "Historic pelagic industry; small-whaling series; resumed 1993",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S001",
+      "S008",
+      "S009",
+      "S010"
+    ],
+    "questions": [
+      "Q017",
+      "Q025"
+    ]
+  },
+  {
+    "id": "ISL",
+    "name": "Iceland",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "iceland",
+    "scope": "Historical shore operations; commercial resumption 2006",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S001",
+      "S011",
+      "S012",
+      "S013",
+      "S014",
+      "S032"
+    ],
+    "questions": [
+      "Q012",
+      "Q013",
+      "Q014"
+    ]
+  },
+  {
+    "id": "JPN",
+    "name": "Japan",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "japan",
+    "scope": "Commercial; special-permit phase separately classified; resumed 2019",
+    "limits": "Scientific permits and commercial byproducts require separate episode coding",
+    "sources": [
+      "S001",
+      "S032",
+      "S033"
+    ],
+    "questions": [
+      "Q015",
+      "Q016",
+      "Q028"
+    ]
+  },
+  {
+    "id": "AUS",
+    "name": "Australia",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "australia",
+    "scope": "Late 18th century–1978; firm periods to refine",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S016",
+      "S017",
+      "S018",
+      "S039"
+    ],
+    "questions": [
+      "Q018"
+    ]
+  },
+  {
+    "id": "NZL",
+    "name": "New Zealand",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "new-zealand",
+    "scope": "Perano 1911–1964; earlier industry not fully inventoried",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S019",
+      "S020"
+    ],
+    "questions": [
+      "Q019"
+    ]
+  },
+  {
+    "id": "GBR",
+    "name": "United Kingdom",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "united-kingdom",
+    "scope": "Salvesen example through 1963; national chronology broader",
+    "limits": "British corporate control; overseas territory and Norwegian-origin founder recorded separately",
+    "sources": [
+      "S026",
+      "S032"
+    ],
+    "questions": [
+      "Q020",
+      "Q025"
+    ]
+  },
+  {
+    "id": "NLD",
+    "name": "Netherlands",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "netherlands",
+    "scope": "Postwar 1946–1964; earlier Dutch industry still to research",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S025",
+      "S042"
+    ],
+    "questions": [
+      "Q021"
+    ]
+  },
+  {
+    "id": "CHL",
+    "name": "Chile",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "chile",
+    "scope": "Santa María and Chome; documented historical span into 1983",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S021",
+      "S022"
+    ],
+    "questions": [
+      "Q022"
+    ]
+  },
+  {
+    "id": "PER",
+    "name": "Peru",
+    "kind": "modern state",
+    "status": "survey supported",
+    "entry": "",
+    "scope": "20th-century stations; firm-level periods to verify",
+    "limits": "Foreign vessels provisioning at Paita do not alone establish domestic industry",
+    "sources": [
+      "S023",
+      "S024",
+      "S032",
+      "S044"
+    ],
+    "questions": [
+      "Q023"
+    ]
+  },
+  {
+    "id": "ZAF",
+    "name": "South Africa",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "south-africa",
+    "scope": "Durban 1908–1975; other stations to inventory",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S027",
+      "S032",
+      "S040"
+    ],
+    "questions": [
+      "Q024"
+    ]
+  },
+  {
+    "id": "PRT",
+    "name": "Portugal",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "portugal",
+    "scope": "Pico factory 1949–1984; wider industry earlier/later",
+    "limits": "Small-boat commercial enterprise qualifies despite limited scale",
+    "sources": [
+      "S028",
+      "S032"
+    ],
+    "questions": [
+      "Q029"
+    ]
+  },
+  {
+    "id": "ESP",
+    "name": "Spain",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "spain",
+    "scope": "Basque episodes; 20th-century Galicia",
+    "limits": "Do not automatically allocate all Basque voyages to modern Spain",
+    "sources": [
+      "S030",
+      "S032",
+      "S045"
+    ],
+    "questions": [
+      "Q029"
+    ]
+  },
+  {
+    "id": "FRA",
+    "name": "France",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "france",
+    "scope": "Basque episodes and later industrial operations",
+    "limits": "Colonial ports and home-port ownership require separate records",
+    "sources": [
+      "S030",
+      "S032"
+    ],
+    "questions": [
+      "Q029"
+    ]
+  },
+  {
+    "id": "DEU",
+    "name": "Germany",
+    "kind": "modern state",
+    "status": "documented episode",
+    "entry": "germany",
+    "scope": "1937–1939 example; full national period pending",
+    "limits": "Vessel construction alone is not evidence that the vessel whaled",
+    "sources": [
+      "S031"
+    ],
+    "questions": []
+  },
+  {
+    "id": "ARG",
+    "name": "Argentina",
+    "kind": "modern state",
+    "status": "attribution review",
+    "entry": "",
+    "scope": "20th-century overseas corporate episodes",
+    "limits": "Corporate domicile, personnel nationality and territorial jurisdiction must be resolved",
+    "sources": [
+      "S032"
+    ],
+    "questions": [
+      "Q025"
+    ]
+  },
+  {
+    "id": "DNK",
+    "name": "Denmark",
+    "kind": "modern state",
+    "status": "attribution review",
+    "entry": "",
+    "scope": "20th-century operations; Greenland relationship requires separate analysis",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S032"
+    ],
+    "questions": [
+      "Q026"
+    ]
+  },
+  {
+    "id": "CHN",
+    "name": "China",
+    "kind": "modern state",
+    "status": "survey supported",
+    "entry": "",
+    "scope": "20th century; polity and operator records pending",
+    "limits": "Historical state and border mapping unresolved",
+    "sources": [
+      "S032"
+    ],
+    "questions": [
+      "Q027"
+    ]
+  },
+  {
+    "id": "KOR-H",
+    "name": "Korea (historical attribution unresolved)",
+    "kind": "historical aggregate",
+    "status": "attribution review",
+    "entry": "",
+    "scope": "20th-century series requiring colonial/postwar split",
+    "limits": "Do not assign all Korean catches to the Republic of Korea",
+    "sources": [
+      "S032"
+    ],
+    "questions": [
+      "Q027"
+    ]
+  },
+  {
+    "id": "KOR",
+    "name": "Republic of Korea",
+    "kind": "modern state",
+    "status": "screening pending",
+    "entry": "",
+    "scope": "Commercial and scientific categories to separate",
+    "limits": "Linked to KOR-H; not an additional confirmed industry count",
+    "sources": [
+      "S032"
+    ],
+    "questions": [
+      "Q027"
+    ]
+  },
+  {
+    "id": "PRK",
+    "name": "Democratic People’s Republic of Korea",
+    "kind": "modern state",
+    "status": "screening pending",
+    "entry": "",
+    "scope": "Not established",
+    "limits": "Unresolved lead, not positive or negative finding",
+    "sources": [
+      "S032"
+    ],
+    "questions": [
+      "Q027"
+    ]
+  },
+  {
+    "id": "SUN",
+    "name": "Union of Soviet Socialist Republics",
+    "kind": "historical state",
+    "status": "documented episode",
+    "entry": "soviet-union",
+    "scope": "20th-century industrial whaling",
+    "limits": "Do not duplicate USSR totals into every successor state",
+    "sources": [
+      "S001",
+      "S032"
+    ],
+    "questions": []
+  },
+  {
+    "id": "RUS",
+    "name": "Russian Federation",
+    "kind": "modern state",
+    "status": "successor context",
+    "entry": "",
+    "scope": "Post-Soviet qualifying commercial episode not established",
+    "limits": "Successor context is not independent evidence of a Russian Federation commercial industry",
+    "sources": [
+      "S001",
+      "S032"
+    ],
+    "questions": []
+  },
+  {
+    "id": "PAN",
+    "name": "Panama",
+    "kind": "modern state",
+    "status": "flag only review",
+    "entry": "",
+    "scope": "1951–1956 episode in scholarly survey",
+    "limits": "Flag attribution alone excluded from initial domestic-industry counting",
+    "sources": [
+      "S032"
+    ],
+    "questions": [
+      "Q028"
+    ]
+  },
+  {
+    "id": "PHL",
+    "name": "Philippines",
+    "kind": "modern state",
+    "status": "attribution review",
+    "entry": "",
+    "scope": "1983–1986 described episode",
+    "limits": "Foreign ownership does not erase local economic activity; requires operational and corporate evidence",
+    "sources": [
+      "S032"
+    ],
+    "questions": [
+      "Q028"
+    ]
+  },
+  {
+    "id": "GRL",
+    "name": "Greenland",
+    "kind": "territory",
+    "status": "mixed economy review",
+    "entry": "",
+    "scope": "1924 onward; changes in classification",
+    "limits": "Current subsistence hunts excluded from commercial total; earlier records assessed individually",
+    "sources": [
+      "S032"
+    ],
+    "questions": [
+      "Q026"
+    ]
+  },
+  {
+    "id": "SGS",
+    "name": "South Georgia",
+    "kind": "territory",
+    "status": "site attribution review",
+    "entry": "",
+    "scope": "20th-century stations",
+    "limits": "Do not count site, UK company, Argentina company and Norwegian personnel as four independent industries",
+    "sources": [
+      "S026",
+      "S032"
+    ],
+    "questions": [
+      "Q025"
+    ]
+  },
+  {
+    "id": "BAS",
+    "name": "Basque maritime enterprises",
+    "kind": "cross border historical group",
+    "status": "documented nonstate episode",
+    "entry": "basque-networks",
+    "scope": "Labrador seasonal operations from 1530s",
+    "limits": "Allocate voyage records by contemporary polity/home port while retaining shared cultural history",
+    "sources": [
+      "S029",
+      "S030"
+    ],
+    "questions": [
+      "Q029"
+    ]
+  },
+  {
+    "id": "AZO",
+    "name": "Azores",
+    "kind": "subnational region",
+    "status": "documented nonstate episode",
+    "entry": "portugal",
+    "scope": "Factory 1949–1984 example",
+    "limits": "The episode does not establish complete national coverage, current law or worker outcomes.",
+    "sources": [
+      "S028",
+      "S032"
+    ],
+    "questions": [
+      "Q029"
+    ]
+  },
+  {
+    "id": "VCT",
+    "name": "Saint Vincent and the Grenadines",
+    "kind": "modern state",
+    "status": "subsistence boundary review",
+    "entry": "",
+    "scope": "Historical commercial/mixed economy needs independent review",
+    "limits": "Current subsistence context does not settle historical commercial inclusion",
+    "sources": [
+      "S032"
+    ],
+    "questions": []
+  },
+  {
+    "id": "GRC",
+    "name": "Greece",
+    "kind": "modern state",
+    "status": "ownership link review",
+    "entry": "",
+    "scope": "1950s corporate/owner link",
+    "limits": "Owner identity does not prove Greek corporate domicile or domestic industry",
+    "sources": [
+      "S032"
+    ],
+    "questions": [
+      "Q028"
+    ]
+  }
+]
