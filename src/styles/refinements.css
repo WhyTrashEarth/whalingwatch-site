@@ -777,3 +777,11 @@ html[lang="ja"] .footer-statement { font-size: clamp(1.5rem, 3vw, 2rem); }
 
 /* Page titles preserve the established appearance with correct heading levels. */
 .source-intro > h1 { font-family: var(--display); font-size: clamp(2.2rem,4.6vw,4.3rem); letter-spacing: -.06em; line-height: .95; margin: .55rem 0; }
+
+/* Historical source additions retain the established numbered source rows. */
+.source-additions-intro { padding-block: 3rem 2rem; }
+.source-additions-intro h2 { font-family: var(--display); font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.2; }
+.source-additions-intro p, .source-additions-notes p { max-width: 80ch; color: var(--muted); line-height: 1.7; }
+.source-additions-intro .source-review-date { font-size: .85rem; }
+.source-copy .source-date { margin-top: .5rem; color: var(--aqua); font-size: .8rem; }
+.source-additions-notes { padding-bottom: 3rem; }
