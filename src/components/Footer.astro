@@ -8,23 +8,60 @@ const localized = locale === 'en' ? undefined : introductions[locale];
 ---
 <footer class="site-footer" role="contentinfo" aria-label={localized?.ui.footer ?? 'Site footer'}>
   <div class="container footer-grid">
-    <div>
+    <div class="footer-brand">
       <p class="eyebrow">Whaling Watch</p>
       <p class="footer-statement">{localized?.ui.statement ?? 'Independent. International. Source-driven.'}</p>
       <p class="footer-note">{localized?.footer.note ?? 'No petitions. No donation appeals. Just careful context and the sources behind it.'}</p>
     </div>
-    <div class="footer-links">
-      {localized ? <>
+    {localized ? <div class="footer-links">
         <a href="/about/" hreflang="en">{localized.footer.about}</a>
         <a href="/resources/" hreflang="en">{localized.ui.resources}</a>
         <a href="/contact/" hreflang="en">{localized.ui.contact}</a>
-      </> : <>
-        <a href="/about/">About the project</a><a href="/resources/">Resources</a><a href="/historical-economics/">Historical economics</a><a href="/countries/history/">Country history</a><a href="/library/">Library</a><a href="/research-status/">Research status &amp; gaps</a><a href="/sources/">Source standards</a><a href="/updates/">Notable developments</a><a href="/blog/">Corrections &amp; changes</a><a href="/contact/">Contact</a>
-      </>}
       <a href="https://whytrashearth.org" target="_blank" rel="noopener noreferrer">© WhyTrashEarth</a>
-    </div>
+    </div> : <nav class="footer-navigation" aria-label="Footer navigation">
+      <section class="footer-nav-group" aria-labelledby="footer-explore">
+        <h2 id="footer-explore" class="eyebrow">Explore</h2>
+        <ul>
+          <li><a href="/countries/">Countries &amp; communities</a></li>
+          <li><a href="/historical-economics/">History &amp; economics</a></li>
+          <li><a href="/countries/history/">Historical country inventory</a></li>
+          <li><a href="/law-and-governance/">Law &amp; governance</a></li>
+          <li><a href="/sonar-and-strandings/">Sonar &amp; strandings</a></li>
+          <li><a href="/when-a-whale-comes-ashore/">Whale carcass guide</a></li>
+        </ul>
+      </section>
+      <section class="footer-nav-group" aria-labelledby="footer-research">
+        <h2 id="footer-research" class="eyebrow">Research &amp; sources</h2>
+        <ul>
+          <li><a href="/resources/">Resources hub</a></li>
+          <li><a href="/sources/">Source library</a></li>
+          <li><a href="/library/">Reading room</a></li>
+          <li><a href="/library/history/">Historical source catalogue</a></li>
+          <li><a href="/research-status/">Research status &amp; gaps</a></li>
+        </ul>
+      </section>
+      <section class="footer-nav-group" aria-labelledby="footer-project">
+        <h2 id="footer-project" class="eyebrow">Project record</h2>
+        <ul>
+          <li><a href="/about/">About the project</a></li>
+          <li><a href="/updates/">Whaling developments</a></li>
+          <li><a href="/blog/">Site corrections &amp; changes</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </section>
+      <section class="footer-nav-group" aria-labelledby="footer-site">
+        <h2 id="footer-site" class="eyebrow">Site</h2>
+        <ul>
+          <li><a href="/privacy/">Privacy policy</a></li>
+          <li><a href="https://whytrashearth.org" target="_blank" rel="noopener noreferrer">An independent project by WhyTrashEarth ↗</a></li>
+        </ul>
+      </section>
+    </nav>}
   </div>
-  <div class="container"><LanguageLinks label={localized?.ui.languages} /></div>
+  <div class="container footer-languages">
+    <p class="eyebrow">{localized?.ui.languages ?? 'Languages'}</p>
+    <LanguageLinks label={localized?.ui.languages} />
+  </div>
   <div class="footer-whale" data-whale-gallery>
     <a class="footer-whale-home" href={locale === 'en' ? '/' : `/${locale}/`} aria-label={localized?.footer.home ?? 'Return to the Whaling Watch homepage'}>
       <img class="footer-whale-art is-active" data-whale src="/images/whale.webp" alt="" />
@@ -32,7 +69,7 @@ const localized = locale === 'en' ? undefined : introductions[locale];
       <img class="footer-whale-art footer-whale-art--orca" data-whale src="/images/orca-transparent.webp" alt="" />
     </a>
   </div>
-  <div class="container footer-bottom">© <span data-current-year>{new Date().getFullYear()}</span> Whaling Watch{!localized && ' · Last updated October 24, 2026'} · <a href="/sitemap-index.xml">{localized?.footer.sitemap ?? 'Sitemap'}</a></div>
+  <div class="container footer-bottom">© <span data-current-year>{new Date().getFullYear()}</span> Whaling Watch{!localized && ' · Last updated November 3, 2026'} · <a href="/sitemap-index.xml">{localized?.footer.sitemap ?? 'XML sitemap'}</a></div>
 </footer>
 
 <script is:inline>
