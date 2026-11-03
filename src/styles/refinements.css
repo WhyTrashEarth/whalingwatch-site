@@ -785,3 +785,33 @@ html[lang="ja"] .footer-statement { font-size: clamp(1.5rem, 3vw, 2rem); }
 .source-additions-intro .source-review-date { font-size: .85rem; }
 .source-copy .source-date { margin-top: .5rem; color: var(--aqua); font-size: .8rem; }
 .source-additions-notes { padding-bottom: 3rem; }
+
+/* Footer navigation groups make the full site map easier to scan. */
+.footer-navigation {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.75rem 2rem;
+}
+.footer-nav-group h2 { margin-bottom: .55rem; }
+.footer-nav-group ul {
+  display: grid;
+  gap: .3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-nav-group a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  color: var(--muted);
+  text-decoration: none;
+  line-height: 1.4;
+}
+.footer-nav-group a:hover { color: var(--aqua); }
+.footer-languages { padding-top: 1.5rem; }
+.footer-languages > .eyebrow { margin-bottom: .25rem; }
+.site-footer .footer-languages .language-links { padding-top: 0; }
+@media (max-width: 560px) {
+  .footer-navigation { grid-template-columns: 1fr; gap: 1.4rem; }
+}
