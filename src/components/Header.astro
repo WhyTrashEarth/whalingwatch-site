@@ -1,21 +1,21 @@
 ---
 import { navState } from '../i18n/localization';
-const links = [
-  ['/countries/', 'Countries'],
-  ['/historical-economics/', 'History & economics'],
-  ['/law-and-governance/', 'Law & governance'],
-  ['/sonar-and-strandings/', 'Sonar & strandings'],
-  ['/when-a-whale-comes-ashore/', 'Whale carcass guide'],
-  ['/resources/', 'Resources'],
-  ['/about/', 'About'],
-];
+import { primaryLinks, researchRoutes } from '../data/navigation';
+type Props = { locale?: string; primaryLabel?: string; homeLabel?: string };
+const { locale = 'en', primaryLabel = 'Primary', homeLabel = 'home' } = Astro.props;
+const home = locale === 'en' ? '/' : `/${locale}/`;
+const current = (href: string) => navState(Astro.url.pathname, href)
+  ?? (href === '/resources/' && researchRoutes.some(route => navState(Astro.url.pathname, route)) ? 'true' : undefined);
 ---
 <header class="site-header" role="banner">
-  <nav aria-label="Primary" class="container nav-shell">
-    <a href="/" class="wordmark" aria-label="Whaling Watch home" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>
+  <nav aria-label={primaryLabel} class="container nav-shell">
+    <a href={home} class="wordmark" aria-label={`Whaling Watch ${homeLabel}`} aria-current={navState(Astro.url.pathname, home)}>
       <span class="wordmark-mark" aria-hidden="true">◒</span>
       <span>Whaling <em>Watch</em></span>
     </a>
-    <div class="nav-links">{links.map(([href, label]) => <a href={href} aria-current={navState(Astro.url.pathname, href)}>{label}</a>)}</div>
+    <div class="primary-navigation" lang="en">
+      <div class="nav-links">{primaryLinks.map(({ href, title }) => <a href={href} hreflang="en" aria-current={current(href)}>{title}</a>)}</div>
+      {locale !== 'en' && <p class="nav-language-note">Pages in English</p>}
+    </div>
   </nav>
 </header>

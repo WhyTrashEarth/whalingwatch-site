@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavigationHeading from '../components/NavigationHeading.astro';
+import { navigationGroups } from '../data/navigation';
+import { introductions, type IntroductionLocale } from '../i18n/introductions';
+import { localeNames, publishedTranslations } from '../i18n/localization';
+
+const [blog, updates] = await Promise.all([getCollection('blog'), getCollection('updates')]);
+const records = [
+  ...updates.map(entry => ({ ...entry, collectionLabel: 'Notable development' })),
+  ...blog.map(entry => ({ ...entry, collectionLabel: 'Site record' })),
+].sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf() || a.id.localeCompare(b.id))
+  .map(entry => ({
+    href: `/${entry.collection}/${entry.id}/`, title: entry.data.title,
+    description: entry.data.description ?? 'A dated record of changes to Whaling Watch.',
+    detail: `${entry.collectionLabel} · ${entry.data.pubDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}`,
+  }));
+const groups = navigationGroups.map(group => ({ ...group, pages: [
+  ...group.pages.map(page => ({ ...page, detail: '' })),
+  ...(group.id === 'project' ? records : []),
+] }));
+const languagePages = (Object.keys(introductions) as IntroductionLocale[]).map(locale => ({
+  locale, href: `/${locale}/`, title: localeNames[locale],
+  description: publishedTranslations.some(item => item.locale === locale && item.page.route === '/')
+    ? 'The homepage in this language.'
+    : 'A short introduction to the project and ways to contribute. Most content remains in English.',
+}));
+const translatedPages = publishedTranslations.filter(item => item.page.route !== '/');
+---
+<BaseLayout title="All pages" description="A directory of Whaling Watch’s guides, research, project records and available language pages.">
+  <section class="container history-hero directory-intro">
+    <p class="eyebrow">Site directory</p>
+    <h1>All pages.</h1>
+    <p>Explore Whaling Watch’s guides, research and project records. This directory lists pages on this site; external sources and treaty destinations remain in the relevant guides.</p>
+  </section>
+  <div class="container page-directory">
+    {groups.map(group => <section class="directory-section" aria-labelledby={`all-${group.id}`}>
+      <NavigationHeading id={`all-${group.id}`} icon={group.icon} label={group.title} />
+      <ul class="directory-list">{group.pages.map(page => <li>
+        <a href={page.href} aria-current={page.href === '/all/' ? 'page' : undefined}>
+          <span class="directory-title">{page.title}<span class="directory-arrow" aria-hidden="true">→</span></span>
+          <span class="directory-description">{page.description}</span>
+          {page.detail && <small class="directory-detail">{page.detail}</small>}
+        </a>
+      </li>)}</ul>
+    </section>)}
+    <section class="directory-section directory-languages" aria-labelledby="all-languages">
+      <NavigationHeading id="all-languages" icon="languages" label="Languages" />
+      <p>The guides and records above are in English. These are the other language pages currently available.</p>
+      <ul class="directory-list">
+        {languagePages.map(page => <li><a href={page.href} hreflang={page.locale}>
+          <span class="directory-title"><span lang={page.locale}>{page.title}</span><span class="directory-arrow" aria-hidden="true">→</span></span>
+          <span class="directory-description">{page.description}</span>
+        </a></li>)}
+        {translatedPages.map(({ locale, page }) => <li><a href={`/${locale}${page.route}`} lang={locale} hreflang={locale}>
+          <span class="directory-title">{page.title}<span class="directory-arrow" aria-hidden="true">→</span></span>
+          <span class="directory-description">{page.description}</span>
+        </a></li>)}
+      </ul>
+    </section>
+  </div>
+</BaseLayout>

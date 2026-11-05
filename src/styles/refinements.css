@@ -535,20 +535,6 @@ h3,
 .research-ledger li { padding: 1.25rem 0 1.25rem 2rem; border-bottom: 1px solid var(--line); color: var(--muted); line-height: 1.6; position: relative; }
 .research-ledger li:before { content: '—'; position: absolute; left: 0; color: var(--aqua); }
 
-@media (min-width: 761px) {
-  .nav-shell {
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 1.35rem;
-  }
-  .wordmark { white-space: nowrap; }
-  .nav-links {
-    justify-content: center;
-    gap: 1.6rem;
-  }
-}
 
 .archive-hero { padding: 8rem 0 5rem; }
 .archive-hero h1 { max-width: 12ch; margin: .7rem 0 1.25rem; font-family: var(--display); font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 400; letter-spacing: -.045em; line-height: .95; }
@@ -786,32 +772,94 @@ html[lang="ja"] .footer-statement { font-size: clamp(1.5rem, 3vw, 2rem); }
 .source-copy .source-date { margin-top: .5rem; color: var(--aqua); font-size: .8rem; }
 .source-additions-notes { padding-bottom: 3rem; }
 
-/* Footer navigation groups make the full site map easier to scan. */
-.footer-navigation {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.75rem 2rem;
-}
-.footer-nav-group h2 { margin-bottom: .55rem; }
-.footer-nav-group ul {
-  display: grid;
-  gap: .3rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.footer-nav-group a {
-  display: inline-flex;
+/* Phase 1: a three-link header, coordinated navigation groups and directory. */
+.nav-shell {
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  min-height: 36px;
-  color: var(--muted);
-  text-decoration: none;
-  line-height: 1.4;
+  gap: 1.5rem;
 }
-.footer-nav-group a:hover { color: var(--aqua); }
-.footer-languages { padding-top: 1.5rem; }
-.footer-languages > .eyebrow { margin-bottom: .25rem; }
-.site-footer .footer-languages .language-links { padding-top: 0; }
+.wordmark { display: inline-flex; align-items: center; flex: 0 0 auto; white-space: nowrap; }
+.primary-navigation { min-width: 0; flex: 0 1 22rem; container-type: inline-size; }
+.nav-links { flex-wrap: nowrap; justify-content: flex-end; gap: clamp(1rem, 3vw, 2rem); }
+.nav-links a { display: inline-flex; align-items: center; min-height: 44px; white-space: nowrap; font-size: .95rem; }
+.nav-language-note { margin: .15rem 0 0; color: var(--muted); text-align: right; font-size: .75rem; }
+
+.navigation-heading {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  margin: 0;
+  color: var(--aqua);
+  font-family: Atkinson, system-ui, sans-serif;
+  font-size: .85rem;
+  font-weight: 700 !important;
+  line-height: 1.5;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.navigation-icon { flex: 0 0 24px; }
+/* A full-width rule is the immediate sibling of every group heading. */
+.navigation-divider { width: 100%; height: 1px; margin: .9rem 0 1rem; background: var(--aqua); opacity: .55; }
+.footer-top { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 3rem; }
+.footer-brand { max-width: 46rem; }
+.footer-note { margin-bottom: 0; }
+.footer-owner { max-width: 22ch; color: var(--muted); font-size: .85rem; line-height: 1.6; }
+.footer-navigation { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; }
+.footer-language-note { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: .9rem; }
+.footer-nav-group ul { display: grid; list-style: none; margin: 0; padding: 0; }
+.footer-nav-group a { display: inline-flex; align-items: center; min-height: 44px; padding-block: .45rem; color: var(--muted); text-decoration: none; line-height: 1.5; }
+.footer-nav-group a:hover { color: var(--aqua); text-decoration: underline; }
+.footer-nav-group a[aria-current] { color: var(--foam); text-decoration: underline; text-decoration-thickness: 2px; }
+.footer-languages { padding-top: 2.5rem; }
+.site-footer .footer-languages .language-links { padding: 0; gap: .5rem 2rem; }
+
+.page-directory { padding-bottom: 6rem; }
+.directory-intro { padding-bottom: 3rem; }
+.directory-section + .directory-section { margin-top: 3.5rem; }
+.directory-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3rem; list-style: none; padding: 0; margin: 0; }
+.directory-list li { min-width: 0; border-bottom: 1px solid var(--line); }
+.directory-list a { display: block; height: 100%; padding: 1.15rem 0; text-decoration: none; }
+.directory-title { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; color: var(--foam); font-family: var(--display); font-size: clamp(1.15rem, 2vw, 1.4rem); line-height: 1.45; }
+.directory-arrow { flex: 0 0 auto; color: var(--aqua); font-family: Atkinson, sans-serif; }
+.directory-description { display: block; max-width: 60ch; margin-top: .5rem; color: var(--muted); font-size: .95rem; line-height: 1.6; }
+.directory-detail { display: block; margin-top: .6rem; color: var(--aqua); font-size: .75rem; line-height: 1.5; }
+.directory-list a:hover .directory-title, .directory-list a[aria-current] .directory-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.directory-languages > p { color: var(--muted); line-height: 1.7; }
+
+/* Subtle, consistent tracking; italics inherit it. Japanese keeps natural spacing. */
+.hero h1, .ashore-hero h1 { letter-spacing: .01em; }
+.section-heading h2, .closing-section h2,
+.contact-hero h1, .update-intro h1, .update-article h1,
+.archive-hero h1, .history-hero h1, .about-page h1, .country-intro h1,
+.translated-page h1, .book-hero h1, .elo-page h1, .source-intro > h1,
+.country-group-heading h2, .worldwide-copy h2, .home-feature h2,
+.ashore-intro h2, .science-grid h2, .case-heading h2,
+.responder-note h2, .research-ledger h2 { letter-spacing: .008em; }
+html[lang="ja"] .translated-page h1 { letter-spacing: normal; }
+
+@media (max-width: 960px) {
+  .sonar-findings { grid-template-columns: minmax(0, 1fr); }
+  .sonar-findings article { min-width: 0; overflow-wrap: anywhere; }
+  .sonar-findings h2 { font-size: clamp(1.65rem, 5vw, 2rem); }
+}
+@media (max-width: 760px) {
+  .footer-top { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+  .footer-owner { max-width: none; }
+  .footer-navigation { grid-template-columns: 1fr; gap: 2rem; }
+  .directory-list { grid-template-columns: 1fr; }
+  .directory-section + .directory-section { margin-top: 2.5rem; }
+}
 @media (max-width: 560px) {
-  .footer-navigation { grid-template-columns: 1fr; gap: 1.4rem; }
+  .nav-shell { flex-direction: column; align-items: flex-start; gap: .5rem; }
+  .primary-navigation { width: 100%; flex-basis: auto; }
+  .nav-links { justify-content: space-between; gap: .75rem; }
+  .nav-language-note { text-align: left; }
+}
+@media (max-width: 360px) {
+  .archive-hero h1 { font-size: clamp(2.75rem, 15vw, 3.5rem); }
+}
+/* Enlarged text switches the whole navigation to a stack, never one orphan link. */
+@container (max-width: 17em) {
+  .nav-links { flex-direction: column; align-items: flex-start; gap: 0; }
 }
