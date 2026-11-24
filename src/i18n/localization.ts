@@ -68,18 +68,18 @@ export function originalPath(path: string) {
 }
 export function equivalents(path: string) {
   const route = originalPath(path);
-  // The short introductions are the initial localized home experiences.
-  // They are not alternate versions of English research or About pages.
-  if (route === '/') return [
-    { locale: 'en' as const, href: '/' },
-    ...introductionLocales.map(locale => ({ locale, href: `/${locale}/` })),
-  ];
-  return [ { locale: 'en' as const, href: route }, ...publishedTranslations.filter(item => item.page.route === route).map(item => ({ locale: item.locale, href: `/${item.locale}${route}` })) ];
+  const translated = publishedTranslations.filter(item => item.page.route === route);
+  const locale = path.match(/^\/(is|ja|nb|pt-br)(?:\/|$)/)?.[1] as IntroductionLocale | undefined;
+  if (locale && route === '/' && !translated.some(item => item.locale === locale)) {
+    return [{ locale, href: `/${locale}/` }];
+  }
+  return [{ locale: 'en' as const, href: route }, ...translated.map(item => ({ locale: item.locale, href: `/${item.locale}${route}` }))];
 }
 export function languageDestinations(path: string) {
-  const available = equivalents(/^\/404(?:\/|\.html)?$/.test(path) ? '/' : path);
+  const safePath = /^\/404(?:\/|\.html)?$/.test(path) ? '/' : path;
+  const available = equivalents(safePath);
   return (Object.keys(localeNames) as (keyof typeof localeNames)[]).map(locale =>
-    available.find(item => item.locale === locale) ?? { locale, href: `/${locale}/` }
+    available.find(item => item.locale === locale) ?? { locale, href: locale === 'en' ? originalPath(safePath) : `/${locale}/` }
   );
 }
 export function navState(path: string, href: string): 'page' | 'true' | undefined {

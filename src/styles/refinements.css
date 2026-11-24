@@ -863,3 +863,120 @@ html[lang="ja"] .translated-page h1 { letter-spacing: normal; }
 @container (max-width: 17em) {
   .nav-links { flex-direction: column; align-items: flex-start; gap: 0; }
 }
+
+/* November 2026: clearer entry points, compact navigation and source-led profiles. */
+.wordmark { letter-spacing: .01em; gap: .55rem; }
+.wordmark-whale { width: 32px; height: 32px; object-fit: contain; }
+.primary-navigation { flex: 0 1 auto; container-type: normal; }
+.nav-links { flex-wrap: wrap; gap: .2rem 1.4rem; }
+.home-hero { padding: 4.5rem 0 5rem; background: radial-gradient(ellipse at 75% 40%, rgba(36,132,166,.22), transparent 65%); }
+.home-hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 1rem; }
+.home-hero h1 { font-family: var(--display); font-size: clamp(3rem, 5.7vw, 5.5rem); font-weight: 400; line-height: 1.08; letter-spacing: .005em; margin: 0 0 1.5rem; }
+.home-lede { color: var(--foam); font-size: 1.17rem; line-height: 1.7; max-width: 54ch; }
+.home-audience { color: var(--muted); line-height: 1.65; max-width: 55ch; margin-top: 1.5rem; font-size: .92rem; }
+.home-whale { margin: 0; min-width: 0; }
+.home-whale img { width: 100%; height: auto; display: block; }
+.home-whale figcaption, .home-guides figcaption { color: var(--muted); text-align: center; font-size: .8rem; }
+.home-section { padding-block: 3.5rem; }
+.home-section + .home-section { border-top: 1px solid var(--line); }
+.home-section h2, .home-method h2, .home-contact h2 { font-family: var(--display); font-weight: 400; font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1.2; letter-spacing: .005em; margin: 0 0 1rem; }
+.home-section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap; }
+.section-intro { max-width: 76ch; color: var(--muted); line-height: 1.7; }
+.home-country-labels, .home-country-list a { display: grid; grid-template-columns: 1.3fr 1fr 1.2fr; align-items: baseline; gap: 1.5rem; }
+.home-country-labels { color: var(--aqua); font-size: .8rem; padding: 1.5rem 0 .7rem; }
+.home-country-list { padding: 0; margin: 0; list-style: none; }
+.home-country-list li { border-top: 1px solid var(--line); }
+.home-country-list a { padding: 1.3rem 0; text-decoration: none; line-height: 1.5; }
+.home-country-list strong { color: var(--foam); font-size: 1.1rem; font-weight: 400; }
+.home-country-list strong span { margin-left: .8rem; color: var(--aqua); }
+.home-country-list a > span { color: var(--muted); font-size: .95rem; }
+.home-country-list a:hover strong { text-decoration: underline; }
+.home-country-list a:hover { background: rgba(117,241,219,.035); }
+.home-review-date { color: var(--muted); font-size: .8rem; line-height: 1.6; margin-top: 1.5rem; }
+.home-updates { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2rem; margin-top: 2rem; }
+.home-updates article { padding-top: 1.2rem; border-top: 1px solid var(--aqua); }
+.home-updates time, .home-update-topic { font-size: .8rem; color: var(--aqua); }
+.home-update-topic { margin-block: .6rem; }
+.home-updates h3, .home-guides h3 { font-family: var(--display); font-weight: 400; font-size: 1.5rem; line-height: 1.35; margin: .7rem 0; }
+.home-updates p:not(.home-update-topic), .home-guides p { color: var(--muted); line-height: 1.7; }
+.home-updates h3 a, .home-guides h3 a { text-decoration-thickness: 1px; }
+.home-method { padding-block: 3.5rem; }
+.home-method .principles-grid { gap: 2.5rem; }
+.home-method .principles-grid h3 { font-size: 1.65rem; }
+.home-method-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 1.5rem; }
+.home-guides { display: grid; grid-template-columns: 1.4fr .6fr; align-items: center; gap: 4rem; padding-bottom: 4.5rem; }
+.home-guides ul { padding: 0; list-style: none; }
+.home-guides li { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.home-guides figure { margin: 0; }
+.home-guides img { width: 100%; height: auto; }
+.home-contact { background: var(--aqua); color: var(--abyss); padding-block: 3.5rem; }
+.home-contact-grid { display: grid; grid-template-columns: 1.2fr .8fr; gap: 3rem; align-items: center; }
+.home-contact p { max-width: 65ch; line-height: 1.7; }
+.home-contact .button { border: 1px solid currentColor; color: var(--abyss); }
+.home-contact a:hover { color: #134e5d; }
+.home-contact img { width: 100%; height: auto; }
+.site-footer { padding-top: 2.5rem; }
+.footer-top { margin-bottom: 2rem; align-items: center; }
+.footer-statement { font-family: Atkinson,system-ui,sans-serif; font-size: 1.1rem; letter-spacing: 0; }
+.footer-brand > .eyebrow { display: none; }
+.footer-note { font-size: .9rem; }
+.footer-navigation { gap: 2rem; }
+.footer-navigation .navigation-heading { font-size: .75rem; letter-spacing: .06em; }
+.footer-navigation .navigation-icon, .footer-navigation .navigation-divider { display: none; }
+.footer-nav-group ul { margin-top: .6rem; }
+.footer-nav-group a { font-size: .9rem; }
+.footer-final { border-top: 1px solid var(--line); margin-top: 2rem; padding-block: 1.2rem; }
+.footer-final .language-links { padding: 0; gap: .25rem 1.3rem; }
+.footer-final > p { color: var(--muted); font-size: .8rem; line-height: 1.8; }
+.country-profile { max-width: 850px; padding-block: 3rem 5rem; }
+.country-profile h1 { font-family: var(--display); font-size: clamp(2.7rem,5.4vw,4.7rem); font-weight: 400; line-height: 1.1; margin: 1.5rem 0; }
+.country-profile h2 { font-family: var(--display); font-size: clamp(1.8rem,3vw,2.4rem); font-weight: 400; line-height: 1.2; }
+.country-profile p, .country-profile li { line-height: 1.75; color: var(--muted); }
+.country-profile section { margin-top: 2.5rem; }
+.country-profile .profile-lede { font-size: 1.15rem; color: var(--foam); }
+.profile-facts { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.5rem; padding: 1.5rem; border: 1px solid var(--line); background: rgba(6,47,74,.35); }
+.profile-facts div { min-width: 0; }
+.profile-facts dt { color: var(--aqua); font-size: .8rem; margin-bottom: .4rem; }
+.profile-facts dd { margin: 0; line-height: 1.6; }
+.profile-figures { padding-left: 1.25rem; }
+.profile-figures li { margin-block: 1rem; }
+.profile-figures strong { color: var(--foam); }
+.profile-source-links { font-size: .85rem; }
+.profile-sources { padding-left: 1.25rem; }
+.profile-sources li { margin-bottom: 1.2rem; overflow-wrap: anywhere; }
+.profile-sources small { display: block; }
+.profile-citation { border-top: 1px solid var(--line); padding-top: 1.5rem; font-size: .85rem; overflow-wrap: anywhere; }
+@media (max-width: 960px) {
+  .nav-shell { flex-direction: column; align-items: flex-start; gap: .75rem; }
+  .primary-navigation { width: 100%; }
+  .nav-links { justify-content: flex-start; }
+  .home-hero-grid { grid-template-columns: 1fr; }
+  .home-hero-copy { max-width: 700px; }
+  .home-whale { max-width: 530px; justify-self: center; }
+  .home-hero { padding-block: 2.5rem; }
+  .home-updates { grid-template-columns: 1fr; gap: 1.5rem; }
+  .home-guides { gap: 2rem; }
+}
+@media (max-width: 600px) {
+  .nav-links { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .1rem 1.15rem; }
+  .nav-links a { font-size: .88rem; }
+  .home-hero h1 { font-size: clamp(2.65rem,11.5vw,3.8rem); }
+  .home-lede { font-size: 1.05rem; }
+  .hero-actions { gap: 1rem; margin-top: 1.5rem; }
+  .hero-actions .button { max-width: 100%; line-height: 1.45; }
+  .home-section { padding-block: 2.5rem; }
+  .home-country-labels { display: none; }
+  .home-country-list a { grid-template-columns: 1fr; gap: .3rem; }
+  .home-country-list a > span:last-child { font-size: .85rem; }
+  .home-method .principles-grid, .home-guides, .home-contact-grid, .profile-facts { grid-template-columns: 1fr; }
+  .home-method .principles-grid { gap: 1rem; }
+  .home-guides figure { max-width: 220px; margin-inline: auto; }
+  .home-contact-grid { gap: 1rem; }
+  .home-contact img { max-width: 320px; justify-self: center; }
+  .footer-navigation { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.5rem; }
+  .footer-nav-group:last-child { grid-column: 1 / -1; }
+  .footer-nav-group:last-child ul { grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 1rem; }
+  .footer-top { gap: 1rem; }
+  .footer-owner { max-width: none; }
+  .country-profile { padding-top: 2rem; }
+}

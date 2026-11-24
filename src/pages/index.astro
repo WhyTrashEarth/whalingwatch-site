@@ -1,14 +1,53 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-import ProjectBackground from "../components/ProjectBackground.astro";
-const watchAreas = [["Iceland", "Commercial", "Reservation framework"], ["Norway", "Commercial", "IWC objection"], ["Japan", "Commercial", "National framework"], ["Greenland", "Subsistence", "Community & quota context"], ["United States", "Subsistence", "Community & legal context"], ["St. Vincent & the Grenadines", "Subsistence", "Community & quota context"]];
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectBackground from '../components/ProjectBackground.astro';
+import { getCollection } from 'astro:content';
+const watchAreas = [
+  ['Iceland', 'Commercial framework', 'IWC reservation', 'iceland'],
+  ['Norway', 'Commercial', 'IWC objection', 'norway'],
+  ['Japan', 'Commercial', 'National framework', 'japan'],
+  ['Greenland', 'Aboriginal subsistence', 'IWC + Greenlandic management', 'greenland'],
+  ['United States', 'Aboriginal subsistence', 'Tribal + federal frameworks', 'united-states'],
+  ['St Vincent & the Grenadines', 'Aboriginal subsistence', 'Bequia / IWC framework', 'st-vincent-and-the-grenadines'],
+];
+const entries = (await getCollection('updates')).sort((a,b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0,3);
+const guides = [
+  ['/law-and-governance/', 'Is whaling legal?', 'Treaties, national law, permits and catch limits: the rules depend on the place and the practice.'],
+  ['/when-a-whale-comes-ashore/', 'When a whale comes ashore', 'A field guide to carcass management, research, preservation and disposal.'],
+  ['/historical-economics/', 'The historical economics of whaling', 'Products, markets and livelihoods, with sourced examples and their limits.'],
+  ['/countries/history/', 'Country-history inventory', 'Documented historical episodes, sources, coverage and open questions.'],
+];
 ---
-<BaseLayout title="Contemporary whaling, in context" description="Explore contemporary whaling by country, legal framework, community context, and primary source with an independent international reference.">
-  <section class="hero ocean-section"><div class="container hero-layout"><div class="hero-copy"><p class="eyebrow">An independent reference</p><h1>Whaling is global.<br /><em>So is the context.</em></h1><p class="hero-lede">Whaling Watch maps contemporary whaling across borders, legal systems, cultures, and changing ecological questions—without reducing a complicated subject to a slogan.</p><div class="hero-actions"><a class="button button-primary" href="/countries/">Explore country context <span aria-hidden="true">↓</span></a><a class="text-link" href="/sources/">How we use sources <span aria-hidden="true">→</span></a></div></div><div class="hero-orbit" aria-hidden="true"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><p>OBSERVE<br />BEFORE<br />JUDGING</p><span class="bubble b1"></span><span class="bubble b2"></span><span class="bubble b3"></span></div></div><div class="surface-wave" aria-hidden="true"></div></section>
-  <section class="container intro-section"><div class="section-heading split-heading"><p class="eyebrow">The watch</p><h2>One subject.<br /><em>Many realities.</em></h2><p>Commercial whaling, Aboriginal and subsistence whaling, national law, treaty law, population science, food systems, cultural continuity: these are not interchangeable categories. The site is built to make the distinctions visible.</p></div></section>
-  <section class="container home-feature"><div><p class="eyebrow">New field guide</p><h2>When a whale comes ashore.</h2><p>Burial, towing, transport, research, preservation—even deliberate explosives. What happens after a large whale dies near a populated coast is a scientific, cultural, environmental, and public-works decision with no universal answer.</p><a class="button button-secondary" href="/when-a-whale-comes-ashore/">Read the field guide <span aria-hidden="true">→</span></a></div><div class="home-feature-mark" aria-hidden="true"><span>01</span><small>FIELD<br />NOTE</small></div></section>
-  <section class="container country-section"><div class="section-heading compact-heading"><p class="eyebrow">Country context</p><h2>Look wider than one flag.</h2><a class="text-link" href="/countries/">View the country index →</a></div><div class="country-grid">{watchAreas.map(([country, type, context], index) => (<a class={`country-card country-card-${index + 1}`} href="/countries/"><span class="card-number">0{index + 1}</span><h3>{country}</h3><p>{type}</p><small>{context}</small><span class="card-arrow" aria-hidden="true">↗</span></a>))}</div></section>
-  <section class="depth-band"><div class="container principles-grid"><article><span>01</span><h3>Define the practice.</h3><p>Names matter. The kind of hunt, species, location, legal basis, and stated purpose all change the meaning of a fact.</p></article><article><span>02</span><h3>Show the rulebook.</h3><p>“Legal” and “illegal” are rarely enough. Treaties, reservations, objections, permits, quotas, and national law belong in the picture.</p></article><article><span>03</span><h3>Keep the receipts.</h3><p>Every substantial claim should lead back to a primary, scientific, legal, or clearly identified community source.</p></article></div></section>
-  <section class="container closing-section"><p class="eyebrow">The long view</p><h2>Reliable information should be easier to find than a stereotype.</h2><p>Whaling Watch is being built as an accessible record: what is happening, where, why, under which rules, and how the picture changes over time.</p><p>Explore the <a href="/historical-economics/">historical economics of whaling</a> and a growing <a href="/countries/history/">country-history inventory</a>, with sources and open questions alongside the findings. Follow the dated record of <a href="/updates/">whaling developments</a> as the picture changes.</p><a class="button button-secondary" href="/about/">Read the mission <span aria-hidden="true">→</span></a></section>
+<BaseLayout title="The independent whaling reference" description="Whaling Watch is a free, independent reference on whaling: who hunts whales, under which laws, and what the records show. Explore dated research and its sources.">
+  <section class="home-hero">
+    <div class="container home-hero-grid">
+      <div class="home-hero-copy">
+        <h1>Whaling, without the campaign.</h1>
+        <p class="home-lede">Whaling Watch is a free, independent reference on whaling: who hunts whales today, under which laws, and what the records show. Our research links back to its sources.</p>
+        <div class="hero-actions"><a class="button button-primary" href="/countries/">See who hunts whales today <span aria-hidden="true">→</span></a><a class="text-link" href="/sources/">How we use sources</a></div>
+        <p class="home-audience">For reporters, teachers and students, researchers, and anyone who wants the facts before the argument.</p>
+      </div>
+      <figure class="home-whale"><img src="/images/whale-blue.webp" width="1600" height="1067" alt="A blue whale illustrated by Angga" fetchpriority="high" /><figcaption>Illustration by <a href="https://vgen.co/AnggaPokoke/">Angga</a></figcaption></figure>
+    </div>
+  </section>
+  <section class="container home-section" aria-labelledby="who-hunts">
+    <div class="home-section-heading"><h2 id="who-hunts">Who hunts whales today?</h2><a class="text-link" href="/countries/">All countries & communities <span aria-hidden="true">→</span></a></div>
+    <p class="section-intro">Commercial whaling and Aboriginal subsistence whaling have different legal frameworks, purposes and communities. These profiles explain the distinctions; a legal framework does not mean a hunt took place this year.</p>
+    <div class="home-country-labels" aria-hidden="true"><span>Country or community</span><span>Kind of whaling</span><span>Framework</span></div>
+    <ul class="home-country-list">{watchAreas.map(([name,practice,framework,slug]) => <li><a href={`/countries/${slug}/`}><strong>{name}<span aria-hidden="true">↗</span></strong><span>{practice}</span><span>{framework}</span></a></li>)}</ul>
+    <p class="home-review-date">Profiles reviewed <time datetime="2026-11-23">November 23, 2026</time>. Each page records its sources and remaining gaps.</p>
+  </section>
+  <section class="container home-section" aria-labelledby="latest-developments">
+    <div class="home-section-heading"><h2 id="latest-developments">Latest developments</h2><a class="text-link" href="/updates/">All developments <span aria-hidden="true">→</span></a></div>
+    <p class="section-intro">A dated record of policy, operations and research. Publication dates and source dates are identified in each entry.</p>
+    <div class="home-updates">{entries.map(entry => <article><time datetime={entry.data.pubDate.toISOString()}>{entry.data.pubDate.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'})}</time><p class="home-update-topic">{entry.data.jurisdiction}</p><h3><a href={`/updates/${entry.id}/`}>{entry.data.title}</a></h3><p>{entry.data.description}</p></article>)}</div>
+  </section>
+  <section class="depth-band home-method" aria-labelledby="how-we-work"><div class="container">
+    <h2 id="how-we-work">How we handle a claim</h2>
+    <div class="principles-grid"><article><h3>Define the practice.</h3><p>Names matter. The kind of hunt, species, location, legal basis, and stated purpose all change the meaning of a fact.</p></article><article><h3>Show the rulebook.</h3><p>“Legal” and “illegal” are rarely enough. Treaties, reservations, objections, permits, quotas, and national law belong in the picture.</p></article><article><h3>Keep the receipts.</h3><p>Every substantial claim should lead back to a primary, scientific, legal, or clearly identified community source.</p></article></div>
+    <div class="home-method-links"><a href="/sources/">Sources & standards</a><a href="/research-status/">Research gaps</a><a href="/blog/">Corrections & changes</a></div>
+  </div></section>
+  <section class="container home-section home-guides" aria-labelledby="guides"><div><h2 id="guides">Explore the guides</h2><ul>{guides.map(([href,title,description]) => <li><h3><a href={href}>{title} <span aria-hidden="true">→</span></a></h3><p>{description}</p></li>)}</ul><p><a href="/all/">Browse every page</a>, including <a href="/sonar-and-strandings/">sonar and strandings</a>, the <a href="/library/">reading room</a> and the <a href="/library/history/">historical source catalogue</a>.</p></div><figure><img src="/images/orca-transparent.webp" width="1254" height="1254" alt="An orca illustrated by Angga" loading="lazy" /><figcaption>Original illustration by Angga</figcaption></figure></section>
   <ProjectBackground standalone />
+  <section class="home-contact" aria-labelledby="send-source"><div class="container home-contact-grid"><div><h2 id="send-source">Send a source or a correction.</h2><p>Whaling Watch grows through careful public participation. Whether you have a source, a correction, a question, or firsthand material, we want to hear from you.</p><p>Tell us what you are sharing, where it came from, what needs checking, and whether we may credit or contact you. For images, include the creator and reuse information.</p><a class="button" href="/contact/">How to contribute <span aria-hidden="true">→</span></a><p><a href="mailto:hello@whaling.watch">hello@whaling.watch</a></p></div><img src="/images/whale.webp" width="2552" height="1378" alt="A whale illustrated by Angga" loading="lazy" /></div></section>
 </BaseLayout>

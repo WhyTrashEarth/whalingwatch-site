@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { getCollection, render } from "astro:content";
+import pageModified from "../../data/page-modified.json";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -11,7 +12,7 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<BaseLayout title={post.data.title} description={post.data.description ?? "A Whaling Watch correction or project update."}>
+<BaseLayout title={post.data.title} description={post.data.description ?? "A Whaling Watch correction or project update."} article={{ published: post.data.pubDate.toISOString(), modified: post.data.updatedDate?.toISOString() ?? pageModified[Astro.url.pathname as keyof typeof pageModified] ?? post.data.pubDate.toISOString() }}>
   <article class="container closing-section update-article">
     <p class="eyebrow">Corrections &amp; changes</p>
     <h1>{post.data.title}</h1>

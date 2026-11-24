@@ -1,0 +1,459 @@
+[
+  {
+    "slug": "iceland",
+    "name": "Iceland",
+    "region": "North Atlantic",
+    "practice": "Commercial framework",
+    "framework": "IWC reservation and Icelandic licensing",
+    "species": [
+      "Fin whale",
+      "Common minke whale"
+    ],
+    "summary": "Iceland's commercial framework combines a reservation to the IWC moratorium with national licences. Permission to hunt and a year's actual catches are separate questions.",
+    "paragraphs": [
+      {
+        "heading": "Which rules apply?",
+        "text": "Iceland rejoined the IWC in 2002 with a reservation to the commercial-whaling moratorium. Within Iceland, the Whaling Act requires a ministry licence and allows regulation of areas, seasons, quantities and equipment. The official statutory compilation inspected for this page is dated October 1, 2026.",
+        "sourceIds": [
+          "iceland-iwc",
+          "iceland-law"
+        ]
+      },
+      {
+        "heading": "Which whales are covered?",
+        "text": "The government's December 2024 licensing announcement identifies fin and minke whales as the permitted species. It records licences issued to Hvalur hf. for fin whales and to a named minke-whaling vessel. That announcement establishes what was authorised then; it does not establish that either operation caught whales in every subsequent year.",
+        "sourceIds": [
+          "iceland-licences"
+        ]
+      },
+      {
+        "heading": "How should the 2026 record be read?",
+        "text": "Our existing Iceland development note separately attributes the reported end of the 2026 season and proposed reform to their sources. The reported catch and season-duration discrepancy still needs reconciliation with an official catch return. A reported reform plan should not be presented as an enacted prohibition.",
+        "sourceIds": [
+          "iceland-site-note",
+          "iceland-law"
+        ]
+      }
+    ],
+    "figures": [],
+    "sources": [
+      {
+        "id": "iceland-iwc",
+        "title": "IWC: Commercial whaling",
+        "url": "https://iwc.int/management-and-conservation/whaling/commercial",
+        "published": "Undated overview",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "iceland-law",
+        "title": "Alþingi: Whaling Act No. 26/1949, Articles 1 and 4",
+        "url": "https://www.althingi.is/lagas/nuna/1949026.html",
+        "published": "Consolidated edition dated October 1, 2026",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "iceland-licences",
+        "title": "Government of Iceland: Fin- and minke-whaling licences issued",
+        "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2024-12-05-Leyfi-til-veida-a-langreydum-og-hrefnu-gefin-ut/",
+        "published": "2024-12-05",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "iceland-site-note",
+        "title": "Whaling Watch: Iceland's 2026 season and reform record",
+        "url": "/updates/iceland-2026-season-and-reform/",
+        "published": "September 26, 2026; research review October 24, 2026",
+        "checked": "2026-11-23"
+      }
+    ],
+    "limitations": [
+      "No independently reconciled 2026 official catch total is presented here; this is not a claim of zero catch.",
+      "The 2024 licence announcement's scientific advice covers an older period and is not reused as a verified 2026 quota.",
+      "This is a guide to dated sources, not a legal determination about a particular operation."
+    ]
+  },
+  {
+    "slug": "norway",
+    "name": "Norway",
+    "region": "North Atlantic",
+    "practice": "Commercial whaling",
+    "framework": "IWC objection and national quotas",
+    "species": [
+      "Common minke whale"
+    ],
+    "summary": "Norway conducts commercial minke whaling under its objection to the IWC moratorium and sets national quotas. A quota is a permitted ceiling, not a count of animals caught.",
+    "paragraphs": [
+      {
+        "heading": "Which rules apply?",
+        "text": "Norway lodged a formal objection to the IWC commercial-whaling moratorium. Its government describes a national system of annual quotas, vessel monitoring and hunter training for the minke-whale hunt.",
+        "sourceIds": [
+          "norway-iwc",
+          "norway-management"
+        ]
+      },
+      {
+        "heading": "What does the 2026 announcement say?",
+        "text": "The ministry announced a quota of 1,641 minke whales for 2026 on January 30, 2026. It explains that unused quota carried over from earlier years accounts for the increase. This is an authorisation figure, not a 2026 catch return.",
+        "sourceIds": [
+          "norway-quota"
+        ]
+      },
+      {
+        "heading": "What catch is documented here?",
+        "text": "The same announcement reports 429 whales caught by 10 vessels in 2025. Keeping that year visible prevents the previous season's reported catch from being mistaken for the current season's result.",
+        "sourceIds": [
+          "norway-quota"
+        ]
+      }
+    ],
+    "figures": [
+      {
+        "label": "Minke-whale quota",
+        "value": "1,641",
+        "period": "2026",
+        "sourceId": "norway-quota",
+        "note": "National quota announced January 30, 2026; includes carry-over. Not actual catch."
+      },
+      {
+        "label": "Reported minke-whale catch",
+        "value": "429",
+        "period": "2025",
+        "sourceId": "norway-quota",
+        "note": "Previous-year catch reported by the ministry. Not a 2026 result."
+      }
+    ],
+    "sources": [
+      {
+        "id": "norway-iwc",
+        "title": "IWC: Commercial whaling",
+        "url": "https://iwc.int/management-and-conservation/whaling/commercial",
+        "published": "Undated overview",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "norway-management",
+        "title": "Government of Norway: Whaling",
+        "url": "https://www.regjeringen.no/en/topics/food-fisheries-and-agriculture/fishing-and-aquaculture/kval-og-sel/whaling/id2001553/",
+        "published": "Updated January 9, 2023",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "norway-quota",
+        "title": "Government of Norway: Higher minke-whale quota in 2026",
+        "url": "https://www.regjeringen.no/no/aktuelt/hogare-vagekvalkvote-i-2026/id3147611/",
+        "published": "2026-01-30",
+        "checked": "2026-11-23"
+      }
+    ],
+    "limitations": [
+      "A final 2026 catch return has not been reconciled for this page. No current-year catch total is inferred from the quota.",
+      "The ministry's assessments of sustainability and animal welfare are government positions; the figures above do not independently establish those assessments."
+    ]
+  },
+  {
+    "slug": "japan",
+    "name": "Japan",
+    "region": "North Pacific",
+    "practice": "Commercial whaling",
+    "framework": "National management following IWC withdrawal",
+    "species": [
+      "Sei whale",
+      "Bryde’s whale",
+      "Common minke whale",
+      "Fin whale"
+    ],
+    "summary": "Japan resumed commercial whaling in 2019 under national management. Its 2026 total allowable catches are documented by species and must be distinguished from actual landings.",
+    "paragraphs": [
+      {
+        "heading": "Where and under which framework?",
+        "text": "Japan's withdrawal from the International Convention for the Regulation of Whaling took effect on June 30, 2019. The Fisheries Agency says commercial operations are restricted to Japan's territorial sea and exclusive economic zone. Fin whales were added to the target species in July 2024.",
+        "sourceIds": [
+          "japan-policy"
+        ]
+      },
+      {
+        "heading": "What is authorised for 2026?",
+        "text": "The Japanese instrument revised September 18, 2026 sets total allowable catches for January 1–December 31, 2026: 56 sei, 153 Bryde’s, 145 minke and 58 fin whales. These are TAC values, not the number actually caught.",
+        "sourceIds": [
+          "japan-tac"
+        ]
+      },
+      {
+        "heading": "Why the document version matters",
+        "text": "The September amendment moves eight Bryde’s-whale allocations from the coastal category to the factory-ship category, leaving the species TAC unchanged. Older English initial-allocation material should not be substituted for the revised Japanese allocation. Our research-status page retains the unresolved translation and catch-reconciliation questions.",
+        "sourceIds": [
+          "japan-amendment",
+          "japan-research-status"
+        ]
+      }
+    ],
+    "figures": [
+      {
+        "label": "Sei-whale TAC",
+        "value": "56",
+        "period": "2026",
+        "sourceId": "japan-tac",
+        "note": "September 18 revised instrument, page 1. Authorised limit, not catch."
+      },
+      {
+        "label": "Bryde’s-whale TAC",
+        "value": "153",
+        "period": "2026",
+        "sourceId": "japan-tac",
+        "note": "September 18 revised instrument, page 2. Authorised limit, not catch."
+      },
+      {
+        "label": "Minke-whale TAC",
+        "value": "145",
+        "period": "2026",
+        "sourceId": "japan-tac",
+        "note": "September 18 revised instrument, page 3. Authorised limit, not catch."
+      },
+      {
+        "label": "Fin-whale TAC",
+        "value": "58",
+        "period": "2026",
+        "sourceId": "japan-tac",
+        "note": "September 18 revised instrument, page 4. Authorised limit, not catch."
+      }
+    ],
+    "sources": [
+      {
+        "id": "japan-policy",
+        "title": "Japan Fisheries Agency: Policy after withdrawal from the ICRW",
+        "url": "https://www.jfa.maff.go.jp/e/whale/cooperation.html",
+        "published": "Undated overview; includes 2024 policy changes",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "japan-tac",
+        "title": "Japan Fisheries Agency: Revised 2026 TAC instrument (Japanese PDF)",
+        "url": "https://www.jfa.maff.go.jp/j/whale/attach/pdf/index-121.pdf",
+        "published": "December 19, 2025; revised September 18, 2026",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "japan-amendment",
+        "title": "Japan Fisheries Agency: September 18 TAC amendment comparison (Japanese PDF)",
+        "url": "https://www.jfa.maff.go.jp/j/whale/attach/pdf/index-123.pdf",
+        "published": "2026-09-18",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "japan-research-status",
+        "title": "Whaling Watch: Japan TAC review and unresolved questions",
+        "url": "/research-status/#japan",
+        "published": "Research review October 24, 2026",
+        "checked": "2026-11-23"
+      }
+    ],
+    "limitations": [
+      "No reconciled actual-catch total for 2026 is presented here. A TAC is not a catch, landing or revenue figure.",
+      "The regulatory history, older English translation and bycatch deductions remain separate review questions. The Japanese instrument is the cited basis for the displayed totals."
+    ]
+  },
+  {
+    "slug": "greenland",
+    "name": "Greenland",
+    "region": "Arctic and North Atlantic · Kingdom of Denmark",
+    "practice": "Aboriginal subsistence whaling",
+    "framework": "IWC subsistence limits and Greenlandic management",
+    "species": [
+      "Common minke whale",
+      "Fin whale",
+      "Humpback whale",
+      "Bowhead whale"
+    ],
+    "summary": "Greenland's large-whale hunts are managed within the IWC Aboriginal Subsistence Whaling framework, with distinctions between species and East and West Greenland.",
+    "paragraphs": [
+      {
+        "heading": "Who is represented?",
+        "text": "Greenland is a self-governing part of the Kingdom of Denmark and manages its living natural resources. Its account published by the IWC describes large-whale hunting as part of food provision and community life. That account is a source for Greenland's management and community perspective.",
+        "sourceIds": [
+          "greenland-overview"
+        ]
+      },
+      {
+        "heading": "Which whales and areas?",
+        "text": "The IWC framework distinguishes East Greenland minke whales from West Greenland minke, fin, humpback and bowhead whales. A single national number would conceal these separate management areas and species.",
+        "sourceIds": [
+          "greenland-limits"
+        ]
+      },
+      {
+        "heading": "Where are the current limits?",
+        "text": "Consult the IWC's current catch-limits page and Schedule for the applicable quota block, annual strike provisions and carry-over conditions. Those limits are authorisations; reported catches require a separate dated return. This profile links the current rules without reproducing the IWC data table.",
+        "sourceIds": [
+          "greenland-limits",
+          "greenland-schedule"
+        ]
+      }
+    ],
+    "figures": [],
+    "sources": [
+      {
+        "id": "greenland-overview",
+        "title": "IWC: Greenland management and community account",
+        "url": "https://iwc.int/management-and-conservation/whaling/aboriginal/greenland",
+        "published": "Undated overview with historical and 2024 context",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "greenland-limits",
+        "title": "IWC: Current Aboriginal Subsistence Whaling catch limits",
+        "url": "https://iwc.int/management-and-conservation/whaling/aboriginal/html_76",
+        "published": "Current page identifies the 2026–2031 block",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "greenland-schedule",
+        "title": "IWC: Schedule archive record",
+        "url": "https://archive.iwc.int/?r=3606",
+        "published": "Versioned treaty Schedule; consult the document date",
+        "checked": "2026-11-23"
+      }
+    ],
+    "limitations": [
+      "No verified 2026 catch return is presented here. Missing figures do not mean that no whales were caught.",
+      "Older community descriptions may retain an earlier quota block; use the current limits and dated Schedule for regulatory figures.",
+      "The Schedule archive landing page was accessible in this review; its underlying attachment was not newly inspected."
+    ]
+  },
+  {
+    "slug": "united-states",
+    "name": "United States",
+    "region": "Alaska and Washington State",
+    "practice": "Aboriginal subsistence and tribal ceremonial frameworks",
+    "framework": "IWC limits, federal law and community-specific authorisations",
+    "species": [
+      "Bowhead whale · Alaska",
+      "Eastern North Pacific gray whale · Makah framework in Washington State"
+    ],
+    "summary": "Alaska Native bowhead hunting and the Makah Tribe's gray-whale authorisation process are distinct. They involve different communities, stocks and domestic requirements.",
+    "paragraphs": [
+      {
+        "heading": "Alaska: bowhead whaling",
+        "text": "The Alaska Eskimo Whaling Commission co-manages the bowhead hunt with federal oversight. Its account on the IWC website describes community sharing, reporting of whales landed and struck but lost, and the relationship between traditional knowledge and scientific research.",
+        "sourceIds": [
+          "usa-alaska"
+        ]
+      },
+      {
+        "heading": "Washington State: the Makah framework",
+        "text": "NOAA granted the Makah Tribe a Marine Mammal Protection Act waiver in June 2024 for a regulated eastern North Pacific gray-whale hunt. A separate hunt permit is required. NOAA's permitting page records a March 2025 application; a waiver or application alone does not establish that a hunt occurred.",
+        "sourceIds": [
+          "usa-makah",
+          "usa-permitting"
+        ]
+      },
+      {
+        "heading": "Keep stocks and permissions separate",
+        "text": "The IWC's current catch-limits page treats the Alaska–Chukotka bowhead stock separately from the gray-whale stock associated with Chukotka and Washington State. These shared stock limits must not be presented as an Alaska gray-whale quota or as a U.S.-only catch allowance.",
+        "sourceIds": [
+          "usa-limits"
+        ]
+      }
+    ],
+    "figures": [],
+    "sources": [
+      {
+        "id": "usa-alaska",
+        "title": "IWC: Alaska community and co-management account",
+        "url": "https://iwc.int/management-and-conservation/whaling/aboriginal/usa/alaska",
+        "published": "Undated account with historical quota material",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "usa-makah",
+        "title": "NOAA Fisheries: Makah Tribal Whale Hunt",
+        "url": "https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/makah-tribal-whale-hunt",
+        "published": "Updated September 28, 2026",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "usa-permitting",
+        "title": "NOAA Fisheries: Makah Tribal Whale Hunt Permitting",
+        "url": "https://www.fisheries.noaa.gov/west-coast/marine-mammal-protection/makah-tribal-whale-hunt-permitting",
+        "published": "Page lists 2025 actions and documents",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "usa-limits",
+        "title": "IWC: Current Aboriginal Subsistence Whaling catch limits",
+        "url": "https://iwc.int/management-and-conservation/whaling/aboriginal/html_76",
+        "published": "Current page identifies the 2026–2031 block",
+        "checked": "2026-11-23"
+      }
+    ],
+    "limitations": [
+      "This profile does not claim a completed Makah hunt or a newly issued permit. Those would require their own dated records.",
+      "No reconciled 2026 catch figures are presented. IWC strike limits, landed-whale limits and national or community allocations are not interchangeable.",
+      "The Alaska community page retains older quota-block wording; its historical numeric quota is not adopted as current."
+    ]
+  },
+  {
+    "slug": "st-vincent-and-the-grenadines",
+    "name": "St. Vincent & the Grenadines",
+    "region": "Caribbean · Bequia",
+    "practice": "Aboriginal subsistence whaling",
+    "framework": "IWC provisions for the Bequian humpback-whale hunt",
+    "species": [
+      "Humpback whale"
+    ],
+    "summary": "The IWC framework concerns the humpback-whale hunt of Bequia. The island, community and species are more informative than treating the whole country as a single generic whaling operation.",
+    "paragraphs": [
+      {
+        "heading": "Which community and practice?",
+        "text": "Bequia's community account published by the IWC describes a humpback-whale hunt using open boats and local processing and distribution of whale products. It records the community's own account of the hunt's cultural and food-related role.",
+        "sourceIds": [
+          "bequia-account"
+        ]
+      },
+      {
+        "heading": "Where are the applicable limits?",
+        "text": "The current IWC catch-limits page contains a multi-year provision for St Vincent and the Grenadines. Read it with the dated Schedule. An older community account's annual shorthand should not replace the current instrument or be mistaken for actual catches.",
+        "sourceIds": [
+          "bequia-limits",
+          "bequia-schedule"
+        ]
+      },
+      {
+        "heading": "What does this profile establish?",
+        "text": "It identifies the community, species and governing source. It does not establish how many whales were taken in 2026, whether the allocation was fully used, or that a hunt occurred every year.",
+        "sourceIds": [
+          "bequia-account",
+          "bequia-limits"
+        ]
+      }
+    ],
+    "figures": [],
+    "sources": [
+      {
+        "id": "bequia-account",
+        "title": "IWC: Bequia community account",
+        "url": "https://iwc.int/management-and-conservation/whaling/aboriginal/bequia",
+        "published": "Undated account discussing historical practice and 2018 activity",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "bequia-limits",
+        "title": "IWC: Current Aboriginal Subsistence Whaling catch limits",
+        "url": "https://iwc.int/management-and-conservation/whaling/aboriginal/html_76",
+        "published": "Current page identifies the 2026–2031 block",
+        "checked": "2026-11-23"
+      },
+      {
+        "id": "bequia-schedule",
+        "title": "IWC: Schedule archive record",
+        "url": "https://archive.iwc.int/?r=3606",
+        "published": "Versioned treaty Schedule; consult the document date",
+        "checked": "2026-11-23"
+      }
+    ],
+    "limitations": [
+      "No verified 2026 catch return is presented here; absence of a figure is not a zero-catch claim.",
+      "The community account is perspective-bearing and includes older quota language. It is not treated as a current catch return or an independent welfare assessment.",
+      "The Schedule archive landing page was accessible in this review; its underlying attachment was not newly inspected."
+    ]
+  }
+]

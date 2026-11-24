@@ -27,7 +27,7 @@ export const navigationGroups: {
     id: 'research', title: 'Research & resources', icon: 'book-open', pages: [
       { href: '/resources/', title: 'Resources hub', description: 'Selected government guidance, scientific literature, historical records and reading.', footer: true },
       { href: '/historical-economics/', title: 'Historical economics', description: 'Whaling products, markets and livelihoods, with scoped economic examples.', footer: true },
-      { href: '/law-and-governance/', title: 'Law & governance', description: 'A guide to legal frameworks, catch limits and governance systems.' },
+      { href: '/law-and-governance/', title: 'Law & governance', description: 'A guide to legal frameworks, catch limits and governance systems.', footer: true },
       { href: '/sources/', title: 'Sources & standards', description: 'Official, scientific and historical sources, with the standards used to assess them.', footer: true },
       { href: '/library/', title: 'Reading room', description: 'Literature and documentary material with provenance and rights information.', footer: true },
       { href: '/library/history/', title: 'Historical source catalogue', description: 'Historical research records, distinguishing inspected evidence from discovery leads.' },
@@ -50,8 +50,9 @@ export const navigationGroups: {
 
 export const primaryLinks = [
   { href: '/countries/', title: 'Countries' },
+  { href: '/law-and-governance/', title: 'Law & governance' },
   { href: '/resources/', title: 'Research' },
-  { href: '/all/', title: 'All pages' },
+  { href: '/about/', title: 'About' },
 ];
 
 export const researchRoutes = [

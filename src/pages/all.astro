@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import profiles from '../data/country-profiles.json';
 import NavigationHeading from '../components/NavigationHeading.astro';
 import { navigationGroups } from '../data/navigation';
 import { introductions, type IntroductionLocale } from '../i18n/introductions';
@@ -19,6 +20,7 @@ const records = [
 const groups = navigationGroups.map(group => ({ ...group, pages: [
   ...group.pages.map(page => ({ ...page, detail: '' })),
   ...(group.id === 'project' ? records : []),
+  ...(group.id === 'start' ? profiles.map(profile => ({ href: `/countries/${profile.slug}/`, title: `Whaling in ${profile.name}`, description: profile.summary, detail: 'Country profile · Reviewed November 23, 2026' })) : []),
 ] }));
 const languagePages = (Object.keys(introductions) as IntroductionLocale[]).map(locale => ({
   locale, href: `/${locale}/`, title: localeNames[locale],

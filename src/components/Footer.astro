@@ -18,8 +18,8 @@ const localizedLabels: Record<string, string | undefined> = {
   <div class="container footer-top">
     <div class="footer-brand">
       <p class="eyebrow">Whaling Watch</p>
-      <p class="footer-statement">{localized?.ui.statement ?? 'Independent. International. Source-driven.'}</p>
-      <p class="footer-note">{localized?.footer.note ?? 'No petitions. No donation appeals. Just careful context and the sources behind it.'}</p>
+      <p class="footer-statement">{localized?.ui.statement ?? 'The independent whaling reference.'}</p>
+      <p class="footer-note">{localized?.footer.note ?? 'Free access to careful context and the sources behind it.'}</p>
     </div>
     <a class="footer-owner" href="https://whytrashearth.org" target="_blank" rel="noopener noreferrer" lang="en">An independent project by WhyTrashEarth ↗</a>
   </div>
@@ -32,29 +32,14 @@ const localizedLabels: Record<string, string | undefined> = {
       </li>)}</ul>
     </section>)}
   </nav>
-  <section class="container footer-languages" aria-labelledby="footer-languages">
-    <NavigationHeading id="footer-languages" icon="languages" label={localized?.ui.languages ?? 'Languages'} />
+  <div class="container footer-final">
     <LanguageLinks label={localized?.ui.languages} />
-  </section>
-  <div class="footer-whale" data-whale-gallery>
-    <a class="footer-whale-home" href={locale === 'en' ? '/' : `/${locale}/`} aria-label={localized?.footer.home ?? 'Return to the Whaling Watch homepage'}>
-      <img class="footer-whale-art is-active" data-whale src="/images/whale.webp" alt="" />
-      <img class="footer-whale-art" data-whale src="/images/whale-blue.webp" alt="" />
-      <img class="footer-whale-art footer-whale-art--orca" data-whale src="/images/orca-transparent.webp" alt="" />
-    </a>
+    <p>© <span data-current-year>{new Date().getFullYear()}</span> Whaling Watch · <a href="/blog/">{locale === 'en' ? 'Site changes' : 'Site changes (English)'}</a> · <a href="/sitemap-index.xml">{localized?.footer.sitemap ?? 'XML sitemap'}</a></p>
   </div>
-  <div class="container footer-bottom">© <span data-current-year>{new Date().getFullYear()}</span> Whaling Watch{!localized && ' · Last updated November 3, 2026'} · <a href="/sitemap-index.xml">{localized?.footer.sitemap ?? 'XML sitemap'}</a></div>
 </footer>
 
 <script is:inline>
-  (() => {
-    const gallery = document.querySelector('[data-whale-gallery]');
-    if (!gallery) return;
-    const whales = [...gallery.querySelectorAll('[data-whale]')];
-    whales.forEach((whale) => whale.classList.remove('is-active'));
-    whales[Math.floor(Math.random() * whales.length)]?.classList.add('is-active');
-    document.querySelectorAll('[data-current-year]').forEach((year) => {
-      year.textContent = String(new Date().getFullYear());
-    });
-  })();
+  document.querySelectorAll('[data-current-year]').forEach(year => {
+    year.textContent = String(new Date().getFullYear());
+  });
 </script>

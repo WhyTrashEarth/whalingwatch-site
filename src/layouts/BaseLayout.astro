@@ -13,14 +13,15 @@ export type Props = {
   ogImage?: string;
   ogImageAlt?: string;
   noIndex?: boolean;
+  article?: { published: string; modified?: string };
 };
 
-const { title, description, canonical, ogImage, ogImageAlt, noIndex } = Astro.props;
+const { title, description, canonical, ogImage, ogImageAlt, noIndex, article } = Astro.props;
 ---
 <!doctype html>
 <html lang={Astro.currentLocale ?? "en"}>
   <head>
-    <SEO title={title} description={description} canonical={canonical} ogImage={ogImage} ogImageAlt={ogImageAlt} noIndex={noIndex} />
+    <SEO title={title} description={description} canonical={canonical} ogImage={ogImage} ogImageAlt={ogImageAlt} noIndex={noIndex} article={article} />
   </head>
   <body>
     <SkipLink />

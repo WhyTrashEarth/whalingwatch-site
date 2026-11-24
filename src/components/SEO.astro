@@ -10,6 +10,7 @@ export type Props = {
   ogImage?: string;   // absolute or site-relative (/og/og-default.png)
   ogImageAlt?: string;
   noIndex?: boolean;
+  article?: { published: string; modified?: string };
   locale?: "en" | IntroductionLocale;
 };
 
@@ -20,6 +21,7 @@ const {
   ogImage = "/og/og-whaling-watch.png",
   ogImageAlt = "Whaling Watch — Independent. International. Source-driven.",
   locale = "en",
+  article,
   noIndex = false
 } = Astro.props;
 
@@ -32,6 +34,22 @@ const finalCanonical = canonical ?? url;
 const alternatives = equivalents(Astro.url.pathname);
 const ogLocale = { en: "en_US", is: "is_IS", ja: "ja_JP", nb: "nb_NO", 'pt-br': "pt_BR" }[locale];
 const ogUrl = finalCanonical;
+const organization = {
+  '@type': 'Organization', '@id': `${site}/#organization`, name: 'Whaling Watch',
+  url: `${site}/`, description: SITE.description,
+  parentOrganization: { '@type': 'Organization', name: 'WhyTrashEarth', url: 'https://whytrashearth.org/' },
+};
+const structuredData = { '@context': 'https://schema.org', '@graph': [
+  organization,
+  { '@type': 'WebSite', '@id': `${site}/#website`, url: `${site}/`, name: SITE.name, publisher: { '@id': `${site}/#organization` } },
+  { '@type': article ? 'Article' : 'WebPage', '@id': `${finalCanonical}#content`, url: finalCanonical,
+    name: finalTitle, headline: title ?? SITE.name, description, inLanguage: locale, isAccessibleForFree: true,
+    isPartOf: { '@id': `${site}/#website` },
+    ...(article ? { datePublished: article.published, dateModified: article.modified ?? article.published,
+      author: { '@type': 'Organization', name: 'Whaling Watch', url: `${site}/about/` },
+      publisher: { '@id': `${site}/#organization` }, mainEntityOfPage: finalCanonical } : {}),
+  },
+] };
 const ogImg = ogImage.startsWith("http") ? ogImage : (site ? `${site}${ogImage}` : ogImage);
 ---
 
@@ -69,3 +87,5 @@ const ogImg = ogImage.startsWith("http") ? ogImage : (site ? `${site}${ogImage}`
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={ogImg} />
 <meta name="twitter:image:alt" content={ogImageAlt} />
+
+{!noIndex && <script type="application/ld+json" set:html={JSON.stringify(structuredData).replace(/</g, '\\u003c')} />}

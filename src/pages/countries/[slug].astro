@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import profiles from '../../data/country-profiles.json';
+export function getStaticPaths() {
+  return profiles.map(profile => ({ params: { slug: profile.slug }, props: { profile } }));
+}
+const { profile } = Astro.props;
+const source = (id: string) => profile.sources.find(item => item.id === id)!;
+const pageUrl = `https://whaling.watch/countries/${profile.slug}/`;
+---
+<BaseLayout title={`Whaling in ${profile.name}`} description={profile.summary} article={{ published: '2026-11-23', modified: '2026-11-23' }}>
+  <article class="container country-profile">
+    <a class="text-link" href="/countries/">← Countries & communities</a>
+    <h1>Whaling in {profile.name}</h1>
+    <p class="profile-lede">{profile.summary}</p>
+    <p class="home-review-date">Published and sources reviewed <time datetime="2026-11-23">November 23, 2026</time>.</p>
+    <dl class="profile-facts">
+      <div><dt>Place & community context</dt><dd>{profile.region}</dd></div>
+      <div><dt>Kind of whaling</dt><dd>{profile.practice}</dd></div>
+      <div><dt>Legal framework</dt><dd>{profile.framework}</dd></div>
+      <div><dt>Species in this profile</dt><dd>{profile.species.join('; ')}</dd></div>
+    </dl>
+    {profile.paragraphs.map(paragraph => <section><h2>{paragraph.heading}</h2><p>{paragraph.text}</p><p class="profile-source-links">Sources: {paragraph.sourceIds.map((id,index) => <>{index > 0 && ' · '}<a href={`#${id}`}>{source(id).title}</a></>)}</p></section>)}
+    <section aria-labelledby="limits-and-catches"><h2 id="limits-and-catches">Limits and reported catches</h2>
+      {profile.figures.length ? <ul class="profile-figures">{profile.figures.map(figure => <li><strong>{figure.period} {figure.label}: {figure.value} whales.</strong> {figure.note} <a href={`#${figure.sourceId}`}>Source and date</a>.</li>)}</ul> : <p>See the dated framework sources below for the applicable limits. This profile does not reproduce the IWC catch-limit tables. A verified 2026 actual-catch total is not supplied here; that does not mean zero whales were caught.</p>}
+    </section>
+    <section aria-labelledby="what-remains-open"><h2 id="what-remains-open">What remains open</h2><ul>{profile.limitations.map(limit => <li>{limit}</li>)}</ul><p>See the <a href="/research-status/">research-status record</a> for the wider evidence review, or <a href="/contact/">send a primary source or correction</a>.</p></section>
+    <section aria-labelledby="profile-sources"><h2 id="profile-sources">Sources and review dates</h2><ol class="profile-sources">{profile.sources.map(item => <li id={item.id}><a href={item.url}>{item.title}</a><small>{item.published} · Checked <time datetime={item.checked}>{item.checked}</time></small></li>)}</ol></section>
+    <p class="profile-citation"><strong>Cite this page:</strong> Whaling Watch. “Whaling in {profile.name}.” November 23, 2026. <a href={pageUrl}>{pageUrl}</a>. Include your access date when citing.</p>
+  </article>
+</BaseLayout>

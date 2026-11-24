@@ -3,7 +3,7 @@ export type SiteStatus = "live" | "construction";
 export const SITE = {
   name: "Whaling Watch",
   description:
-    "An independent, international, source-driven reference on contemporary whaling.",
+    "A free, independent whaling reference: who hunts whales, under which laws, and what the records show.",
 
   // Flip this to "construction" to force the homepage into under-construction mode:
   status: "live" as SiteStatus,

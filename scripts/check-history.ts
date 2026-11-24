@@ -49,10 +49,11 @@ for (const modify of [
 }
 assert.equal(validateTranslations([{...reviewed,pages:[{route:'/',status:'draft'}]}]).length,0);
 assert.equal(equivalents('/about/').length,1,'Full pages have no alternate translation before review');
-assert.deepEqual(equivalents('/'), equivalents('/is/'));
-assert.deepEqual(equivalents('/'), equivalents('/ja/'));
-assert.deepEqual(equivalents('/'), equivalents('/nb/'));
-assert.deepEqual(equivalents('/'), equivalents('/pt-br/'));
+assert.deepEqual(equivalents('/'), [{ locale: 'en', href: '/' }], 'Untranslated homepage has no full-page alternatives');
+for (const locale of ['is','ja','nb','pt-br']) {
+  assert.deepEqual(equivalents(`/${locale}/`), [{ locale, href: `/${locale}/` }], 'Introduction is its own page, not a homepage translation');
+  assert.equal(languageDestinations(`/${locale}/`)[0].href, '/', 'Introduction still offers English navigation');
+}
 assert.equal(navState('/nb/about/', '/nb/'), undefined);
 assert.equal(navState('/pt-br/about/', '/pt-br/'), undefined);
 assert.deepEqual(languageDestinations('/countries/history/').map(item => item.href), ['/countries/history/', '/is/', '/ja/', '/nb/', '/pt-br/']);
@@ -75,7 +76,7 @@ for(const locale of ['is','ja','nb','pt-br'] as const) {
   assert.ok(html.includes(`<html lang="${locale}">`));
   assert.equal((html.match(/<h1[\s>]/g)||[]).length, 1);
   assert.ok(html.includes(`rel="canonical" href="https://whaling.watch/${locale}/"`));
-  for (const alt of equivalents('/')) assert.ok(html.includes(`rel="alternate" hreflang="${alt.locale}" href="https://whaling.watch${alt.href}"`));
+  assert.ok(!html.split('</head>')[0].includes('rel="alternate" hreflang='), 'Short introduction must not claim homepage equivalence');
   const mail = new URL(contactHref(locale));
   assert.equal(mail.pathname, 'hello@whaling.watch');
   assert.equal(mail.searchParams.get('subject'), introductions[locale].contactSubject);
