@@ -1,0 +1,55 @@
+---
+type Props = { standalone?: boolean };
+const { standalone = false } = Astro.props;
+---
+
+<section class:list={['project-background', { container: standalone, 'project-background-standalone': standalone }]} aria-labelledby="project-background-heading">
+  <h2 id="project-background-heading">A <a href="https://whytrashearth.org/">WhyTrashEarth</a> project</h2>
+  <p>Whaling Watch is a free, independent reference from WhyTrashEarth, an environmental project active since 2016 through practical cleanup work, public information, and related projects.</p>
+  <p>We document whaling’s history, practices, and governance using traceable sources. Our approach is to apply consistent standards of evidence, distinguish documented events from proposals and disputed claims, and make uncertainties and corrections visible.</p>
+  <p><strong>Project lead:</strong> Alec Flores<br /><strong>Original whale illustrations:</strong> <a href="https://vgen.co/AnggaPokoke/">Angga</a></p>
+  <p>Explore our <a href="/sources/">sources</a>, <a href="/about/#editorial-principles">research methods</a>, and <a href="/blog/">public corrections</a>—or <a href="/contact/">send a source or correction</a> of your own.</p>
+  <p class="project-social"><a href="https://x.com/WhyTrashEarth">WhyTrashEarth on Twitter (X)</a></p>
+</section>
+
+<style>
+  .project-background {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 2rem;
+  }
+
+  .project-background-standalone {
+    max-width: 800px;
+    margin-top: 0;
+    padding-bottom: 5rem;
+  }
+
+  .project-background > h2 {
+    margin: 0 0 1.5rem;
+    font-family: var(--display);
+    font-size: clamp(1.8rem, 3.3vw, 2.8rem);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: .008em;
+    overflow-wrap: anywhere;
+  }
+
+  .project-background > p {
+    color: var(--muted);
+    line-height: 1.75;
+  }
+
+  .project-background a {
+    color: var(--foam);
+  }
+
+  .project-background a:hover {
+    color: var(--aqua);
+  }
+
+  .project-background .project-social {
+    font-size: .95rem;
+  }
+</style>

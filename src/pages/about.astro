@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectBackground from '../components/ProjectBackground.astro';
 ---
 
 <BaseLayout title="About the project" description="Read the mission, editorial principles, international translation plans, and public participation goals behind Whaling Watch.">
@@ -8,6 +9,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <h1>Document the evidence.<br />Preserve the context.</h1>
     <p>Whaling Watch is an independent, international information project about whales, whaling, strandings, historical events, regulation, and related science. We document the subject without treating a country, community, incident, or individual claim as shorthand for the whole picture.</p>
     <p>Our aim is simple: make reliable context easier to reach—across commercial activity, Aboriginal and subsistence whaling, law, science, culture, logistics, history, and the public record.</p>
+    <ProjectBackground />
     <div class="mission-panel">
       <p class="eyebrow">The mission</p>
       <h2>A reference that outlasts any one industry.</h2>
@@ -15,7 +17,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p>Whaling Watch does not advocate for the continuation or cessation of whaling. We provide historical context, document contemporary developments and help readers find reliable records. Whether whaling continues, changes or ceases entirely, its history remains worth understanding.</p>
       <p>This is a growing reference, not a claim to contain everything. Our <a href="/historical-economics/">historical economics guide</a> and <a href="/countries/history/">country-history inventory</a> make the current evidence and its limits visible.</p>
     </div>
-    <section class="about-principles">
+    <section class="about-principles" id="editorial-principles">
       <h2>Consistent standards. Room for correction.</h2>
       <p>We distinguish documented events from attributed explanations, proposals from enacted law, and commercial activity from Indigenous and subsistence practices. Neutrality means applying consistent standards of evidence, including when the evidence describes harm or disagreement.</p>
       <p>People and organizations directly involved should have a fair opportunity to explain their positions. We welcome corrections and primary-source material. Listening does not promise agreement or publication: claims still require appropriate attribution and verification.</p>
