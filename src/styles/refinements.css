@@ -865,10 +865,12 @@ html[lang="ja"] .translated-page h1 { letter-spacing: normal; }
 }
 
 /* November 2026: clearer entry points, compact navigation and source-led profiles. */
+.nav-shell { justify-content: center; }
 .wordmark { letter-spacing: .01em; gap: .55rem; }
 .wordmark-whale { width: 32px; height: 32px; object-fit: contain; }
 .primary-navigation { flex: 0 1 auto; container-type: normal; }
-.nav-links { flex-wrap: wrap; gap: .2rem 1.4rem; }
+.nav-links { flex-wrap: wrap; justify-content: center; gap: .2rem 1.4rem; }
+.nav-language-note { text-align: center; }
 .home-hero { padding: 4.5rem 0 5rem; background: radial-gradient(ellipse at 75% 40%, rgba(36,132,166,.22), transparent 65%); }
 .home-hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 1rem; }
 .home-hero h1 { font-family: var(--display); font-size: clamp(3rem, 5.7vw, 5.5rem); font-weight: 400; line-height: 1.08; letter-spacing: .005em; margin: 0 0 1.5rem; }
@@ -947,9 +949,9 @@ html[lang="ja"] .translated-page h1 { letter-spacing: normal; }
 .profile-sources small { display: block; }
 .profile-citation { border-top: 1px solid var(--line); padding-top: 1.5rem; font-size: .85rem; overflow-wrap: anywhere; }
 @media (max-width: 960px) {
-  .nav-shell { flex-direction: column; align-items: flex-start; gap: .75rem; }
+  .nav-shell { flex-direction: column; align-items: center; gap: .75rem; }
   .primary-navigation { width: 100%; }
-  .nav-links { justify-content: flex-start; }
+  .nav-links { justify-content: center; }
   .home-hero-grid { grid-template-columns: 1fr; }
   .home-hero-copy { max-width: 700px; }
   .home-whale { max-width: 530px; justify-self: center; }
@@ -959,7 +961,7 @@ html[lang="ja"] .translated-page h1 { letter-spacing: normal; }
 }
 @media (max-width: 600px) {
   .nav-links { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .1rem 1.15rem; }
-  .nav-links a { font-size: .88rem; }
+  .nav-links a { justify-content: center; text-align: center; font-size: .88rem; }
   .home-hero h1 { font-size: clamp(2.65rem,11.5vw,3.8rem); }
   .home-lede { font-size: 1.05rem; }
   .hero-actions { gap: 1rem; margin-top: 1.5rem; }
